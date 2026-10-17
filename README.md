@@ -51,10 +51,49 @@ season.
 
 See [docs/data-formats.md](docs/data-formats.md) for column/sheet details.
 
+### Extracting rankings from the legacy workbook
+
+The scheduler does not read the xlsx directly. Instead, run
+`src/legacy_extract_rank.py` once per season to pull the hand-calculated
+"proposed next-season rank" out of the workbook's `North Report` and
+`South Report` sheets into two small CSVs:
+
+```bash
+source .venv/bin/activate
+python src/legacy_extract_rank.py "data/2027/input/2026 Dual Meet Summary v.4.0 - MN Copy.xlsx"
+# North Report: 37 teams -> data/2027/input/north_ranks.csv
+# South Report: 51 teams -> data/2027/input/south_ranks.csv
+```
+
+Output format (`rank,team`, sorted by rank):
+
+```
+rank,team
+1,Seven Oaks
+2,University Club
+...
+```
+
+Details:
+
+- The CSVs are written next to the workbook by default; use `--out-dir` to
+  override.
+- The script **requires** both `North Report` and `South Report` sheets and
+  exits non-zero if either is missing.
+- It reads column A (rank) and column B (team) starting at row 4, skips the
+  `**Any New Teams to be added here…` placeholder row, and validates that
+  ranks are contiguous `1..N` with no duplicate team names.
+- A workbook whose Report sheets are unfilled (e.g. the 2022 file, which is
+  all `#N/A`) is rejected rather than producing an empty CSV.
+- Commit the generated CSVs alongside the workbook — they are the canonical
+  input for the scheduler; the xlsx is kept for provenance only.
+
 ## Running a season
 
 1. Create `data/<year>/` (copy an existing year's folder as a template).
 2. Drop the two input files into `data/<year>/input/` and fill in `config.yaml`.
-3. Run the scheduler pointing at that year.
-4. Fill in `data/<year>/README.md` with run date and commit hash.
-5. Commit inputs, config, and outputs together.
+3. Run `src/legacy_extract_rank.py` on the workbook to produce
+   `north_ranks.csv` / `south_ranks.csv` (see above).
+4. Run the scheduler pointing at that year.
+5. Fill in `data/<year>/README.md` with run date and commit hash.
+6. Commit inputs, config, and outputs together.
