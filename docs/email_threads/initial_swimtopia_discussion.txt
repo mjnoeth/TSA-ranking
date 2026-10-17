@@ -1,0 +1,220 @@
+Hey Nathan,
+
+I'm starting to go through the data Stefan has provided this weekend but the key to making this work is consistent input - this is certainly the most important. I'd like to understand what the "Dataclip" is - I imagine you are dumping some relational database to csv. Can you provide me with your query to dump (i.e. mysql -e "SELECT * FROM my_table" -B mydatabase | tr '\t' ',' > output.csv). I'd also be interested in the entire schema to know what data is available (i.e. SHOW CREATE TABLE table_name for all relevant tables). Finally, I want to know over time, how the tables can change (i.e. what are you internal rules on changing the schema like dropping columns, renaming fields etc).
+
+My second goal is to eliminate the need for us to bug folks at swimtopia. Is it possible to implement a feature to dump the "Dataclip"? I imagine it'd be something built into swimtopia since a quick search shows you all don't have any public facing APIs (haha, I'd be happy to be proven wrong here). Ideally, it'd be programmatic REST interface so our scheduling script can just get run at the end of the year with no human interaction.
+
+Thanks for your time,
+~Mike Noeth
+
+On Tuesday, October 13, 2026 at 01:29:57 PM EDT, Stefan van Staveren <stefan@xylemonline.com> wrote:
+
+
+Nathan and Mike,
+
+This correspondence introduces you both.
+
+Nathan, Mike Noeth is a fellow TSA Representative who offered to help me streamline our league's ranking process.  Mike is uniquely qualified to help; he's a programmer with a strong AI skillset, and for over 10 weeks each year, he lives and breathes summer swimming.
+
+You'll remember that each year, at the close of the season, I ask you for the Dataclip of the season's meet scores.  Mike would like to write a parser to pull the data, put it into our spreadsheet, and generate the results.
+
+Mike, Nathan has been a huge help to me within the Swimtopia community, and I trust that he can help in our endeavors.  Swimtopia is constantly soliciting feedback from its swim teams and making improvements and additions to its suite of products, so he may be busy tackling the tasks that we and other teams have requested, but he has always provided me the information I needed.
+
+I look forward to working with both of you on this project.
+
+Thanks!
+
+Stefan van Staveren
+(919) 795-1247
+TSA Rep, Leagues and Scheduling Chairperson
+Cary Swim Club
+
+On Tue, Jul 28, 2026 at 3:30 PM Nathan Roller <nathan.roller@swimtopia.com> wrote:
+Hi Stefan,
+
+I updated the query to first look at recorded scores.  This will return the 1-1 score when a meet score is entered that way.  
+
+Of the 43 meets on 7/7, 24 have a declared score and come through correctly. The other 19 fall back to the computed total — and 13 of those look like they never finished either. 
+
+Meet	Both-team total	Link
+2026 Meredith Townes at Raleigh Racquet	63	808087
+2026 Amberly at Brookstone	108	807997
+2026 Crabtree at Manchester	261	808057
+2026 Weatherstone Sha at Weldon Ridge	276	808118
+2026 Coachmans Trail at Wendell Waves	277	808112
+2026 Heritage Betas at Bedford Sharks	292	807994
+2026 Greenway Club at North Raleigh	315	808063
+2026 Sweetwater at RenPark Rays	319	808093
+2026 SM Sea Dragons at Bentwinds Barracudas	356	808000
+2026 Hawthorne at Planters Walk	361	808084
+2026 DT Typhoons at Riverwood Rays	370	808096
+2026 Wood Valley at Lakepark	372	808048
+2026 Kildaire Farms at Eagle Ridge	374	808021
+
+Whether each of these 13 reached official status is your call against the league rule, not something the data can decide. But the workflow is the same either way: record the declared result on the meet's Scores screen, and the dataclip picks it up on the next run with no query change.
+
+Best,
+Nathan
+
+On Tue, Jul 28, 2026 at 2:00 PM Stefan van Staveren <stefan@xylemonline.com> wrote:
+I do have a question.
+
+In week five (out of six) of our season, many of the meets could not be completed due to bad weather.  These meets were scheduled for 7/7, many tried to resume on 7/8, and several simply couldn't reach official status.
+
+In that case, the meet is declared a tie and each team records a score of "1".
+
+I'm guessing the data clip shows the score as it was recorded in Meet Maestro when the meet ended.  As an example, for Scottish Hills @ CSC, the score reads 44-24, but for our purposes, it needs to read 1-1.  Is there a way that the dataclips can be altered to capture that, or do I have to make a manual fix for meets that were not completed?
+
+On Tue, Jul 28, 2026 at 10:34 AM Nathan Roller <nathan.roller@swimtopia.com> wrote:
+Hi Stefan, my apologies on the oversight.  I've updated the dataclip to include meet scores.  Please take a look and let me know if you have any questions.
+
+Best,
+Nathan
+
+On Mon, Jul 20, 2026 at 1:07 PM Stefan van Staveren <stefan@xylemonline.com> wrote:
+Checking in... is there a version of the DataClip that can include the actual meet scores?
+
+thanks,
+
+Stefan
+
+On Thu, Jul 16, 2026 at 12:44 PM Stefan van Staveren <stefan@xylemonline.com> wrote:
+Hi Nathan,
+
+Thanks for sending!  At a quick glance, I don't see the meet scores.  Are the meet scores embedded somewhere, or does the file need updating?
+
+Stefan
+
+On Thu, Jul 16, 2026 at 12:38 PM Nathan Roller <nathan.roller@swimtopia.com> wrote:
+Hello Stefan, 
+
+Congratulations on another season.  This dataclip updates to show results from the current year. 
+
+TSA: Current Year Meet Results - https://data.heroku.com/dataclips/smfoqxcbmrlksbzxksdhhomofqrd
+
+If you tried to access before, it might have loaded stale data since the dataclip had not been accessed in a while. 
+
+Let me know if you have any questions.
+
+Best,
+Nathan
+
+On Wed, Jul 15, 2026 at 12:36 PM Stefan van Staveren <stefan@xylemonline.com> wrote:
+Hi Swimtopia team!
+
+Our season ended yesterday... so of course I'm already working on 2027's rankings!
+
+Can you please send me the .CSV Swimtopia Dataclips file with the scores from all the swim meets for the 2026 season?
+
+Thanks!
+
+Stefan
+
+
+
+On Wed, Aug 13, 2025 at 10:34 AM Mason Hale <mason@swimtopia.com> wrote:
+Hi Stefan --
+
+It's great to hear from you! I'm copying Nathan Roller into this thread. He will be able to update the dataclips for you for this year. 
+
+I also wanted to say that we still have several TSA related features on our Todo list and they are climbing up our priority list. I know the ability to track in-division win/loss/tie standing in our Team Standings snippet is actively being worked on.
+
+Nathan also previously did some work to calculate the in-division standings in the dataclips (I believe for last season), so he's familiar with some of the specifics of TSAs needs.
+
+Mason
+
+Mason Hale
+CEO & Founder
+www.SwimTopia.com
+(877) 856-2940 ext 701
+
+Swim team software you'll love! 
+
+
+
+On Mon, Aug 11, 2025 at 1:13 PM Stefan van Staveren <stefan@xylemonline.com> wrote:
+Hi Mason,
+
+Hope you're doing well!
+
+It's that time of year where I start the ranking process for next year's season.  If you remember, you send me the .CSV Swimtopia Dataclips file with the scores from all the swim meets, and I can take it from there.
+
+Thanks!
+
+Stefan
+
+On Sat, Jul 19, 2025 at 10:46 PM Samantha Hall <samanthalahall@gmail.com> wrote:
+Yes, that works for me.
+
+
+On Wed, Jul 16, 2025, 3:00 PM Stefan van Staveren <stefan@xylemonline.com> wrote:
+Will you be available on Tuesday, October 7th @ 6pm for the annual meeting of the Leagues & Scheduling committee?  It's where we determine ranking for the 2026 season.
+
+S
+
+On Mon, Jul 14, 2025 at 4:39 PM Samantha Hall <samanthalahall@gmail.com> wrote:
+Sounds like a plan! Let me know when to make time :)
+
+
+On Mon, Jul 14, 2025, 12:15 PM Stefan van Staveren <stefan@xylemonline.com> wrote:
+Looking back at last year's files, I started the process around the first week of August.  I'll likely do the same this year, although there's no rush, so long as the ranking spreadsheet is ready by the beginning of October.
+
+We could do much of this remotely with screen shares.  Maybe we'd have to get together once or twice to do the work collaboratively.  There's always JUST enough time between doing this work that I forget some of it and have to re-learn, but that is usually helpful to the overall process.
+
+S
+
+On Mon, Jul 14, 2025 at 12:07 PM Samantha Hall <samanthalahall@gmail.com> wrote:
+Sounds like something I could handle :). When would you be looking to do this first task? I will be away from Wed-Sat but we're back for the TSA meet on the 20th.
+
+
+On Mon, Jul 14, 2025, 11:58 AM Stefan van Staveren <stefan@xylemonline.com> wrote:
+Hi Sam!
+
+Thanks so much for reaching out.  Here's some basic information about the job.
+
+First, the commitment is almost 100% off-season.
+
+The only component that is during the season is being able to answer questions from teams and the Executive Board, but that's just a few emails here and there.
+
+I spend about 10-15 hours between August and October, cumulatively, on formatting and creating the ranking file for the L&S October meeting.  We meet (this year on 10/7) for about two hours, and set the proposed rankings.
+
+Then, once rankings have been approved by the BOD, I format and build the schedule.  Again, maybe about 10-15 hours total.  This process involves a little more interaction/communication with team reps because I invite them to make "special requests" for schedules, and I do my best to honor those as long as they are reasonable.
+
+It's not a hard job, and it is INCREDIBLY rewarding because of how important it is, and the genuine appreciation that teams share for the work involved.
+
+My first task this off-season, once this Tuesday's meets are completed, is harvesting all the meet scores from all 268 dual meets, and using that data to create the "Dual Meet Summary" file.  This would be a great starting point to the mentoring and eventual handing off of the title.
+
+Stefan
+
+On Mon, Jul 14, 2025 at 11:47 AM Samantha Hall <samanthalahall@gmail.com> wrote:
+Hi Stefan,
+
+I am interested. I am very comfortable with spreadsheets and I do use AI for a lot of things so I could definitely explore options for simplification and or automation. I did used to be a software engineer before kids so am very tech capable.
+
+Thanks,
+Sam
+
+On Mon, Jul 14, 2025, 11:33 AM Stefan van Staveren (via SwimTopia) <noreply+tsa@swimtopia.net> wrote:
+ 
+ 
+Hi Reps!
+
+I'm looking for a partner, and ultimately my replacement, as chairperson of the Leagues and Scheduling committee.
+
+I have almost exactly two [2] years left to serve in this role.  The job consists of two [2] main objectives each year.  The first is to create the rankings for the upcoming year, using meet results from the year that just ended.  That job starts as soon as the season ends, and is usually finished in October when the L&S committee meets to set the rankings in order to present to the BOD meeting in mid-October.
+
+The second job is use the new rankings to create the schedule for the upcoming season.  This is usually done in time for the January meeting for presentation, and for a vote as early as the February meeting.
+
+Beyond that, the L&S chair helps with the executive committee with any issues regarding rankings, schedules, etc.
+
+This job is VERY reliant on spreadsheets.  Besides loving puppies and walks in the rain, you need to be very comfortable in an Excel/Sheets environment.
+
+Furthermore, I wanted to take this opportunity to see if anyone with experience using AI or data analytics might consider seeing if there are opportunities to automate this job.  I've always felt that since this is such a numbers-based practice, there MUST be a way to rely less on intuition and subjectivity.  There must be a way to plug numbers in on one end, and produce rankings on the other.
+
+I was fortunate to be mentored for two [2] years of these ranking/scheduling cycles so that I was ready for the job once it was mine.  I'm recruiting now so that someone new will have the same opportunity to take over in the Fall of 2027.  I will, of course, always be available to the new chair when questions arise.
+
+If you think this may be something you're interested in, please let me know.
+
+Thanks!
+
+Stefan van Staveren

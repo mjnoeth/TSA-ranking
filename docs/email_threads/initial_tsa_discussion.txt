@@ -1,0 +1,156 @@
+Excell is better because for now that will be part of the workflow: exporting the ranking data as CSV for input to the next year.
+
+~Mike
+
+On Wed, Oct 14, 2026 at 9:52 AM, Stefan van Staveren
+<stefan@xylemonline.com> wrote:
+Do you want the Excel version, or will a PDF of the voted-on/approved rankings suffice?
+
+On Wed, Oct 14, 2026 at 9:47 AM Mike Noeth <mjnoeth@yahoo.com> wrote:
+Yes - the Excell spreadsheet that you just sent to the TSA to vote on for the 2027 season. I need those results for 2023 - 2026. I'll review what I have this afternoon and put together a high level proposal of the work flow.
+
+~Mike
+
+On Wed, Oct 14, 2026 at 9:43 AM, Stefan van Staveren
+<stefan@xylemonline.com> wrote:
+I'll send you anything you want, I just want to ensure I'm sending you what you need.
+
+By "the results of each year," do you mean the V1.0 Dual Meet results for the years 2022-2026?
+
+S
+
+On Wed, Oct 14, 2026 at 9:39 AM Mike Noeth <mjnoeth@yahoo.com> wrote:
+Got it. I think I'd like to maintain your process initially so we'll keep your spreadsheet. Parsing MS Excell can probably be done but I don't recommend it for many reasons (if you're interested, I can run through it). What we'll do is export the ranking data from your Excell spreadsheet in CSV format and use that as input in addition to the Swimtopia data dump. I will format the output to look exactly the same as this input so if/when we move away from your spread sheet, we can use last year's output as the new year's input.
+
+Can you share the results of each year so I can attempt to tune the script. I plan to work on it this weekend so I'd like to gather everything I need.
+
+~Mike
+
+On Wed, Oct 14, 2026 at 9:16 AM, Stefan van Staveren
+<stefan@xylemonline.com> wrote:
+Yes, of course.
+
+So... I'll start you out slowly, and then dump more on you once you process this first round.
+
+I already sent you five years' worth of head-to-head meet scores, 2022-2026.
+
+I've attached:  2022 Dual Meet Summary v.1.0 - MN Copy
+
+Version 1 of a Dual Meet Summary is the first file I create; I copy it from the previous year.  You'll see a worksheet titled "Results" at the bottom.  This is the sheet into which the parsed data from the Swimtopia-exported .CSV file will be entered.  Once entered, the worksheet "South" & "North" matrices will update to show the score differentials.
+
+Let me know if you have any questions.
+
+S
+
+
+
+On Tue, Oct 13, 2026 at 7:31 PM Mike Noeth <mjnoeth@yahoo.com> wrote:
+The csv files cover what looks like head to head data. Like team A beat team B and this was the score. Part of the algorithm requires us to know if the win was a division victory (weighted much heavier in the score computation). 
+
+~Mike
+
+On Tue, Oct 13, 2026 at 7:07 PM, Stefan van Staveren
+<stefan@xylemonline.com> wrote:
+Not sure that I know what you mean.  Elaborate? 
+
+On Tue, Oct 13, 2026, 7:02 PM Mike Noeth <mjnoeth@yahoo.com> wrote:
+I just opened one of the files and I see that team rank and division information are added separately. Can you provide those inputs?
+
+~Mike
+
+On Tue, Oct 13, 2026 at 8:18 AM, Stefan van Staveren
+<stefan@xylemonline.com> wrote:
+Sounds like a plan.  But, in typical TSA fashion, there's a hitch: I can only provide 5 years worth of Dual Meet data.
+
+For reasons I'll be happy to explain later, TSA has only been getting meet data from Swimtopia for 5 years.  I don't have access to the raw data from years before.
+
+However... thinking about it, I probably do have the re-formatted, parsed data for some years BEFORE Swimtopia.  Let me know if you want me to work on publishing that data.
+
+For now, the five years of data are attached.
+
+I'll craft an email to link you up with Swimtopia and send it out a little later.
+
+S
+
+
+
+On Mon, Oct 12, 2026 at 6:52 PM Mike Noeth <mjnoeth@yahoo.com> wrote:
+Ok - let's run 2 parallel tracks: (1) please get me the last 10 years of results in csv format from Swimtopia so I can finish the script and generate results we can look at (2) please start an email chain with me and someone at swimtopia that I can discuss what they're doing for us to see if it can be a more formal feature. 
+
+~Mike 
+
+On Mon, Oct 12, 2026 at 3:50 PM, Stefan van Staveren
+<stefan@xylemonline.com> wrote:
+I've been a TSA rep for... 14 years now I think.  And I've been chairman of Leagues and Scheduling for 7 years.  I've been looking at the same spreadsheets for so long that they are the only thing I understand.  I am wholly unfamiliar with AI and using tools like ChatGPT.  So, when it didn't know how to re-format the leagues into 3-team divisions at the bottom after the exhibition teams were added as full-time members, I just threw up my hands and dove back in as I'm used to doing.
+
+That's only one example.  I'm sure much of the work I do is unnecessary - it's how I was taught, and how I continued to operate.  At the same time, however, I have always acknowledged that this is purely numbers-driven, which is why I share your frustration when someone starts talking about year-round school calendars, good swimmers being on vacation, and all of the noise that doesn't matter.
+
+Regarding the raw data - there may be a way to automatically cull that from Swimtopia, but that is a language I do not speak.  I simply ask for a dataclip from them, they send me an exportable .CSV file, I format it so that the spreadsheet can read it, and the process continues from there.  I'm happy to help connect some dots with Swimtopia because I've been working with them since 2012 and know most of the top brass there.
+
+Your disclosure that your motivation may be somewhat selfish does not matter to me.  Splitting leagues, and especially the South, has been a whispered agenda item for years.  If this effort spearheads discussion in that direction, I think that's a win-win.  I am both the Leagues AND Scheduling committee chair, so the discussion can start with me, but I think an ad-hoc committee would definitely gain some traction if we had a product already written to share.
+
+S
+
+On Mon, Oct 12, 2026 at 3:36 PM Mike Noeth <mjnoeth@yahoo.com> wrote:
+Hey Stefan,
+
+Can you elaborate what wasn't captured by your ChatGPT attempt? Also, I have access through work to better models not available to the public.
+
+Anyway, I think the first step is to establish an export functionality in Swimtopia i.e. some csv format dumped from their database that comes out in a consistent manner year over year. Once that format is established (I believe you told me you email them for the csv dump currently - I want something more formal), I (haha - royal I since AI will write it) can write a parser to pull the data and (1)  put it into your spreadsheet that you presented (2) generate results.
+
+Then we can export 10 seasons of data and run it through to see how close we match.
+
+Selfishly - I am interested in future knobs for those of us at the lower end of the rankings. My team's parents value swimming against our neighbors (there are 4 or 5 pools right next to us and all the kids know each other from school) and not traveling to far away pools on school nights through rush hour traffic. Is it the scheduling committee that I bring this up in or the TSA at large? My first wack at this would be to consider having 3 divisions and redrawing the map since the South seems kind of big.
+
+~Mike
+
+On Mon, Oct 12, 2026 at 3:20 PM, Stefan van Staveren
+<stefan@xylemonline.com> wrote:
+Hi Mike!
+
+This is what I've been waiting for!!!
+
+Yes, I agree that this committee is well-suited for this type of analysis.  I think your approach is very well focused, and I know that I would greatly appreciate this being the next evolution of the Rankings process.
+
+Over the off-season I collaborated with an individual who helped me write something similar in ChatGPT.  While it was a good effort, I felt the experience couldn't tackle many of the intangibles that our league and meet format involve.  I also agree that applying this to past years' results and rankings will be the best way to fine tune.  And, that once we have a more numbers-based ranking result, a committee meeting will still be necessary, if only to verify the rankings produced.
+
+I strongly encourage you to keep up with this project.   Please let me know what I can provide you: raw data from past years, or the current spreadsheet so you can see what is being taken into account.  I have a veritable treasure trove of past years' data.
+
+I'm happy to meet at your convenience to discuss further.  I can walk you through my process - or we may find that only the data is necessary to chart a new course.
+
+Thank you, thank you, thank you.  I had given up hope that a better way existed.
+
+Stefan
+
+
+
+On Sat, Oct 10, 2026 at 1:18 PM Mike Noeth <mjnoeth@yahoo.com> wrote:
+Hey Stefan,
+
+I'm Mike Noeth and I had expressed interest in streamlining this committee using programming / AI. I attended my first committee meeting (I was the one sitting right in front of you) and found it somewhat hard to follow as a new comer. I also noticed some participants brought up irrelevant topics (this team's pool was too small, I didn't like working with this team). I think your provided notes allowed it to stay structured enough but once the top teams were locked in, I got the sense we departed from the stated objective of preferring division record, head-to-head, point diff, COPD (explicitly stated in your cliff notes). Haha, turns out I was mostly wrong and you all did a pretty good job.
+
+My day job is programming and I've been doing it for over 20 years. I now use AI a lot and this committee seems like a well suited arena for this application. The way I would do it is:
+- specify the rule set
+- come up with the algorithm
+- write a script to (1) extract data (2) process data to provide an output of the records
+
+Specification:
+An objective, data-driven ranking algorithm can be developed using the principles laid out in the TSA notes document:
+1. In-Division Record / Division Winner Status: Division winners move up; division losers move down.
+2. Head-to-Head (HTH) Results: Directly comparing teams that swam against each other.
+3. Point Differential: The margin of victory/loss in direct matchups.
+4. Common Opponent Point Differential (COPD): Used when teams did not face each other or to resolve head-to-head ties/close decisions.
+
+Algorithm:
+see scheduling_algo.png
+
+Script:
+see scheduling.py (note I did not script up data extraction and let the AI pull it from 2026+Dual+Meet+Summary+v.3.0.pdf directly - to do this properly, we need swimtopia to provide us with an export that we can generate your dual-meet-summary spread sheet as well as input data for a scheuling.py script).
+
+Results:
+The algorithmic application mapped very closely to what the committee came up. There need to be some tweaks (I noticed it expanded Southern division 13 to 4 teams and shrank Southern division 12 to 3 teams). It took less than a second to run this. Parsing data will also take very little time. Re-weighting the script/algorithm can easily be done with AI. You can see the break down here: https://docs.google.com/document/d/1qHGzfctTmAcyIYsAlZc8lYbTIqxpYswExKxAd_YMmfY/edit?usp=sharing
+
+We could try the algorithm on previous years to see how well it aligns with what you all did in the past to see how well it maps. I would still recommend the committee review its output and could spend more of the time discussing weights / what's important rather than the raw mechanics of trying to do COPD in person. Obviously the people in the committee could also overrule anything done but this streamlines what I imagine you spend A LOT of time doing.
+
+Anyways, please let me know what you think of this approach,
+~Mike
