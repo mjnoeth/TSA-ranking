@@ -1,10 +1,12 @@
 # TSA Scheduler
 
-Scheduling tools for the Tarheel Swim Association (TSA).
+Dual-meet scheduler for the Tarheel Swim Association (TSA).
 
 ## Layout
 
 - `src/` – scheduler code (year-agnostic; takes a year/config as input)
+  - `src/tools/` – one-off helper scripts for preparing input data (see
+    [Tools](#tools) below); not part of the scheduler itself
 - `tests/` – automated tests
 - `docs/` – rules, design notes, how-to-run
   - [docs/data-formats.md](docs/data-formats.md) – what the input files contain
@@ -38,29 +40,46 @@ truth for dependencies. If you add a package, add it there too.
 
 ## Inputs for a season
 
-To compute year **N** you need two inputs in `data/N/input/`:
+To schedule year **N**, `data/N/input/` holds:
 
-1. `<N-1> Dual Meet Summary ... .xlsx` – the **previous** season's summary
-   workbook, which supplies team rankings/standings.
-2. `<N> TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv` – the current season's
-   meet results exported from SwimTopia.
+| File | Source | Purpose |
+|---|---|---|
+| `north_ranks.csv`, `south_ranks.csv` | `tools/legacy_extract_rank.py` run on the **N-1** workbook | Team rank order per league (`rank,team`) |
+| `team_addresses.csv` | `tools/scrape_team_addresses.py` | Pool address + lat/long per club |
+| `<N> TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv` | SwimTopia export | Current-season meet results |
+| `<N-1> Dual Meet Summary ... .xlsx` | League spreadsheet | Provenance only — the scheduler reads the CSVs, not the workbook |
 
-Note the one-year offset: the 2026 run uses the 2025 workbook. The newest
-workbook (e.g. 2026) therefore lives in `data/2027/input/`, ready for next
-season.
+Note the one-year offset: the 2026 season uses rankings produced at the end of
+2025. The newest workbook (e.g. 2026) therefore lives in `data/2027/input/`,
+ready for next season.
 
-See [docs/data-formats.md](docs/data-formats.md) for column/sheet details.
+The CSVs are the canonical scheduler inputs; commit them alongside the raw
+sources. See [docs/data-formats.md](docs/data-formats.md) for column/sheet
+details.
 
-### Extracting rankings from the legacy workbook
+## Running a season
 
-The scheduler does not read the xlsx directly. Instead, run
-`src/legacy_extract_rank.py` once per season to pull the hand-calculated
-"proposed next-season rank" out of the workbook's `North Report` and
-`South Report` sheets into two small CSVs:
+1. Create `data/<year>/` (copy an existing year's folder as a template).
+2. Drop the SwimTopia CSV and prior-year workbook into `data/<year>/input/`
+   and fill in `config.yaml`.
+3. Generate `north_ranks.csv` / `south_ranks.csv` and `team_addresses.csv`
+   using the tools below.
+4. Run the scheduler pointing at that year.
+5. Fill in `data/<year>/README.md` with run date and commit hash.
+6. Commit inputs, config, and outputs together.
+
+## Tools
+
+Helper scripts in `src/tools/` prepare scheduler inputs. They are run once per
+season and are independent of the scheduler.
+
+### `legacy_extract_rank.py` — rankings from the legacy workbook
+
+Pulls the hand-calculated "proposed next-season rank" out of the workbook's
+`North Report` and `South Report` sheets into two CSVs:
 
 ```bash
-source .venv/bin/activate
-python src/legacy_extract_rank.py "data/2027/input/2026 Dual Meet Summary v.4.0 - MN Copy.xlsx"
+python src/tools/legacy_extract_rank.py "data/2027/input/2026 Dual Meet Summary v.4.0 - MN Copy.xlsx"
 # North Report: 37 teams -> data/2027/input/north_ranks.csv
 # South Report: 51 teams -> data/2027/input/south_ranks.csv
 ```
@@ -74,27 +93,22 @@ rank,team
 ...
 ```
 
-Details:
+- CSVs are written next to the workbook by default; `--out-dir` overrides.
+- **Requires** both `North Report` and `South Report` sheets; exits non-zero
+  if either is missing.
+- Reads column A (rank) and column B (team) from row 4, skips the
+  `**Any New Teams to be added here…` placeholder, and validates that ranks
+  are contiguous `1..N` with no duplicate names.
+- A workbook whose Report sheets are unfilled (e.g. the 2022 file, all
+  `#N/A`) is rejected rather than producing an empty CSV.
 
-- The CSVs are written next to the workbook by default; use `--out-dir` to
-  override.
-- The script **requires** both `North Report` and `South Report` sheets and
-  exits non-zero if either is missing.
-- It reads column A (rank) and column B (team) starting at row 4, skips the
-  `**Any New Teams to be added here…` placeholder row, and validates that
-  ranks are contiguous `1..N` with no duplicate team names.
-- A workbook whose Report sheets are unfilled (e.g. the 2022 file, which is
-  all `#N/A`) is rejected rather than producing an empty CSV.
-- Commit the generated CSVs alongside the workbook — they are the canonical
-  input for the scheduler; the xlsx is kept for provenance only.
+### `scrape_team_addresses.py` — club addresses from SwimTopia
 
-### Scraping club addresses
-
-`src/scrape_team_addresses.py` pulls every club's pool address and lat/long
-from the TSA SwimTopia site (roster page → each club page) into a CSV:
+Scrapes the TSA SwimTopia roster page and each club page for the pool
+address and lat/long:
 
 ```bash
-python src/scrape_team_addresses.py --out data/2026/input/team_addresses.csv
+python src/tools/scrape_team_addresses.py --out data/2026/input/team_addresses.csv
 ```
 
 Output columns: `division, team, url, address, latitude, longitude, note`.
@@ -105,13 +119,3 @@ map snippet falls back to the address text on the page and is flagged in
 Club names on the website differ slightly from the Dual Meet Summary in a few
 cases (e.g. `Lakepark` vs `Lake Park`, `Brier Creek Country Club` vs
 `Brier Creek`), so joining to `*_ranks.csv` needs a small alias map.
-
-## Running a season
-
-1. Create `data/<year>/` (copy an existing year's folder as a template).
-2. Drop the two input files into `data/<year>/input/` and fill in `config.yaml`.
-3. Run `src/legacy_extract_rank.py` on the workbook to produce
-   `north_ranks.csv` / `south_ranks.csv` (see above).
-4. Run the scheduler pointing at that year.
-5. Fill in `data/<year>/README.md` with run date and commit hash.
-6. Commit inputs, config, and outputs together.

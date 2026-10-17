@@ -8,7 +8,7 @@ has no map snippet, falls back to the first "<street>\\n<City, NC 12345>" pair
 found in the page text and flags it in the note column.
 
 Usage:
-  python src/scrape_team_addresses.py [--out data/<year>/input/team_addresses.csv]
+  python src/tools/scrape_team_addresses.py [--out data/<year>/input/team_addresses.csv]
 
 Output columns: division, team, url, address, latitude, longitude, note
 

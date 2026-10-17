@@ -10,7 +10,7 @@ The Report sheets have a fixed layout across all known years:
 Rows whose team name starts with "**" are placeholders and are skipped.
 
 Usage:
-  python src/legacy_extract_rank.py <workbook.xlsx> [--out-dir DIR]
+  python src/tools/legacy_extract_rank.py <workbook.xlsx> [--out-dir DIR]
 
 By default the CSVs are written next to the workbook.
 """
