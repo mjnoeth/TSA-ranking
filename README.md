@@ -88,6 +88,24 @@ Details:
 - Commit the generated CSVs alongside the workbook — they are the canonical
   input for the scheduler; the xlsx is kept for provenance only.
 
+### Scraping club addresses
+
+`src/scrape_team_addresses.py` pulls every club's pool address and lat/long
+from the TSA SwimTopia site (roster page → each club page) into a CSV:
+
+```bash
+python src/scrape_team_addresses.py --out data/2026/input/team_addresses.csv
+```
+
+Output columns: `division, team, url, address, latitude, longitude, note`.
+Addresses come from the Google Maps snippet on each club page; a club with no
+map snippet falls back to the address text on the page and is flagged in
+`note` (currently only Preston Village, which therefore has no lat/long).
+
+Club names on the website differ slightly from the Dual Meet Summary in a few
+cases (e.g. `Lakepark` vs `Lake Park`, `Brier Creek Country Club` vs
+`Brier Creek`), so joining to `*_ranks.csv` needs a small alias map.
+
 ## Running a season
 
 1. Create `data/<year>/` (copy an existing year's folder as a template).
