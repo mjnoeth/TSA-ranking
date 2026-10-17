@@ -42,6 +42,21 @@ GRID = {
     ("adjust", "copd_max_rating_gap"):   [0, 10, 20, 30, 45],
     ("adjust", "passes"):                [1, 2, 3, 5],
 }
+# Grid applied to every metric declared in config `metrics:` when --tune-metrics is set.
+METRIC_GRID = [0, 10, 20, 40, 60, 100]
+
+
+def _get(cfg, section, knob):
+    if section == "metrics":
+        return next(m for m in cfg.metrics if m.name == knob).weight
+    return getattr(cfg, section)[knob]
+
+
+def _set(cfg, section, knob, val):
+    if section == "metrics":
+        next(m for m in cfg.metrics if m.name == knob).weight = float(val)
+    else:
+        getattr(cfg, section)[knob] = float(val) if section == "weights" else val
 
 
 def score(cfg, season, ref_dir) -> tuple[float, dict]:
@@ -58,26 +73,33 @@ def main(argv=None) -> int:
     p.add_argument("ref_dir", type=Path)
     p.add_argument("--iters", type=int, default=4, help="coordinate-descent sweeps")
     p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--tune-metrics", action="store_true",
+                   help="also search weights of metrics declared in config.yaml (default: leave as configured)")
     args = p.parse_args(argv)
 
     cfg = load_config(args.season_dir)
     season = load_season(cfg)
     rng = random.Random(args.seed)
+    grid = dict(GRID)
+    if args.tune_metrics:
+        for m in cfg.metrics:
+            if m.file.is_file():
+                grid[("metrics", m.name)] = METRIC_GRID
 
     best_obj, res = score(cfg, season, args.ref_dir)
     print(f"start: obj {best_obj:.3f}  " + "  ".join(f"{l} MAE {r['mae']:.2f} exact {r['exact']}/{r['n']}" for l, r in res.items()))
 
     for sweep in range(args.iters):
-        keys = list(GRID)
+        keys = list(grid)
         rng.shuffle(keys)
         improved = False
         for section, knob in keys:
-            current = getattr(cfg, section)[knob]
-            for val in GRID[(section, knob)]:
+            current = _get(cfg, section, knob)
+            for val in grid[(section, knob)]:
                 if val == current:
                     continue
                 trial = copy.deepcopy(cfg)
-                getattr(trial, section)[knob] = float(val) if section == "weights" else val
+                _set(trial, section, knob, val)
                 obj, r = score(trial, season, args.ref_dir)
                 if obj < best_obj - 1e-9:
                     best_obj, cfg, res, improved = obj, trial, r, True
@@ -87,7 +109,10 @@ def main(argv=None) -> int:
             break
 
     print("\nbest:")
-    print(yaml.safe_dump({"weights": cfg.weights, "adjust": cfg.adjust}, sort_keys=False))
+    out = {"weights": cfg.weights, "adjust": cfg.adjust}
+    if cfg.metrics:
+        out["metrics"] = {m.name: {"weight": m.weight} for m in cfg.metrics}
+    print(yaml.safe_dump(out, sort_keys=False))
     for league, r in res.items():
         print(f"{league}: {r['exact']}/{r['n']} exact, {r['within1']} within 1, {r['within2']} within 2, "
               f"MAE {r['mae']:.2f}, max {r['max']}, rho {r['rho']:.3f}")

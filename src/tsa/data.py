@@ -50,8 +50,6 @@ class Season:
     teams: dict[str, Team]
     meets: list[Meet]
     division_size: int
-    distances: pd.DataFrame | None = None       # miles, teams x teams
-    drive_minutes: pd.DataFrame | None = None
     dropped: list[str] = field(default_factory=list)   # in ranks but swam no meets
     added: list[str] = field(default_factory=list)     # swam but not in ranks
 
@@ -126,15 +124,6 @@ def apply_overrides(meets: list[Meet], path: Path | None, aliases: dict[str, str
     return n
 
 
-def load_matrix(path: Path | None, aliases: dict[str, str]) -> pd.DataFrame | None:
-    if not path or not path.is_file():
-        return None
-    df = pd.read_csv(path, index_col=0)
-    df.index = [_canon(str(i), aliases) for i in df.index]
-    df.columns = [_canon(str(c), aliases) for c in df.columns]
-    return df.astype(float)
-
-
 def assign_divisions(season: Season) -> None:
     """Fill divisions of ``division_size`` from the top; the remainder is
     absorbed by making the bottom divisions one team smaller (TSA practice:
@@ -194,15 +183,7 @@ def load_season(cfg: SeasonConfig) -> Season:
 
     season = Season(
         year=cfg.year, teams=teams, meets=meets, division_size=cfg.division_size,
-        distances=load_matrix(cfg.inputs.get("team_distances"), cfg.aliases),
-        drive_minutes=load_matrix(cfg.inputs.get("team_drive_minutes"), cfg.aliases),
         dropped=dropped, added=added,
     )
     assign_divisions(season)
-
-    for df, label in ((season.distances, "team_distances"), (season.drive_minutes, "team_drive_minutes")):
-        if df is not None:
-            missing = sorted(set(teams) - set(df.index))
-            if missing:
-                raise ValueError(f"{label}: no row for {missing}; add aliases to config.yaml")
     return season

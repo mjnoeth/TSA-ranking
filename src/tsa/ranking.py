@@ -16,6 +16,7 @@ from dataclasses import dataclass, field
 
 from .config import LEAGUES, SeasonConfig
 from .data import Meet, Season
+from .metrics import MetricValues, load_metrics
 
 
 @dataclass
@@ -34,10 +35,7 @@ class TeamStats:
     ovr_pd: float = 0.0          # overall point differential
     div_winner: bool = False
     div_loser: bool = False
-    travel_miles: float | None = None     # mean road miles to other league clubs
-    travel_minutes: float | None = None
-    travel_miles_norm: float = 0.0        # 0..1 within league (0 = most central)
-    travel_minutes_norm: float = 0.0
+    metrics: dict[str, float] = field(default_factory=dict)   # raw per-team metric values
     rating: float = 0.0
     components: dict[str, float] = field(default_factory=dict)
     new_rank: int = 0
@@ -86,30 +84,15 @@ def compute_stats(season: Season) -> dict[str, TeamStats]:
             members[0].div_winner = True
             members[-1].div_loser = True
 
-    _compute_travel(season, stats)
     return stats
-
-
-def _compute_travel(season: Season, stats: dict[str, TeamStats]) -> None:
-    for df, attr in ((season.distances, "miles"), (season.drive_minutes, "minutes")):
-        if df is None:
-            continue
-        for league in LEAGUES:
-            names = [t.name for t in season.league_teams(league)]
-            vals = {}
-            for n in names:
-                others = [o for o in names if o != n]
-                vals[n] = float(df.loc[n, others].mean())
-                setattr(stats[n], f"travel_{attr}", vals[n])
-            lo, hi = min(vals.values()), max(vals.values())
-            for n, v in vals.items():
-                setattr(stats[n], f"travel_{attr}_norm", (v - lo) / (hi - lo) if hi > lo else 0.0)
 
 
 # ---------------------------------------------------------------------------
 # Rating
 
-def compute_ratings(season: Season, stats: dict[str, TeamStats], weights: dict[str, float]) -> None:
+def compute_ratings(season: Season, stats: dict[str, TeamStats], weights: dict[str, float],
+                    metrics: dict[str, MetricValues] | None = None) -> None:
+    metrics = metrics or {}
     for league in LEAGUES:
         n = len(season.league_teams(league))
         for s in stats.values():
@@ -123,9 +106,10 @@ def compute_ratings(season: Season, stats: dict[str, TeamStats], weights: dict[s
                 "division_loser": -weights["division_loser"] * s.div_loser,
                 "division_point_diff": weights["division_point_diff"] * s.div_pd,
                 "overall_point_diff": weights["overall_point_diff"] * s.ovr_pd,
-                "travel_distance": -weights["travel_distance"] * s.travel_miles_norm,
-                "travel_minutes": -weights["travel_minutes"] * s.travel_minutes_norm,
             }
+            for name, mv in metrics.items():
+                s.metrics[name] = mv.raw[s.name]
+                c[name] = mv.spec.weight * mv.signed[s.name]
             s.components = c
             s.rating = sum(c.values())
 
@@ -187,7 +171,8 @@ def adjust_order(season: Season, stats: dict[str, TeamStats], order: list[str], 
 
 def rank_season(season: Season, cfg: SeasonConfig) -> dict[str, TeamStats]:
     stats = compute_stats(season)
-    compute_ratings(season, stats, cfg.weights)
+    metrics = load_metrics(cfg.metrics, season, cfg.aliases)
+    compute_ratings(season, stats, cfg.weights, metrics)
     for league in LEAGUES:
         names = [t.name for t in season.league_teams(league)]
         # Stable tiebreak on equal rating: previous rank.

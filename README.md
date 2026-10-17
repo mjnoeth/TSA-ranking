@@ -10,8 +10,9 @@ common-opponent point differential (COPD).
 
 - `src/scheduling.py` – command-line entry point
 - `src/tsa/` – the ranking engine
-  - `config.py` – reads `data/<year>/config.yaml` (paths, aliases, weights)
-  - `data.py` – loads ranks, dataclips, overrides, distance matrices; assigns divisions
+  - `config.py` – reads `data/<year>/config.yaml` (paths, aliases, weights, metrics)
+  - `data.py` – loads ranks, dataclips, overrides; assigns divisions
+  - `metrics.py` – pluggable per-team metrics from CSV (travel, team size, …)
   - `ranking.py` – per-team stats, weighted rating, HTH/COPD adjustment
   - `report.py` – writes outputs and compares against a reference ranking
 - `src/tools/` – one-off helpers for preparing inputs (see [Tools](#tools))
@@ -106,7 +107,8 @@ Season checklist:
 2. **Stats** per team: in-division and overall W-L-T, point differentials, and
    division winner/loser (best/worst in-division record, tie broken on
    in-division differential — the committee's practice).
-3. **Rating** = Σ weight × factor, from `config.yaml`:
+3. **Rating** = Σ weight × factor. Built-in factors come from the meet results
+   (`weights:` in `config.yaml`):
 
    | weight | factor | 2026 value |
    |---|---|---|
@@ -115,9 +117,30 @@ Season checklist:
    | `overall_record` | overall wins − losses | 15 |
    | `division_winner` / `division_loser` | flat bonus / penalty | +40 / −60 |
    | `division_point_diff`, `overall_point_diff` | per point | 0 |
-   | `travel_distance`, `travel_minutes` | normalised mean road miles / minutes to the league (0–1), subtracted | 0 |
 
    With `previous_rank` at 25, 100 points ≈ one division (4 ranks).
+
+   **Any other "one number per team" is a pluggable metric** (`metrics:` in
+   `config.yaml`) — no code changes needed:
+
+   ```yaml
+   metrics:
+     travel_distance:                # name -> m_/c_ columns in the report
+       file: team_distances.csv      # relative to data/<year>/input/
+       source: matrix_row_mean       # team x team matrix -> mean over your league
+       normalize: minmax_league      # none | minmax_league (0..1) | zscore_league
+       direction: lower_is_better    # or higher_is_better
+       weight: 0.0
+     team_size:
+       file: team_metrics.csv        # any CSV with a `team` column
+       column: swimmers              # source: column (default)
+       weight: 0.0
+   ```
+
+   Values are normalised within each league and sign-adjusted so that
+   "better" is positive, then multiplied by `weight`. A weight-0 metric whose
+   file is missing is skipped; a non-zero one must load for every team. The
+   two travel metrics ship at weight 0.
 4. **Adjustment**: teams are sorted by rating, then bubble passes swap adjacent
    pairs where the lower team **beat the upper head-to-head** (gap ≤
    `hth_max_rating_gap`) or, if they never met, holds a **COPD** edge of at
@@ -153,7 +176,8 @@ Once the workbook is retired, maintain this file by hand.
 Coordinate-descent over every numeric knob in `config.yaml`, minimising mean
 absolute rank error against a reference `north_ranks.csv`/`south_ranks.csv`.
 Prints the best weights as YAML; never writes files. Try a few `--seed`s — the
-landscape has several local optima.
+landscape has several local optima. Add `--tune-metrics` to also search the
+weights of declared `metrics:`.
 
 ```bash
 python src/tools/tune_weights.py data/2026 data/2027/input --iters 6 --seed 3

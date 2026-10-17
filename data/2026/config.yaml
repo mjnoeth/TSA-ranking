@@ -6,9 +6,6 @@ inputs:
   south_ranks: south_ranks.csv
   dataclips: 2026 TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv
   score_overrides: score_overrides.csv         # official corrections (rain-out ties etc.)
-  team_addresses: team_addresses.csv
-  team_distances: team_distances.csv           # road miles, from tools/build_team_distances.py
-  team_drive_minutes: team_drive_minutes.csv
 
 # Map names used by other sources onto the canonical names in the ranks CSVs.
 aliases:
@@ -24,7 +21,7 @@ new_teams: {}
 division:
   size: 4            # 4-team divisions; remainder becomes 3-team divisions at the bottom
 
-# Rating = sum of weight * factor. Higher rating = higher rank.
+# Built-in rating factors computed from meet results. Rating = sum of weight * factor.
 # Tuned against the committee's approved 2027 ranking (see data/2026/README.md);
 # with previous_rank at 25/rank, 100 points = 4 ranks = one division.
 weights:
@@ -35,8 +32,33 @@ weights:
   division_loser: 60.0         # flat penalty for finishing last in division
   division_point_diff: 0.0     # per point of in-division score differential
   overall_point_diff: 0.0      # per point of overall score differential
-  travel_distance: 0.0         # per unit of normalised mean road miles to league (0..1); subtracted
-  travel_minutes: 0.0          # per unit of normalised mean drive minutes to league (0..1); subtracted
+
+# Pluggable per-team metrics: any "one number per team" from a CSV. Each adds
+# weight * normalised value to the rating and gets m_/c_ columns in the report.
+#   source:    column (CSV with a `team` column) | matrix_row_mean (team x team matrix)
+#   normalize: none | minmax_league (0..1 within league) | zscore_league
+#   direction: higher_is_better | lower_is_better
+# A metric with weight 0 whose file is missing is silently skipped.
+metrics:
+  travel_distance:
+    file: team_distances.csv                   # from tools/build_team_distances.py
+    source: matrix_row_mean                    # mean road miles to the other clubs in your league
+    normalize: minmax_league
+    direction: lower_is_better
+    weight: 0.0
+  travel_minutes:
+    file: team_drive_minutes.csv
+    source: matrix_row_mean
+    normalize: minmax_league
+    direction: lower_is_better
+    weight: 0.0
+  # Example of a plain per-team column (uncomment and supply the CSV):
+  # team_size:
+  #   file: team_metrics.csv
+  #   column: swimmers
+  #   normalize: minmax_league
+  #   direction: higher_is_better
+  #   weight: 0.0
 
 # Pairwise pass after rating: swap adjacent teams when the lower team has a
 # direct win (HTH) or, if they did not meet, a clear common-opponent edge (COPD).

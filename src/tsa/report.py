@@ -29,20 +29,21 @@ def write_ranks(stats: dict[str, TeamStats], out_dir: Path) -> dict[str, Path]:
 def write_report(season: Season, stats: dict[str, TeamStats], cfg: SeasonConfig, out_dir: Path) -> Path:
     """ranking_report.csv: one row per team with every input to the rating."""
     p = out_dir / "ranking_report.csv"
-    comp_keys = list(cfg.weights)
+    metric_names = [m.name for m in cfg.metrics]
+    comp_keys = cfg.component_names
     with p.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["league", "new_rank", "prev_rank", "change", "team", "prev_division",
                     "div_record", "ovr_record", "div_pd", "ovr_pd", "div_winner", "div_loser",
-                    "travel_miles", "travel_minutes", "rating", *[f"c_{k}" for k in comp_keys], "adjustments"])
+                    *[f"m_{k}" for k in metric_names],
+                    "rating", *[f"c_{k}" for k in comp_keys], "adjustments"])
         for league in LEAGUES:
             for s in sorted((s for s in stats.values() if s.league == league), key=lambda s: s.new_rank):
                 w.writerow([
                     league, s.new_rank, s.prev_rank, s.prev_rank - s.new_rank, s.name, s.division,
                     s.div_record, s.ovr_record, f"{s.div_pd:g}", f"{s.ovr_pd:g}",
                     int(s.div_winner), int(s.div_loser),
-                    "" if s.travel_miles is None else f"{s.travel_miles:.1f}",
-                    "" if s.travel_minutes is None else f"{s.travel_minutes:.0f}",
+                    *["" if k not in s.metrics else f"{s.metrics[k]:.2f}" for k in metric_names],
                     f"{s.rating:.1f}", *[f"{s.components.get(k, 0):.1f}" for k in comp_keys],
                     " | ".join(s.adjustments),
                 ])

@@ -7,8 +7,12 @@ from pathlib import Path
 
 import yaml
 
+from .metrics import MetricSpec
+
 LEAGUES = ("North", "South")
 
+# Built-in weights apply to factors computed from the meet results themselves.
+# Anything else ("one number per team" from a CSV) goes in config `metrics:`.
 DEFAULT_WEIGHTS = {
     # Baseline: points per rank position below the bottom of the league.
     # Keeps a team near where it was; everything else perturbs this.
@@ -25,10 +29,6 @@ DEFAULT_WEIGHTS = {
     "division_point_diff": 0.0,
     # Points per point of overall score differential.
     "overall_point_diff": 0.0,
-    # Travel burden (mean road miles / drive minutes to other clubs in the
-    # league, normalised 0..1 within league). Subtracted. Default 0 = ignored.
-    "travel_distance": 0.0,
-    "travel_minutes": 0.0,
 }
 
 DEFAULT_ADJUST = {
@@ -54,12 +54,18 @@ class SeasonConfig:
     new_teams: dict[str, str]       # team -> league, for clubs not in last year's ranks
     division_size: int
     weights: dict[str, float]
+    metrics: list[MetricSpec]
     adjust: dict
     output_dir: Path
 
     @property
     def input_dir(self) -> Path:
         return self.root / "input"
+
+    @property
+    def component_names(self) -> list[str]:
+        """All rating components in report order: built-ins then metrics."""
+        return list(self.weights) + [m.name for m in self.metrics]
 
 
 def load_config(season_dir: Path) -> SeasonConfig:
@@ -77,9 +83,6 @@ def load_config(season_dir: Path) -> SeasonConfig:
         ("south_ranks", "south_ranks.csv"),
         ("dataclips", None),
         ("score_overrides", "score_overrides.csv"),
-        ("team_addresses", "team_addresses.csv"),
-        ("team_distances", "team_distances.csv"),
-        ("team_drive_minutes", "team_drive_minutes.csv"),
     ):
         name = inputs_raw.get(key, default)
         if name:
@@ -98,8 +101,20 @@ def load_config(season_dir: Path) -> SeasonConfig:
     weights = {**DEFAULT_WEIGHTS, **(raw.get("weights") or {})}
     unknown = set(weights) - set(DEFAULT_WEIGHTS)
     if unknown:
-        raise ValueError(f"unknown weight(s) in {cfg_path}: {sorted(unknown)}")
+        raise ValueError(
+            f"unknown weight(s) in {cfg_path}: {sorted(unknown)}. Built-in weights are "
+            f"{sorted(DEFAULT_WEIGHTS)}; per-team metrics from CSV files go under 'metrics:'."
+        )
     adjust = {**DEFAULT_ADJUST, **(raw.get("adjust") or {})}
+    unknown = set(adjust) - set(DEFAULT_ADJUST)
+    if unknown:
+        raise ValueError(f"unknown adjust key(s) in {cfg_path}: {sorted(unknown)}; known: {sorted(DEFAULT_ADJUST)}")
+
+    metrics_raw = raw.get("metrics") or {}
+    clash = set(metrics_raw) & set(DEFAULT_WEIGHTS)
+    if clash:
+        raise ValueError(f"metrics {sorted(clash)} collide with built-in weight names")
+    metrics = [MetricSpec.from_config(name, spec or {}, input_dir) for name, spec in metrics_raw.items()]
 
     return SeasonConfig(
         year=year,
@@ -109,6 +124,7 @@ def load_config(season_dir: Path) -> SeasonConfig:
         new_teams={str(k): str(v) for k, v in (raw.get("new_teams") or {}).items()},
         division_size=int((raw.get("division") or {}).get("size", 4)),
         weights={k: float(v) for k, v in weights.items()},
+        metrics=metrics,
         adjust=adjust,
         output_dir=season_dir / "output",
     )
