@@ -1,21 +1,28 @@
 # TSA Scheduler
 
-Dual-meet scheduler for the Tarheel Swim Association (TSA).
+Objective, data-driven **next-season rankings** for the Tarheel Swim
+Association (TSA) from this season's dual-meet results. Replaces the by-hand
+spreadsheet process described in [docs/](docs/) while following the same rules:
+in-division record first, then head-to-head, point differential, and
+common-opponent point differential (COPD).
 
 ## Layout
 
-- `src/` – scheduler code (year-agnostic; takes a year/config as input)
-  - `src/tools/` – one-off helper scripts for preparing input data (see
-    [Tools](#tools) below); not part of the scheduler itself
-- `tests/` – automated tests
-- `docs/` – rules, design notes, how-to-run
-  - [docs/data-formats.md](docs/data-formats.md) – what the input files contain
-- `config/` – shared default settings and templates for per-year configs
+- `src/scheduling.py` – command-line entry point
+- `src/tsa/` – the ranking engine
+  - `config.py` – reads `data/<year>/config.yaml` (paths, aliases, weights)
+  - `data.py` – loads ranks, dataclips, overrides, distance matrices; assigns divisions
+  - `ranking.py` – per-team stats, weighted rating, HTH/COPD adjustment
+  - `report.py` – writes outputs and compares against a reference ranking
+- `src/tools/` – one-off helpers for preparing inputs (see [Tools](#tools))
+- `tests/` – `pytest` smoke tests
+- `docs/` – methodology notes, email threads, the original prototype
+  - [docs/data-formats.md](docs/data-formats.md) – what every input/output file contains
 - `data/<year>/` – one folder per season
   - `README.md` – where the inputs came from, when the run was done
-  - `config.yaml` – year-specific settings
+  - `config.yaml` – input file names, name aliases, weights
   - `input/` – source data for that season
-  - `output/` – generated schedules and reports
+  - `output/` – next-season ranks + per-team report
 
 ## Setup
 
@@ -40,39 +47,117 @@ truth for dependencies. If you add a package, add it there too.
 
 ## Inputs for a season
 
-To schedule year **N**, `data/N/input/` holds:
+To rank year **N** (producing N+1 ranks), `data/N/input/` holds:
 
-| File | Source | Purpose |
-|---|---|---|
-| `north_ranks.csv`, `south_ranks.csv` | `tools/legacy_extract_rank.py` run on the **N-1** workbook | Team rank order per league (`rank,team`) |
-| `team_addresses.csv` | `tools/scrape_team_addresses.py` | Pool address + lat/long per club |
-| `team_distances.csv`, `team_drive_minutes.csv` | `tools/build_team_distances.py` (Google Maps) | Club-to-club road miles / drive minutes matrices |
-| `<N> TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv` | SwimTopia export | Current-season meet results |
-| `<N-1> Dual Meet Summary ... .xlsx` | League spreadsheet | Provenance only — the scheduler reads the CSVs, not the workbook |
+| File | Required | Source | Purpose |
+|---|---|---|---|
+| `north_ranks.csv`, `south_ranks.csv` | yes | previous run's `output/`, or `tools/legacy_extract_rank.py` on the **N-1** workbook | Rank entering season N (`rank,team`) |
+| `<N> TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv` | yes | SwimTopia export | Every dual meet with scores |
+| `score_overrides.csv` | no | `tools/legacy_extract_score_overrides.py`, or by hand | Official corrections (rain-out ties recorded 1-1, etc.) |
+| `team_addresses.csv` | no | `tools/scrape_team_addresses.py` | Pool address + lat/long per club |
+| `team_distances.csv`, `team_drive_minutes.csv` | no | `tools/build_team_distances.py` (Google Maps) | Club-to-club road miles / drive minutes; weight 0 by default |
+| `<N-1> Dual Meet Summary ... .xlsx` | no | League spreadsheet | Provenance only — the engine never reads the workbook |
 
 Note the one-year offset: the 2026 season uses rankings produced at the end of
 2025. The newest workbook (e.g. 2026) therefore lives in `data/2027/input/`,
 ready for next season.
 
-The CSVs are the canonical scheduler inputs; commit them alongside the raw
-sources. See [docs/data-formats.md](docs/data-formats.md) for column/sheet
-details.
+The CSVs are the canonical inputs; commit them alongside the raw sources. See
+[docs/data-formats.md](docs/data-formats.md) for column/sheet details.
 
 ## Running a season
 
-1. Create `data/<year>/` (copy an existing year's folder as a template).
-2. Drop the SwimTopia CSV and prior-year workbook into `data/<year>/input/`
-   and fill in `config.yaml`.
-3. Generate `north_ranks.csv` / `south_ranks.csv`, `team_addresses.csv`, and
-   the distance matrices using the tools below.
-4. Run the scheduler pointing at that year.
-5. Fill in `data/<year>/README.md` with run date and commit hash.
-6. Commit inputs, config, and outputs together.
+```bash
+source .venv/bin/activate
+python src/scheduling.py data/2026                          # writes data/2026/output/
+python src/scheduling.py data/2026 --compare data/2027/input  # ...and score against a reference
+python src/scheduling.py data/2026 --dry-run -q             # just the summary, write nothing
+```
+
+Outputs in `data/<year>/output/`:
+
+- `north_ranks.csv`, `south_ranks.csv` — next season's ranks, **same format as
+  the input ranks**, so they can be copied straight into `data/<year+1>/input/`.
+- `ranking_report.csv` — one row per team: previous rank/division, in-division
+  and overall records, point differentials, winner/loser flags, travel
+  metrics, the rating and each weighted component, and a log of every HTH/COPD
+  swap that moved the team. This is the committee's discussion document.
+
+Season checklist:
+
+1. Create `data/<year>/` (copy an existing year's folder; clear `output/`).
+2. Copy last season's `output/*_ranks.csv` into `input/` (or extract them from
+   the legacy workbook with the tool below).
+3. Drop in the SwimTopia dataclip CSV; set `inputs.dataclips` in `config.yaml`.
+4. Add `score_overrides.csv` for any meets the league ruled differently than
+   the dataclip shows.
+5. If a club joined, add it to `new_teams` in `config.yaml`; clubs that left
+   are dropped automatically (ranked but swam no meets).
+6. Optionally refresh `team_addresses.csv` and the distance matrices.
+7. Run the engine, review `ranking_report.csv`, fill in `data/<year>/README.md`,
+   commit inputs + config + outputs together.
+
+## How the ranking works
+
+1. **Divisions** are derived from the incoming ranks: 4-team divisions from the
+   top, with the remainder forming 3-team divisions at the bottom (37 teams →
+   7×4 + 3×3). A meet is "in-division" when both clubs share a league and
+   division.
+2. **Stats** per team: in-division and overall W-L-T, point differentials, and
+   division winner/loser (best/worst in-division record, tie broken on
+   in-division differential — the committee's practice).
+3. **Rating** = Σ weight × factor, from `config.yaml`:
+
+   | weight | factor | 2026 value |
+   |---|---|---|
+   | `previous_rank` | positions above the bottom of the league | 25 / rank |
+   | `division_record` | in-division wins − losses | 0 |
+   | `overall_record` | overall wins − losses | 15 |
+   | `division_winner` / `division_loser` | flat bonus / penalty | +40 / −60 |
+   | `division_point_diff`, `overall_point_diff` | per point | 0 |
+   | `travel_distance`, `travel_minutes` | normalised mean road miles / minutes to the league (0–1), subtracted | 0 |
+
+   With `previous_rank` at 25, 100 points ≈ one division (4 ranks).
+4. **Adjustment**: teams are sorted by rating, then bubble passes swap adjacent
+   pairs where the lower team **beat the upper head-to-head** (gap ≤
+   `hth_max_rating_gap`) or, if they never met, holds a **COPD** edge of at
+   least `copd_min_margin` (gap ≤ `copd_max_rating_gap`). Every swap is
+   logged in the report.
+
+The 2026 weights were tuned against the committee's approved 2027 ranking with
+`tools/tune_weights.py`: North 28/37 exact, South 34/51 exact, every team
+within 4 places, Spearman ≥ 0.998.
 
 ## Tools
 
-Helper scripts in `src/tools/` prepare scheduler inputs. They are run once per
-season and are independent of the scheduler.
+Helper scripts in `src/tools/` prepare inputs or tune the engine. They are run
+once per season and are independent of the ranking code.
+
+### `legacy_extract_score_overrides.py` — official score corrections
+
+Diffs the dataclip against the `Results` sheet of the *same* season's Dual
+Meet Summary workbook and writes every disagreement to `score_overrides.csv`
+(`date,team_a,team_b,score_a,score_b,note`). In 2026 this captured 11
+rain-shortened meets the league recorded as 1-1 / 1-0.
+
+```bash
+python src/tools/legacy_extract_score_overrides.py \
+  "data/2027/input/2026 Dual Meet Summary v.4.0 - MN Copy.xlsx" \
+  "data/2026/input/2026 TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv"
+```
+
+Once the workbook is retired, maintain this file by hand.
+
+### `tune_weights.py` — fit weights to a reference ranking
+
+Coordinate-descent over every numeric knob in `config.yaml`, minimising mean
+absolute rank error against a reference `north_ranks.csv`/`south_ranks.csv`.
+Prints the best weights as YAML; never writes files. Try a few `--seed`s — the
+landscape has several local optima.
+
+```bash
+python src/tools/tune_weights.py data/2026 data/2027/input --iters 6 --seed 3
+```
 
 ### `legacy_extract_rank.py` — rankings from the legacy workbook
 

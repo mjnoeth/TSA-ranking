@@ -1,1 +1,50 @@
+# 2026 season -> produces proposed 2027 rankings
 year: 2026
+
+inputs:
+  north_ranks: north_ranks.csv
+  south_ranks: south_ranks.csv
+  dataclips: 2026 TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv
+  score_overrides: score_overrides.csv         # official corrections (rain-out ties etc.)
+  team_addresses: team_addresses.csv
+  team_distances: team_distances.csv           # road miles, from tools/build_team_distances.py
+  team_drive_minutes: team_drive_minutes.csv
+
+# Map names used by other sources onto the canonical names in the ranks CSVs.
+aliases:
+  Brier Creek Country Club: Brier Creek
+  Lakepark: Lake Park
+  Life Time Athletic Raleigh: Lifetime Raleigh
+  Raleigh Racquet Club: Raleigh Racquet
+
+# Clubs that swam this season but are not in the ranks CSVs (new members).
+# Listed in the order they should be appended to the bottom of their league.
+new_teams: {}
+
+division:
+  size: 4            # 4-team divisions; remainder becomes 3-team divisions at the bottom
+
+# Rating = sum of weight * factor. Higher rating = higher rank.
+# Tuned against the committee's approved 2027 ranking (see data/2026/README.md);
+# with previous_rank at 25/rank, 100 points = 4 ranks = one division.
+weights:
+  previous_rank: 25.0          # per rank position (rank 1 of N scores N*25)
+  division_record: 0.0         # per (in-division wins - losses); captured by winner/loser below
+  overall_record: 15.0         # per (overall wins - losses): 6-0 -> +90, 0-6 -> -90
+  division_winner: 40.0        # flat bonus for finishing first in division
+  division_loser: 60.0         # flat penalty for finishing last in division
+  division_point_diff: 0.0     # per point of in-division score differential
+  overall_point_diff: 0.0      # per point of overall score differential
+  travel_distance: 0.0         # per unit of normalised mean road miles to league (0..1); subtracted
+  travel_minutes: 0.0          # per unit of normalised mean drive minutes to league (0..1); subtracted
+
+# Pairwise pass after rating: swap adjacent teams when the lower team has a
+# direct win (HTH) or, if they did not meet, a clear common-opponent edge (COPD).
+adjust:
+  hth_enabled: true
+  hth_min_margin: 1.0          # a 1-0 rain-out "win" still counts
+  hth_max_rating_gap: 60.0     # never overturn a rating gap bigger than this (~2.4 ranks)
+  copd_enabled: true
+  copd_min_margin: 80.0        # net common-opponent differential must favour the lower team by this much
+  copd_max_rating_gap: 45.0
+  passes: 3

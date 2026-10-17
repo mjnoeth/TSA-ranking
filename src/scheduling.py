@@ -1,103 +1,77 @@
-import json
-import pandas as pd
-from typing import List, Dict, Tuple, Optional
+#!/usr/bin/env python3
+"""TSA next-season ranking from this season's results.
 
-# Sample data structure representing the dual meet results parsed from the schedule
-# Each meet record: {"winner": str, "loser": str, "margin": int, "is_division": bool}
+Usage:
+  python src/scheduling.py data/2026                 # writes data/2026/output/
+  python src/scheduling.py data/2026 --compare data/2027/input
+  python src/scheduling.py data/2026 --dry-run       # print ranks, write nothing
 
-class TSARanker:
-    def __init__(self, teams: List[Dict], meets: List[Dict]):
+Inputs are read from data/<year>/input/ as declared in data/<year>/config.yaml:
+  north_ranks.csv, south_ranks.csv   rank entering this season (required)
+  <dataclips>.csv                    SwimTopia meet results (required)
+  score_overrides.csv                official corrections to dataclip scores
+  team_distances.csv                 road miles matrix (optional, weight 0 by default)
+  team_drive_minutes.csv             drive-time matrix (optional, weight 0 by default)
 
-        self.teams = {t["name"]: t for t in teams}
-        self.meets = meets
-        self.hth_matrix = {}
-        self._build_hth_matrix()
+Outputs in data/<year>/output/:
+  north_ranks.csv, south_ranks.csv   next season's rank (same format as input)
+  ranking_report.csv                 per-team records, rating components, adjustments
+"""
 
-    def _build_hth_matrix(self):
-        for meet in self.meets:
-            w, l, m = meet["winner"], meet["loser"], meet["margin"]
-            self.hth_matrix[(w, l)] = m
-            self.hth_matrix[(l, w)] = -m
+from __future__ import annotations
 
-    def get_hth_margin(self, team_a: str, team_b: str) -> Optional[int]:
-        return self.hth_matrix.get((team_a, team_b), None)
+import argparse
+import sys
+from pathlib import Path
 
-    def get_copd(self, team_a: str, team_b: str) -> float:
-        """Calculates Common Opponent Point Differential between two teams."""
-        opponents_a = {
-            m["loser"] if m["winner"] == team_a else m["winner"]
-            for m in self.meets
-            if m["winner"] == team_a or m["loser"] == team_a
-        }
-        opponents_b = {
-            m["loser"] if m["winner"] == team_b else m["winner"]
-            for m in self.meets
-            if m["winner"] == team_b or m["loser"] == team_b
-        }
-        
-        common = opponents_a.intersection(opponents_b)
-        if not common:
-            return 0.0
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-        copd_sum = 0
-        for opp in common:
-            margin_a = self.get_hth_margin(team_a, opp)
-            margin_b = self.get_hth_margin(team_b, opp)
-            if margin_a is not None and margin_b is not None:
-                copd_sum += (margin_a - margin_b)
-                
-        return copd_sum / len(common)
+from tsa.config import LEAGUES, load_config          # noqa: E402
+from tsa.data import load_season                     # noqa: E402
+from tsa.ranking import rank_season                  # noqa: E402
+from tsa.report import compare, format_compare, write_ranks, write_report   # noqa: E402
 
-    def calculate_objective_score(self, team_name: str) -> float:
-        """
-        Calculates a quantifiable rating score.
-        Higher score = stronger team (higher ranking).
-        """
-        team = self.teams[team_name]
-        
-        # 1. Base Score derived from In-Division Win % and Overall Win %
-        div_wins, div_losses = team["div_record"]
-        div_win_pct = div_wins / (div_wins + div_losses) if (div_wins + div_losses) > 0 else 0
-        
-        ovr_wins, ovr_losses = team["ovr_record"]
-        ovr_win_pct = ovr_wins / (ovr_wins + ovr_losses) if (ovr_wins + ovr_losses) > 0 else 0
-        
-        # Division Winner / Loser Bonuses
-        div_bonus = 50.0 if team.get("is_div_winner") else ( -50.0 if team.get("is_div_loser") else 0.0 )
 
-        # Baseline rating from previous rank (invert so 1 is high)
-        base_rating = (100 - team["2026_rank"]) * 10
-        
-        # Aggregate Rating
-        rating = base_rating + (div_win_pct * 100) + (ovr_win_pct * 50) + div_bonus
-        return rating
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("season_dir", type=Path, help="data/<year> directory containing config.yaml and input/")
+    p.add_argument("--compare", type=Path, metavar="DIR",
+                   help="directory with reference north_ranks.csv/south_ranks.csv to score against")
+    p.add_argument("--dry-run", action="store_true", help="do not write output files")
+    p.add_argument("--quiet", "-q", action="store_true", help="suppress the ranking printout")
+    args = p.parse_args(argv)
 
-    def rank_league(self) -> List[Tuple[int, str, float]]:
-        """Ranks teams objectively and resolves head-to-head / COPD conflicts."""
-        # Initial sorting by objective rating
-        scores = {t: self.calculate_objective_score(t) for t in self.teams}
-        ranked_teams = sorted(self.teams.keys(), key=lambda t: scores[t], reverse=True)
+    cfg = load_config(args.season_dir)
+    season = load_season(cfg)
+    stats = rank_season(season, cfg)
 
-        # Bubble-pass to resolve direct HTH and COPD ties between adjacent ranks
-        n = len(ranked_teams)
-        for i in range(n):
-            for j in range(0, n - i - 1):
-                t1, t2 = ranked_teams[j], ranked_teams[j+1]
-                
-                # Check HTH
-                hth = self.get_hth_margin(t1, t2)
-                if hth is not None:
-                    # If t2 beat t1 directly, swap them
-                    if hth < 0:
-                        ranked_teams[j], ranked_teams[j+1] = ranked_teams[j+1], ranked_teams[j]
-                else:
-                    # Check COPD if no direct HTH
-                    copd = self.get_copd(t1, t2)
-                    if copd < -10.0:  # Clear COPD advantage to t2
-                        ranked_teams[j], ranked_teams[j+1] = ranked_teams[j+1], ranked_teams[j]
+    print(f"{cfg.year} season: {len(season.teams)} teams, {len(season.meets)} meets "
+          f"({sum(m.overridden for m in season.meets)} overridden)")
+    if season.dropped:
+        print(f"  dropped (ranked but swam no meets): {season.dropped}")
+    if season.added:
+        print(f"  added (swam but not ranked): {season.added}")
 
-        return [(idx + 1, team, scores[team]) for idx, team in enumerate(ranked_teams)]
+    if not args.quiet:
+        for league in LEAGUES:
+            print(f"\n{league}")
+            for s in sorted((s for s in stats.values() if s.league == league), key=lambda s: s.new_rank):
+                chg = s.prev_rank - s.new_rank
+                flag = " W" if s.div_winner else " L" if s.div_loser else "  "
+                print(f"  {s.new_rank:3d} ({s.prev_rank:3d} {chg:+3d}){flag} {s.name:34s} "
+                      f"div {s.div_record:6s} ovr {s.ovr_record:6s} pd {s.ovr_pd:+5g} rating {s.rating:7.1f}")
 
-# Example execution template
+    if not args.dry_run:
+        paths = write_ranks(stats, cfg.output_dir)
+        rep = write_report(season, stats, cfg, cfg.output_dir)
+        print(f"\nwrote {', '.join(str(p) for p in paths.values())} and {rep}")
+
+    if args.compare:
+        res = compare(stats, args.compare, cfg.aliases)
+        print(f"\nComparison against {args.compare}:")
+        print(format_compare(res))
+    return 0
+
+
 if __name__ == "__main__":
-    print("TSA Objective Ranking Algorithm Initialized.")
+    sys.exit(main())
