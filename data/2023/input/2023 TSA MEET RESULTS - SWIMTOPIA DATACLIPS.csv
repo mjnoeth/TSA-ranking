@@ -1,0 +1,271 @@
+meet_date,meet_name,team1_abbrev,team1_name,team1_is_home,team1_score,team1_place,team1_win_count,team1_loss_count,team1_tie_count,team2_abbrev,team2_name,team2_is_home,team2_score,team2_place,team2_win_count,team2_loss_count,team2_tie_count
+2023-06-13,2023 Prestonwood at Seven Oaks,7OAK,Seven Oaks,true,316.0,1,1,0,0,PWOOD,Prestonwood,false,198.0,2,0,1,0
+2023-06-13,2023 Walden Creek at Alligators,ABB,Abbington Alligators,true,298.0,1,1,0,0,WDCR,Walden Creek,false,212.0,2,0,1,0
+2023-06-13,2023 Crooked Creek at Arbor Creek Swim,AC,Arbor Creek Swim Club,true,258.0,1,1,0,0,CC,Crooked Creek,false,204.0,2,0,1,0
+2023-06-13,2023 Scottish Hills at Apex Breakers,SHRC,Scottish Hills Sea Lions,false,260.5,1,1,0,0,APEX,Apex Breakers Swim Team,true,253.5,2,0,1,0
+2023-06-13,2023 Weldon Ridge at Bella Casa,BELL,Bella Casa Barracudas,true,319.5,1,1,0,0,WRIDG,Weldon Ridge,false,179.5,2,0,1,0
+2023-06-13,2023 Wellington Park at Bentwinds Barrac,BWBAR,Bentwinds Barracudas,true,355.0,1,1,0,0,WLLPK,Wellington Park,false,154.0,2,0,1,0
+2023-06-13,2023 CV Hammerheads at Amberly,AMBER,Amberly,true,302.0,1,1,0,0,CARP,Carpenter Village Hammerheads,false,207.0,2,0,1,0
+2023-06-13,2023 University Club at Cary Park,UCLUB,University Club,false,331.0,1,1,0,0,CPSD,Cary Park Sea Dragons,true,170.0,2,0,1,0
+2023-06-13,2023 Heritage Betas at Crabtree,HWFB,"Heritage Swim Team Association, Inc.",false,331.5,1,1,0,0,CRAB,Crabtree,true,182.5,2,0,1,0
+2023-06-13,2023 Holly Glen at Charleston Villg,HGHAM,Holly Glen Hammerheads Swim Team,false,329.0,1,1,0,0,CVC,Charleston Village Crocodiles,true,185.0,2,0,1,0
+2023-06-13,2023 Highcroft at Dutchman Downs,DUTCH,Dutchman Downs Dolphins,true,347.0,1,1,0,0,HICR,Highcroft Hurricanes Swim Team,false,148.0,2,0,1,0
+2023-06-13,2023 Brier Creek CC at Gators,GFG,Granite Falls Gators,true,285.0,1,1,0,0,BCCC,Brier Creek Country Club,false,227.0,2,0,1,0
+2023-06-13,2023 North Hills Club at Greystone Gators,NH,North Hills Club,false,292.0,1,1,0,0,GRY,Greystone Gators,true,222.0,2,0,1,0
+2023-06-13,2023 Wood Valley at Greenway Club,WDVLY,Wood Valley,false,264.0,1,1,0,0,GWC,Greenway Club Racers Swim Team,true,249.0,2,0,1,0
+2023-06-13,2023 Banbury Woods at Hawthorne,BWHL,Banbury Woods Dolphins,false,301.0,1,1,0,0,HAW,Hawthorne Stingrays,true,209.0,2,0,1,0
+2023-06-13,2023 Black Horse Run at Harrington Grove,HG,Harrington Grove,true,349.0,1,1,0,0,BHR,Black Horse Run,false,163.0,2,0,1,0
+2023-06-13,2023 12 Oaks at Hammerheads,12OAK,12 Oaks Summer Swim Team,false,263.0,1,1,0,0,HHH,Haddon Hall Hammerheads,true,251.0,2,0,1,0
+2023-06-13,2023 Lakepark at Hasentree,HTHHS,Hasentree Hammerheads,true,273.0,1,1,0,0,LPK,Lakepark Swim Team,false,234.0,2,0,1,0
+2023-06-13,2023 Wendell Waves at JCC,JCC,JCC J-Rays,true,355.0,1,1,0,0,WAVES,Wendell Waves,false,158.0,2,0,1,0
+2023-06-13,2023 Harmony at Kildaire Farms,KILD,Kildaire Farms Killer Whales,true,302.0,1,1,0,0,HARM,Harmony,false,197.0,2,0,1,0
+2023-06-13,2023 Garner at Kitts Creek,KITT,Kitts Creek Killer Whales,true,317.0,1,1,0,0,GAR,Garner Dolphins,false,191.0,2,0,1,0
+2023-06-13,2023 Hedingham Sharks at Lakemont,HEDI,Hedingham Sharks,false,204.0,1,1,0,0,LKMT,Lakemont,true,186.0,2,0,1,0
+2023-06-13,2023 SV Killer Whales at Lochmere,SHEP,Shepherd's Vineyard Killer Whales,false,262.0,1,1,0,0,LOCH,Lochmere Swim Team,true,247.0,2,0,1,0
+2023-06-13,2023 Oxxford Hunt at Life Time Cary,OXH,Oxxford Hunt,false,272.0,1,1,0,0,LTFC,Life Time Cary,true,215.0,2,0,1,0
+2023-06-13,2023 Coachmans Trail at LifeTime Raleigh,LTRAL,LifeTime Raleigh,true,306.0,1,1,0,0,CTSWI,CT Sharks,false,198.0,2,0,1,0
+2023-06-13,2023 OliveChapel Swim at Medfield Pool,OCSTC,OliveChapel Swim,false,281.0,1,1,0,0,MARC,Medfield  Sharks,true,233.0,2,0,1,0
+2023-06-13,2023 Springdale at Manchester,MSRC,Manchester,true,284.0,1,1,0,0,SPRG,Springdale,false,214.0,2,0,1,0
+2023-06-13,2023 North Raleigh at Meredith Townes,NRSC,North Raleigh,false,351.0,1,1,0,0,MT,Meredith Townes,true,159.0,2,0,1,0
+2023-06-13,2023 Riverwood Rays at Northbrook,NBK,Northbrook Club,true,296.0,1,1,0,0,RVWD,Riverwood Rays,false,217.0,2,0,1,0
+2023-06-13,2023 DT Typhoons at Oak Park,DTTYP,Durant Trails Typhoons Swim Team,false,266.5,1,1,0,0,OPK,Oak Park,true,241.5,2,0,1,0
+2023-06-13,2023 Glenridge Gators at Park Village,PARKV,Park Village,true,239.0,1,1,0,0,GLEN,Glenridge Gators,false,225.0,2,0,1,0
+2023-06-13,2023 Brighton Forest at Park @ West Lake,BRFO,Brighton Forest Silver Fins,false,250.5,1,1,0,0,PAWL,Park @ West Lake,true,248.5,2,0,1,0
+2023-06-13,2023 Bedford Sharks at Quail Hollow,BAFR,Bedford at Falls River Sharks Swim Team,false,302.5,1,1,0,0,QHSC,Quail Hollow Amberjacks,true,210.5,2,0,1,0
+2023-06-13,2023 Zebulon at Raleigh Racquet,ZCC,Zebulon Swim Team,false,274.0,1,1,0,0,RRC,Raleigh Racquet,true,187.0,2,0,1,0
+2023-06-13,2023 Clubworx Sharks at Regency Riptides,REG,Regency Riptides Swim Team,true,290.0,1,1,0,0,CW,Clubworx Sharks,false,220.0,2,0,1,0
+2023-06-13,2023 Preston Village at The Reserve,PV,Preston Village Tiger Sharks,false,388.0,1,1,0,0,RES,The Reserve Stingrays,true,120.0,2,0,1,0
+2023-06-13,2023 Eagle Ridge at RenPark Rays,ERST,Eagle Ridge Soaring Eagles,false,314.0,1,1,0,0,RPRAY,RenPark Rays,true,159.0,2,0,1,0
+2023-06-13,2023 Weatherstone Sha at Silverton Sharks,WES,Weatherstone Sharks,false,269.0,1,1,0,0,SILV,Silverton Sharks,true,244.0,2,0,1,0
+2023-06-13,2023 Brookstone at SM Sea Dragons,BROOK,Brookstone Barracudas,false,353.0,1,1,0,0,SMSD,Scotts Mill Sea Dragons,true,155.0,2,0,1,0
+2023-06-13,2023 CSC Swim Team at Sunset Ridge,CARY,Cary Swim Club Swim Team,false,272.0,1,1,0,0,SSR,Sunset Ridge,true,238.0,2,0,1,0
+2023-06-13,2023 Planters Walk at Southall,SSRC,Southall Swim & Racquet Club,true,314.0,1,1,0,0,PWST,Planters Walk Piranhas Swim Team,false,135.0,2,0,1,0
+2023-06-13,2023 SummerfieldNorth at Stonebridge,STONE,Stonebridge Stingrays,true,272.0,1,1,0,0,SMFLD,SummerfieldNorth,false,236.0,2,0,1,0
+2023-06-13,2023 Devereaux at The Christian Co,TCC,The Christian Co,true,326.0,1,1,0,0,DEVER,Devereaux Devil Rays,false,157.0,2,0,1,0
+2023-06-13,2023 Wellsley at Woodcreek,WCWC,WoodCreek WhiteCaps,true,330.5,1,1,0,0,WELLS,Wellsley,false,179.5,2,0,1,0
+2023-06-20,2023 Preston Village at 12 Oaks,PV,Preston Village Tiger Sharks,false,269.0,1,1,0,0,12OAK,12 Oaks Summer Swim Team,true,235.0,2,0,1,0
+2023-06-20,2023 Cary Park at Seven Oaks,7OAK,Seven Oaks,true,351.0,1,1,0,0,CPSD,Cary Park Sea Dragons,false,162.0,2,0,1,0
+2023-06-20,2023 Life Time Cary at Amberly,AMBER,Amberly,true,295.0,1,1,0,0,LTFC,Life Time Cary,false,105.0,2,0,1,0
+2023-06-20,2023 Wood Valley at Bedford Sharks,BAFR,Bedford at Falls River Sharks Swim Team,true,267.5,1,1,0,0,WDVLY,Wood Valley,false,245.5,2,0,1,0
+2023-06-20,2023 Greystone Gators at Brier Creek CC,BCCC,Brier Creek Country Club,true,199.0,1,1,0,0,GRY,Greystone Gators,false,193.0,2,0,1,0
+2023-06-20,2023 Park @ West Lake at Bella Casa,PAWL,Park @ West Lake,false,264.0,1,1,0,0,BELL,Bella Casa Barracudas,true,248.0,2,0,1,0
+2023-06-20,2023 Northbrook at Black Horse Run,NBK,Northbrook Club,false,355.0,1,1,0,0,BHR,Black Horse Run,true,135.0,2,0,1,0
+2023-06-20,2023 Dutchman Downs at Brookstone,DUTCH,Dutchman Downs Dolphins,false,274.0,1,1,0,0,BROOK,Brookstone Barracudas,true,223.0,2,0,1,0
+2023-06-20,2023 Eagle Ridge at Bentwinds Barrac,BWBAR,Bentwinds Barracudas,true,306.0,1,1,0,0,ERST,Eagle Ridge Soaring Eagles,false,192.0,2,0,1,0
+2023-06-20,2023 Southall at Banbury Woods,BWHL,Banbury Woods Dolphins,true,270.0,1,1,0,0,SSRC,Southall Swim & Racquet Club,false,183.0,2,0,1,0
+2023-06-20,2023 Apex Breakers at CSC Swim Team,CARY,Cary Swim Club Swim Team,true,276.0,1,1,0,0,APEX,Apex Breakers Swim Team,false,237.0,2,0,1,0
+2023-06-20,2023 Kitts Creek at Crooked Creek,KITT,Kitts Creek Killer Whales,false,294.0,1,1,0,0,CC,Crooked Creek,true,203.0,2,0,1,0
+2023-06-20,2023 DT Typhoons at Coachmans Trail,DTTYP,Durant Trails Typhoons Swim Team,false,339.0,1,1,0,0,CTSWI,CT Sharks,true,164.0,2,0,1,0
+2023-06-20,2023 Wellsley at Clubworx Sharks,CW,Clubworx Sharks,true,322.5,1,1,0,0,WELLS,Wellsley,false,191.5,2,0,1,0
+2023-06-20,2023 Park Village at Devereaux,PARKV,Park Village,false,266.0,1,1,0,0,DEVER,Devereaux Devil Rays,true,238.0,2,0,1,0
+2023-06-20,2023 Arbor Creek Swim at Garner,GAR,Garner Dolphins,true,224.0,1,1,0,0,AC,Arbor Creek Swim Club,false,138.0,2,0,1,0
+2023-06-20,2023 Quail Hollow at Greenway Club,GWC,Greenway Club Racers Swim Team,true,323.16666666666663,1,1,0,0,QHSC,Quail Hollow Amberjacks,false,189.83333333333334,2,0,1,0
+2023-06-20,2023 Charleston Villg at Harmony,HARM,Harmony,true,312.0,1,1,0,0,CVC,Charleston Village Crocodiles,false,191.0,2,0,1,0
+2023-06-20,2023 Kildaire Farms at Holly Glen,HGHAM,Holly Glen Hammerheads Swim Team,true,187.0,1,0,0,1,KILD,Kildaire Farms Killer Whales,false,187.0,1,0,0,1
+2023-06-20,2023 SM Sea Dragons at Highcroft,HICR,Highcroft Hurricanes Swim Team,true,224.0,1,1,0,0,SMSD,Scotts Mill Sea Dragons,false,140.0,2,0,1,0
+2023-06-20,2023 Hedingham Sharks at Heritage Betas,HWFB,"Heritage Swim Team Association, Inc.",true,335.0,1,1,0,0,HEDI,Hedingham Sharks,false,170.0,2,0,1,0
+2023-06-20,2023 Crabtree at Lakemont,LKMT,Lakemont,true,302.0,1,1,0,0,CRAB,Crabtree,false,207.0,2,0,1,0
+2023-06-20,2023 Stonebridge at Lakepark,LPK,Lakepark Swim Team,true,268.0,1,1,0,0,STONE,Stonebridge Stingrays,false,226.0,2,0,1,0
+2023-06-20,2023 Oak Park at LifeTime Raleigh,LTRAL,LifeTime Raleigh,true,186.0,1,1,0,0,OPK,Oak Park,false,182.0,2,0,1,0
+2023-06-20,2023 Springdale at Meredith Townes,SPRG,Springdale,false,283.0,1,1,0,0,MT,Meredith Townes,true,211.0,2,0,1,0
+2023-06-20,2023 Gators at North Hills Club,NH,North Hills Club,true,307.5,1,1,0,0,GFG,Granite Falls Gators,false,206.5,2,0,1,0
+2023-06-20,2023 Manchester at North Raleigh,NRSC,North Raleigh,true,365.0,1,1,0,0,MSRC,Manchester,false,147.0,2,0,1,0
+2023-06-20,2023 Silverton Sharks at OliveChapel Swim,OCSTC,OliveChapel Swim,true,281.0,1,1,0,0,SILV,Silverton Sharks,false,233.0,2,0,1,0
+2023-06-20,2023 CV Hammerheads at Oxxford Hunt,OXH,Oxxford Hunt,true,257.0,1,1,0,0,CARP,Carpenter Village Hammerheads,false,240.0,2,0,1,0
+2023-06-20,2023 University Club at Prestonwood,UCLUB,University Club,false,222.0,1,1,0,0,PWOOD,Prestonwood,true,147.0,2,0,1,0
+2023-06-20,2023 Hawthorne at Planters Walk,HAW,Hawthorne Stingrays,false,240.0,1,1,0,0,PWST,Planters Walk Piranhas Swim Team,true,202.0,2,0,1,0
+2023-06-20,2023 Hammerheads at The Reserve,HHH,Haddon Hall Hammerheads,false,278.0,1,1,0,0,RES,The Reserve Stingrays,true,216.0,2,0,1,0
+2023-06-20,2023 Harrington Grove at Riverwood Rays,RVWD,Riverwood Rays,true,317.0,1,1,0,0,HG,Harrington Grove,false,181.0,2,0,1,0
+2023-06-20,2023 Alligators at SV Killer Whales,ABB,Abbington Alligators,false,264.0,1,1,0,0,SHEP,Shepherd's Vineyard Killer Whales,true,250.0,2,0,1,0
+2023-06-20,2023 Sunset Ridge at Scottish Hills,SHRC,Scottish Hills Sea Lions,true,307.0,1,1,0,0,SSR,Sunset Ridge,false,207.0,2,0,1,0
+2023-06-20,2023 Hasentree at SummerfieldNorth,HTHHS,Hasentree Hammerheads,false,185.0,1,1,0,0,SMFLD,SummerfieldNorth,true,170.0,2,0,1,0
+2023-06-20,2023 The Christian Co at Glenridge Gators,TCC,The Christian Co,true,274.0,1,1,0,0,GLEN,Glenridge Gators,false,206.0,2,0,1,0
+2023-06-20,2023 Raleigh Racquet at Wendell Waves,WAVES,Wendell Waves,true,331.0,1,1,0,0,RRC,Raleigh Racquet,false,168.0,2,0,1,0
+2023-06-20,2023 Regency Riptides at Woodcreek,WCWC,WoodCreek WhiteCaps,true,271.0,1,1,0,0,REG,Regency Riptides Swim Team,false,242.0,2,0,1,0
+2023-06-20,2023 Lochmere at Walden Creek,WDCR,Walden Creek,true,288.0,1,1,0,0,LOCH,Lochmere Swim Team,false,226.0,2,0,1,0
+2023-06-20,2023 Medfield Pool at Weatherstone Sha,MARC,Medfield  Sharks,false,275.0,1,1,0,0,WES,Weatherstone Sharks,true,236.0,2,0,1,0
+2023-06-20,2023 RenPark Rays at Wellington Park,WLLPK,Wellington Park,true,265.0,1,1,0,0,RPRAY,RenPark Rays,false,128.0,2,0,1,0
+2023-06-20,2023 Brighton Forest at Weldon Ridge,WRIDG,Weldon Ridge,true,254.0,1,1,0,0,BRFO,Brighton Forest Silver Fins,false,243.0,2,0,1,0
+2023-06-20,2023 JCC at Zebulon,JCC,JCC J-Rays,false,399.0,1,1,0,0,ZCC,Zebulon Swim Team,true,113.0,2,0,1,0
+2023-06-27,2023 CV Hammerheads at 12 Oaks,12OAK,12 Oaks Summer Swim Team,true,300.0,1,1,0,0,CARP,Carpenter Village Hammerheads,false,197.0,2,0,1,0
+2023-06-27,2023 Scottish Hills at Alligators,ABB,Abbington Alligators,true,259.0,1,1,0,0,SHRC,Scottish Hills Sea Lions,false,254.0,2,0,1,0
+2023-06-27,2023 Bentwinds Barrac at Arbor Creek Swim,BWBAR,Bentwinds Barracudas,false,327.0,1,1,0,0,AC,Arbor Creek Swim Club,true,153.0,2,0,1,0
+2023-06-27,2023 Bella Casa at Amberly,AMBER,Amberly,true,319.0,1,1,0,0,BELL,Bella Casa Barracudas,false,193.0,2,0,1,0
+2023-06-27,2023 Oxxford Hunt at Brighton Forest,OXH,Oxxford Hunt,false,305.0,1,1,0,0,BRFO,Brighton Forest Silver Fins,true,199.0,2,0,1,0
+2023-06-27,2023 Woodcreek at Brookstone,BROOK,Brookstone Barracudas,true,262.0,1,1,0,0,WCWC,WoodCreek WhiteCaps,false,248.0,2,0,1,0
+2023-06-27,2023 Sunset Ridge at Cary Park,CPSD,Cary Park Sea Dragons,true,290.0,1,1,0,0,SSR,Sunset Ridge,false,224.0,2,0,1,0
+2023-06-27,2023 Oak Park at Crabtree,OPK,Oak Park,false,277.33333333333337,1,1,0,0,CRAB,Crabtree,true,231.66666666666669,2,0,1,0
+2023-06-27,2023 Weldon Ridge at Charleston Villg,WRIDG,Weldon Ridge,false,311.5,1,1,0,0,CVC,Charleston Village Crocodiles,true,186.5,2,0,1,0
+2023-06-27,2023 JCC at DT Typhoons,DTTYP,Durant Trails Typhoons Swim Team,true,248.0,1,1,0,0,JCC,JCC J-Rays,false,221.0,2,0,1,0
+2023-06-27,2023 Crooked Creek at Eagle Ridge,ERST,Eagle Ridge Soaring Eagles,true,297.0,1,1,0,0,CC,Crooked Creek,false,217.0,2,0,1,0
+2023-06-27,2023 RenPark Rays at Garner,GAR,Garner Dolphins,true,308.0,1,1,0,0,RPRAY,RenPark Rays,false,176.0,2,0,1,0
+2023-06-27,2023 Seven Oaks at Gators,7OAK,Seven Oaks,false,358.0,1,1,0,0,GFG,Granite Falls Gators,true,156.0,2,0,1,0
+2023-06-27,2023 Kitts Creek at Glenridge Gators,KITT,Kitts Creek Killer Whales,false,300.0,1,1,0,0,GLEN,Glenridge Gators,true,199.0,2,0,1,0
+2023-06-27,2023 LifeTime Raleigh at Hawthorne,LTRAL,LifeTime Raleigh,false,244.0,1,1,0,0,HAW,Hawthorne Stingrays,true,225.0,2,0,1,0
+2023-06-27,2023 Coachmans Trail at Hedingham Sharks,HEDI,Hedingham Sharks,true,280.0,1,1,0,0,CTSWI,CT Sharks,false,218.0,2,0,1,0
+2023-06-27,2023 Bedford Sharks at Harrington Grove,HG,Harrington Grove,true,271.0,1,1,0,0,BAFR,Bedford at Falls River Sharks Swim Team,false,241.0,2,0,1,0
+2023-06-27,2023 The Christian Co at Holly Glen,HGHAM,Holly Glen Hammerheads Swim Team,true,1.0,1,1,0,0,TCC,The Christian Co,false,0.0,2,0,1,0
+2023-06-27,2023 Clubworx Sharks at Highcroft,CW,Clubworx Sharks,false,267.0,1,1,0,0,HICR,Highcroft Hurricanes Swim Team,true,247.0,2,0,1,0
+2023-06-27,2023 Manchester at Hasentree,HTHHS,Hasentree Hammerheads,true,268.0,1,1,0,0,MSRC,Manchester,false,224.0,2,0,1,0
+2023-06-27,2023 CSC Swim Team at Lochmere,CARY,Cary Swim Club Swim Team,false,339.0,1,1,0,0,LOCH,Lochmere Swim Team,true,166.0,2,0,1,0
+2023-06-27,2023 Lakemont at Lakepark,LPK,Lakepark Swim Team,true,310.5,1,1,0,0,LKMT,Lakemont,false,193.5,2,0,1,0
+2023-06-27,2023 The Reserve at Life Time Cary,RES,The Reserve Stingrays,false,270.0,1,1,0,0,LTFC,Life Time Cary,true,230.0,2,0,1,0
+2023-06-27,2023 Walden Creek at Medfield Pool,MARC,Medfield  Sharks,true,273.5,1,1,0,0,WDCR,Walden Creek,false,239.5,2,0,1,0
+2023-06-27,2023 Greenway Club at Northbrook,NBK,Northbrook Club,true,277.0,1,1,0,0,GWC,Greenway Club Racers Swim Team,false,237.0,2,0,1,0
+2023-06-27,2023 Riverwood Rays at North Raleigh,NRSC,North Raleigh,true,277.5,1,1,0,0,RVWD,Riverwood Rays,false,236.5,2,0,1,0
+2023-06-27,2023 Dutchman Downs at OliveChapel Swim,OCSTC,OliveChapel Swim,true,277.5,1,1,0,0,DUTCH,Dutchman Downs Dolphins,false,236.5,2,0,1,0
+2023-06-27,2023 Harmony at Park Village,HARM,Harmony,false,293.0,1,1,0,0,PARKV,Park Village,true,176.0,2,0,1,0
+2023-06-27,2023 Kildaire Farms at Park @ West Lake,PAWL,Park @ West Lake,true,300.0,1,1,0,0,KILD,Kildaire Farms Killer Whales,false,213.0,2,0,1,0
+2023-06-27,2023 Regency Riptides at Preston Village,PV,Preston Village Tiger Sharks,true,300.0,1,1,0,0,REG,Regency Riptides Swim Team,false,214.0,2,0,1,0
+2023-06-27,2023 Apex Breakers at Prestonwood,PWOOD,Prestonwood,true,308.5,1,1,0,0,APEX,Apex Breakers Swim Team,false,200.5,2,0,1,0
+2023-06-27,2023 Wendell Waves at Planters Walk,WAVES,Wendell Waves,false,383.0,1,1,0,0,PWST,Planters Walk Piranhas Swim Team,true,128.0,2,0,1,0
+2023-06-27,2023 North Hills Club at Quail Hollow,NH,North Hills Club,false,371.0,1,1,0,0,QHSC,Quail Hollow Amberjacks,true,143.0,2,0,1,0
+2023-06-27,2023 Banbury Woods at Raleigh Racquet,BWHL,Banbury Woods Dolphins,false,263.0,1,1,0,0,RRC,Raleigh Racquet,true,218.0,2,0,1,0
+2023-06-27,2023 Silverton Sharks at SV Killer Whales,SHEP,Shepherd's Vineyard Killer Whales,true,287.5,1,1,0,0,SILV,Silverton Sharks,false,226.5,2,0,1,0
+2023-06-27,2023 Heritage Betas at SummerfieldNorth,HWFB,"Heritage Swim Team Association, Inc.",false,276.0,1,1,0,0,SMFLD,SummerfieldNorth,true,233.0,2,0,1,0
+2023-06-27,2023 Weatherstone Sha at SM Sea Dragons,WES,Weatherstone Sharks,false,274.5,1,1,0,0,SMSD,Scotts Mill Sea Dragons,true,219.5,2,0,1,0
+2023-06-27,2023 Black Horse Run at Springdale,SPRG,Springdale,true,316.0,1,1,0,0,BHR,Black Horse Run,false,180.0,2,0,1,0
+2023-06-27,2023 Meredith Townes at Stonebridge,STONE,Stonebridge Stingrays,true,275.5,1,1,0,0,MT,Meredith Townes,false,237.5,2,0,1,0
+2023-06-27,2023 Greystone Gators at University Club,UCLUB,University Club,true,345.0,1,1,0,0,GRY,Greystone Gators,false,169.0,2,0,1,0
+2023-06-27,2023 Brier Creek CC at Wood Valley,BCCC,Brier Creek Country Club,false,260.0,1,1,0,0,WDVLY,Wood Valley,true,253.0,2,0,1,0
+2023-06-27,2023 Hammerheads at Wellsley,HHH,Haddon Hall Hammerheads,false,290.0,1,1,0,0,WELLS,Wellsley,true,223.0,2,0,1,0
+2023-06-27,2023 Devereaux at Wellington Park,DEVER,Devereaux Devil Rays,false,295.0,1,1,0,0,WLLPK,Wellington Park,true,200.0,2,0,1,0
+2023-06-27,2023 Southall at Zebulon,SSRC,Southall Swim & Racquet Club,false,266.0,1,1,0,0,ZCC,Zebulon Swim Team,true,216.0,2,0,1,0
+2023-07-05,2023 Seven Oaks at Apex Breakers,7OAK,Seven Oaks,false,377.5,1,1,0,0,APEX,Apex Breakers Swim Team,true,136.5,2,0,1,0
+2023-07-05,2023 Black Horse Run at Bedford Sharks,BAFR,Bedford at Falls River Sharks Swim Team,true,422.0,1,1,0,0,BHR,Black Horse Run,false,91.0,2,0,1,0
+2023-07-05,2023 Greenway Club at Brier Creek CC,GWC,Greenway Club Racers Swim Team,false,262.0,1,1,0,0,BCCC,Brier Creek Country Club,true,252.0,2,0,1,0
+2023-07-05,2023 Kildaire Farms at Brighton Forest,BRFO,Brighton Forest Silver Fins,true,0.0,1,0,0,1,KILD,Kildaire Farms Killer Whales,false,0.0,1,0,0,1
+2023-07-05,2023 Planters Walk at Banbury Woods,BWHL,Banbury Woods Dolphins,true,309.0,1,1,0,0,PWST,Planters Walk Piranhas Swim Team,false,130.0,2,0,1,0
+2023-07-05,2023 Bella Casa at CV Hammerheads,BELL,Bella Casa Barracudas,false,280.0,1,1,0,0,CARP,Carpenter Village Hammerheads,true,225.0,2,0,1,0
+2023-07-05,2023 SV Killer Whales at CSC Swim Team,CARY,Cary Swim Club Swim Team,true,307.0,1,1,0,0,SHEP,Shepherd's Vineyard Killer Whales,false,206.0,2,0,1,0
+2023-07-05,2023 Garner at Crooked Creek,GAR,Garner Dolphins,false,284.0,1,1,0,0,CC,Crooked Creek,true,211.0,2,0,1,0
+2023-07-05,2023 SummerfieldNorth at Crabtree,SMFLD,SummerfieldNorth,false,262.0,1,1,0,0,CRAB,Crabtree,true,252.0,2,0,1,0
+2023-07-05,2023 Lakemont at Coachmans Trail,LKMT,Lakemont,false,283.0,1,1,0,0,CTSWI,CT Sharks,true,215.0,2,0,1,0
+2023-07-05,2023 The Christian Co at Charleston Villg,CVC,Charleston Village Crocodiles,true,262.0,1,1,0,0,TCC,The Christian Co,false,244.0,2,0,1,0
+2023-07-05,2023 Dutchman Downs at Clubworx Sharks,DUTCH,Dutchman Downs Dolphins,false,339.0,1,1,0,0,CW,Clubworx Sharks,true,165.0,2,0,1,0
+2023-07-05,2023 Holly Glen at Devereaux,HGHAM,Holly Glen Hammerheads Swim Team,false,345.0,1,1,0,0,DEVER,Devereaux Devil Rays,true,166.0,2,0,1,0
+2023-07-05,2023 Raleigh Racquet at DT Typhoons,DTTYP,Durant Trails Typhoons Swim Team,true,380.0,1,1,0,0,RRC,Raleigh Racquet,false,122.0,2,0,1,0
+2023-07-05,2023 Wellington Park at Eagle Ridge,ERST,Eagle Ridge Soaring Eagles,true,309.0,1,1,0,0,WLLPK,Wellington Park,false,193.0,2,0,1,0
+2023-07-05,2023 Arbor Creek Swim at Glenridge Gators,GLEN,Glenridge Gators,true,279.5,1,1,0,0,AC,Arbor Creek Swim Club,false,192.5,2,0,1,0
+2023-07-05,2023 Cary Park at Greystone Gators,GRY,Greystone Gators,true,304.0,1,1,0,0,CPSD,Cary Park Sea Dragons,false,209.0,2,0,1,0
+2023-07-05,2023 Park @ West Lake at Harmony,HARM,Harmony,true,248.0,1,1,0,0,PAWL,Park @ West Lake,false,243.0,2,0,1,0
+2023-07-05,2023 LifeTime Raleigh at Hedingham Sharks,HEDI,Hedingham Sharks,true,277.0,1,1,0,0,LTRAL,LifeTime Raleigh,false,202.0,2,0,1,0
+2023-07-05,2023 Woodcreek at Hammerheads,WCWC,WoodCreek WhiteCaps,false,331.0,1,1,0,0,HHH,Haddon Hall Hammerheads,true,168.0,2,0,1,0
+2023-07-05,2023 Stonebridge at Heritage Betas,HWFB,"Heritage Swim Team Association, Inc.",true,282.0,1,1,0,0,STONE,Stonebridge Stingrays,false,214.0,2,0,1,0
+2023-07-05,2023 Oak Park at JCC,JCC,JCC J-Rays,true,299.0,1,1,0,0,OPK,Oak Park,false,210.0,2,0,1,0
+2023-07-05,2023 Park Village at Kitts Creek,KITT,Kitts Creek Killer Whales,true,316.0,1,1,0,0,PARKV,Park Village,false,188.0,2,0,1,0
+2023-07-05,2023 Alligators at Medfield Pool,ABB,Abbington Alligators,false,277.5,1,1,0,0,MARC,Medfield  Sharks,true,236.5,2,0,1,0
+2023-07-05,2023 Lakepark at Manchester,LPK,Lakepark Swim Team,false,340.0,1,1,0,0,MSRC,Manchester,true,153.0,2,0,1,0
+2023-07-05,2023 Northbrook at North Raleigh,NRSC,North Raleigh,true,282.0,1,1,0,0,NBK,Northbrook Club,false,232.0,2,0,1,0
+2023-07-05,2023 The Reserve at Oxxford Hunt,OXH,Oxxford Hunt,true,280.0,1,1,0,0,RES,The Reserve Stingrays,false,214.0,2,0,1,0
+2023-07-05,2023 Life Time Cary at Preston Village,PV,Preston Village Tiger Sharks,true,374.0,1,1,0,0,LTFC,Life Time Cary,false,139.0,2,0,1,0
+2023-07-05,2023 Harrington Grove at Quail Hollow,QHSC,Quail Hollow Amberjacks,true,289.0,1,1,0,0,HG,Harrington Grove,false,225.0,2,0,1,0
+2023-07-05,2023 Highcroft at Regency Riptides,REG,Regency Riptides Swim Team,true,285.0,1,1,0,0,HICR,Highcroft Hurricanes Swim Team,false,214.0,2,0,1,0
+2023-07-05,2023 Bentwinds Barrac at RenPark Rays,RPRAY,RenPark Rays,true,,0,,,,BWBAR,Bentwinds Barracudas,false,,0,,,
+2023-07-05,2023 Meredith Townes at Riverwood Rays,RVWD,Riverwood Rays,true,366.0,1,1,0,0,MT,Meredith Townes,false,140.0,2,0,1,0
+2023-07-05,2023 Prestonwood at Scottish Hills,SHRC,Scottish Hills Sea Lions,true,263.0,1,1,0,0,PWOOD,Prestonwood,false,247.0,2,0,1,0
+2023-07-05,2023 Silverton Sharks at SM Sea Dragons,SILV,Silverton Sharks,false,379.5,1,1,0,0,SMSD,Scotts Mill Sea Dragons,true,128.5,2,0,1,0
+2023-07-05,2023 Hasentree at Springdale,HTHHS,Hasentree Hammerheads,false,1.0,1,1,0,0,SPRG,Springdale,true,0.0,2,0,1,0
+2023-07-05,2023 Lochmere at Sunset Ridge,SSR,Sunset Ridge,true,314.0,1,1,0,0,LOCH,Lochmere Swim Team,false,200.0,2,0,1,0
+2023-07-05,2023 Hawthorne at Southall,SSRC,Southall Swim & Racquet Club,true,258.5,1,1,0,0,HAW,Hawthorne Stingrays,false,233.5,2,0,1,0
+2023-07-05,2023 North Hills Club at University Club,UCLUB,University Club,true,341.0,1,1,0,0,NH,North Hills Club,false,173.0,2,0,1,0
+2023-07-05,2023 Zebulon at Wendell Waves,WAVES,Wendell Waves,true,371.0,1,1,0,0,ZCC,Zebulon Swim Team,false,138.0,2,0,1,0
+2023-07-05,2023 OliveChapel Swim at Walden Creek,WDCR,Walden Creek,true,275.0,1,1,0,0,OCSTC,OliveChapel Swim,false,225.0,2,0,1,0
+2023-07-05,2023 Gators at Wood Valley,WDVLY,Wood Valley,true,276.0,1,1,0,0,GFG,Granite Falls Gators,false,238.0,2,0,1,0
+2023-07-05,2023 12 Oaks at Wellsley,12OAK,12 Oaks Summer Swim Team,false,276.5,1,1,0,0,WELLS,Wellsley,true,219.5,2,0,1,0
+2023-07-05,2023 Brookstone at Weatherstone Sha,WES,Weatherstone Sharks,true,247.0,1,1,0,0,BROOK,Brookstone Barracudas,false,235.0,2,0,1,0
+2023-07-05,2023 Amberly at Weldon Ridge,AMBER,Amberly,false,294.5,1,1,0,0,WRIDG,Weldon Ridge,true,196.5,2,0,1,0
+2023-07-11,2023 Life Time Cary at 12 Oaks,12OAK,12 Oaks Summer Swim Team,true,302.0,1,1,0,0,LTFC,Life Time Cary,false,164.0,2,0,1,0
+2023-07-11,2023 Greystone Gators at Seven Oaks,7OAK,Seven Oaks,true,339.0,1,1,0,0,GRY,Greystone Gators,false,175.0,2,0,1,0
+2023-07-11,2023 CSC Swim Team at Alligators,CARY,Cary Swim Club Swim Team,false,266.5,1,1,0,0,ABB,Abbington Alligators,true,246.5,2,0,1,0
+2023-07-11,2023 Eagle Ridge at Arbor Creek Swim,ERST,Eagle Ridge Soaring Eagles,false,301.0,1,1,0,0,AC,Arbor Creek Swim Club,true,195.0,2,0,1,0
+2023-07-11,2023 Brighton Forest at Amberly,AMBER,Amberly,true,368.0,1,1,0,0,BRFO,Brighton Forest Silver Fins,false,144.0,2,0,1,0
+2023-07-11,2023 Cary Park at Apex Breakers,CPSD,Cary Park Sea Dragons,false,265.0,1,1,0,0,APEX,Apex Breakers Swim Team,true,248.0,2,0,1,0
+2023-07-11,2023 Quail Hollow at Brier Creek CC,BCCC,Brier Creek Country Club,true,317.0,1,1,0,0,QHSC,Quail Hollow Amberjacks,false,197.0,2,0,1,0
+2023-07-11,2023 Oxxford Hunt at Bella Casa,BELL,Bella Casa Barracudas,true,262.33333333333337,1,1,0,0,OXH,Oxxford Hunt,false,247.66666666666669,2,0,1,0
+2023-07-11,2023 North Raleigh at Black Horse Run,NRSC,North Raleigh,false,397.0,1,1,0,0,BHR,Black Horse Run,true,116.0,2,0,1,0
+2023-07-11,2023 The Reserve at CV Hammerheads,CARP,Carpenter Village Hammerheads,true,282.0,1,1,0,0,RES,The Reserve Stingrays,false,230.0,2,0,1,0
+2023-07-11,2023 RenPark Rays at Crooked Creek,CC,Crooked Creek,true,253.0,1,1,0,0,RPRAY,RenPark Rays,false,199.0,2,0,1,0
+2023-07-11,2023 Crabtree at Coachmans Trail,CRAB,Crabtree,false,323.0,1,1,0,0,CTSWI,CT Sharks,true,174.0,2,0,1,0
+2023-07-11,2023 Brookstone at Clubworx Sharks,BROOK,Brookstone Barracudas,false,277.0,1,1,0,0,CW,Clubworx Sharks,true,237.0,2,0,1,0
+2023-07-11,2023 Kitts Creek at Devereaux,KITT,Kitts Creek Killer Whales,false,291.0,1,1,0,0,DEVER,Devereaux Devil Rays,true,222.0,2,0,1,0
+2023-07-11,2023 Weatherstone Sha at Dutchman Downs,DUTCH,Dutchman Downs Dolphins,true,325.0,1,1,0,0,WES,Weatherstone Sharks,false,166.0,2,0,1,0
+2023-07-11,2023 Bentwinds Barrac at Garner,BWBAR,Bentwinds Barracudas,false,308.0,1,1,0,0,GAR,Garner Dolphins,true,193.0,2,0,1,0
+2023-07-11,2023 University Club at Gators,UCLUB,University Club,false,301.5,1,1,0,0,GFG,Granite Falls Gators,true,212.5,2,0,1,0
+2023-07-11,2023 Harrington Grove at Greenway Club,GWC,Greenway Club Racers Swim Team,true,257.0,1,0,0,1,HG,Harrington Grove,false,257.0,1,0,0,1
+2023-07-11,2023 DT Typhoons at Hawthorne,DTTYP,Durant Trails Typhoons Swim Team,false,298.0,1,1,0,0,HAW,Hawthorne Stingrays,true,200.0,2,0,1,0
+2023-07-11,2023 Park Village at Holly Glen,HGHAM,Holly Glen Hammerheads Swim Team,true,338.5,1,1,0,0,PARKV,Park Village,false,172.5,2,0,1,0
+2023-07-11,2023 Woodcreek at Highcroft,WCWC,WoodCreek WhiteCaps,false,300.0,1,1,0,0,HICR,Highcroft Hurricanes Swim Team,true,202.0,2,0,1,0
+2023-07-11,2023 Weldon Ridge at Kildaire Farms,WRIDG,Weldon Ridge,false,289.0,1,1,0,0,KILD,Kildaire Farms Killer Whales,true,213.0,2,0,1,0
+2023-07-11,2023 SummerfieldNorth at Lakemont,SMFLD,SummerfieldNorth,false,260.3333333333333,1,1,0,0,LKMT,Lakemont,true,252.66666666666669,2,0,1,0
+2023-07-11,2023 Heritage Betas at Lakepark,LPK,Lakepark Swim Team,true,254.5,1,1,0,0,HWFB,"Heritage Swim Team Association, Inc.",false,250.5,2,0,1,0
+2023-07-11,2023 JCC at LifeTime Raleigh,LTRAL,LifeTime Raleigh,true,244.83333333333331,1,1,0,0,JCC,JCC J-Rays,false,219.16666666666666,2,0,1,0
+2023-07-11,2023 Hasentree at Meredith Townes,HTHHS,Hasentree Hammerheads,false,288.0,1,1,0,0,MT,Meredith Townes,true,197.0,2,0,1,0
+2023-07-11,2023 Bedford Sharks at Northbrook,BAFR,Bedford at Falls River Sharks Swim Team,false,293.0,1,1,0,0,NBK,Northbrook Club,true,218.0,2,0,1,0
+2023-07-11,2023 Wood Valley at North Hills Club,NH,North Hills Club,true,284.5,1,1,0,0,WDVLY,Wood Valley,false,229.5,2,0,1,0
+2023-07-11,2023 SM Sea Dragons at OliveChapel Swim,OCSTC,OliveChapel Swim,true,360.0,1,1,0,0,SMSD,Scotts Mill Sea Dragons,false,147.0,2,0,1,0
+2023-07-11,2023 Hedingham Sharks at Oak Park,OPK,Oak Park,true,322.5,1,1,0,0,HEDI,Hedingham Sharks,false,180.5,2,0,1,0
+2023-07-11,2023 Charleston Villg at Park @ West Lake,PAWL,Park @ West Lake,true,331.5,1,1,0,0,CVC,Charleston Village Crocodiles,false,182.5,2,0,1,0
+2023-07-11,2023 Wellsley at Preston Village,PV,Preston Village Tiger Sharks,true,320.6666666666667,1,1,0,0,WELLS,Wellsley,false,193.33333333333334,2,0,1,0
+2023-07-11,2023 Sunset Ridge at Prestonwood,PWOOD,Prestonwood,true,297.0,1,1,0,0,SSR,Sunset Ridge,false,217.0,2,0,1,0
+2023-07-11,2023 Southall at Raleigh Racquet,SSRC,Southall Swim & Racquet Club,false,255.0,1,1,0,0,RRC,Raleigh Racquet,true,225.0,2,0,1,0
+2023-07-11,2023 Hammerheads at Regency Riptides,REG,Regency Riptides Swim Team,true,308.0,1,1,0,0,HHH,Haddon Hall Hammerheads,false,204.0,2,0,1,0
+2023-07-11,2023 Springdale at Riverwood Rays,RVWD,Riverwood Rays,true,305.0,1,1,0,0,SPRG,Springdale,false,209.0,2,0,1,0
+2023-07-11,2023 Medfield Pool at SV Killer Whales,MARC,Medfield  Sharks,false,257.0,1,1,0,0,SHEP,Shepherd's Vineyard Killer Whales,true,256.0,2,0,1,0
+2023-07-11,2023 Lochmere at Scottish Hills,SHRC,Scottish Hills Sea Lions,true,349.0,1,1,0,0,LOCH,Lochmere Swim Team,false,165.0,2,0,1,0
+2023-07-11,2023 Walden Creek at Silverton Sharks,WDCR,Walden Creek,false,260.0,1,1,0,0,SILV,Silverton Sharks,true,245.0,2,0,1,0
+2023-07-11,2023 Manchester at Stonebridge,STONE,Stonebridge Stingrays,true,327.16666666666663,1,1,0,0,MSRC,Manchester,false,184.83333333333334,2,0,1,0
+2023-07-11,2023 Harmony at The Christian Co,TCC,The Christian Co,true,292.5,1,1,0,0,HARM,Harmony,false,212.5,2,0,1,0
+2023-07-11,2023 Banbury Woods at Wendell Waves,WAVES,Wendell Waves,true,348.0,1,1,0,0,BWHL,Banbury Woods Dolphins,false,148.0,2,0,1,0
+2023-07-11,2023 Glenridge Gators at Wellington Park,GLEN,Glenridge Gators,false,243.0,1,1,0,0,WLLPK,Wellington Park,true,234.0,2,0,1,0
+2023-07-11,2023 Planters Walk at Zebulon,ZCC,Zebulon Swim Team,true,270.0,1,1,0,0,PWST,Planters Walk Piranhas Swim Team,false,228.0,2,0,1,0
+2023-07-15,Cary City Meet 2023 - 10 & Under,CARY,Cary Swim Club Swim Team,true,,0,,,,WCWC,WoodCreek WhiteCaps,false,,0,,,
+2023-07-15,Cary City Meet 2023 - 11 & Over,CARY,Cary Swim Club Swim Team,true,,0,,,,SILV,Silverton Sharks,false,,0,,,
+2023-07-18,2023 Greenway Club at Bedford Sharks,BAFR,Bedford at Falls River Sharks Swim Team,true,259.0,1,1,0,0,GWC,Greenway Club Racers Swim Team,false,255.0,2,0,1,0
+2023-07-18,2023 Riverwood Rays at Black Horse Run,RVWD,Riverwood Rays,false,392.0,1,1,0,0,BHR,Black Horse Run,true,120.0,2,0,1,0
+2023-07-18,2023 Bella Casa at Brighton Forest,BELL,Bella Casa Barracudas,false,269.0,1,1,0,0,BRFO,Brighton Forest Silver Fins,true,232.0,2,0,1,0
+2023-07-18,2023 Highcroft at Brookstone,BROOK,Brookstone Barracudas,true,296.0,1,1,0,0,HICR,Highcroft Hurricanes Swim Team,false,213.0,2,0,1,0
+2023-07-18,2023 Crooked Creek at Bentwinds Barrac,BWBAR,Bentwinds Barracudas,true,364.0,1,1,0,0,CC,Crooked Creek,false,145.0,2,0,1,0
+2023-07-18,2023 Zebulon at Banbury Woods,BWHL,Banbury Woods Dolphins,true,251.0,1,1,0,0,ZCC,Zebulon Swim Team,false,236.0,2,0,1,0
+2023-07-18,2023 Scottish Hills at CSC Swim Team,SHRC,Scottish Hills Sea Lions,false,261.0,1,1,0,0,CARY,Cary Swim Club Swim Team,true,253.0,2,0,1,0
+2023-07-18,2023 Prestonwood at Cary Park,PWOOD,Prestonwood,false,276.5,1,1,0,0,CPSD,Cary Park Sea Dragons,true,235.5,2,0,1,0
+2023-07-18,2023 LifeTime Raleigh at DT Typhoons,DTTYP,Durant Trails Typhoons Swim Team,true,282.1666666666667,1,1,0,0,LTRAL,LifeTime Raleigh,false,224.83333333333331,2,0,1,0
+2023-07-18,2023 SM Sea Dragons at Dutchman Downs,DUTCH,Dutchman Downs Dolphins,true,379.0,1,1,0,0,SMSD,Scotts Mill Sea Dragons,false,119.0,2,0,1,0
+2023-07-18,2023 Garner at Eagle Ridge,ERST,Eagle Ridge Soaring Eagles,true,268.0,1,1,0,0,GAR,Garner Dolphins,false,246.0,2,0,1,0
+2023-07-18,2023 Devereaux at Glenridge Gators,GLEN,Glenridge Gators,true,294.0,1,1,0,0,DEVER,Devereaux Devil Rays,false,216.0,2,0,1,0
+2023-07-18,2023 Gators at Greystone Gators,GRY,Greystone Gators,true,294.0,1,1,0,0,GFG,Granite Falls Gators,false,220.0,2,0,1,0
+2023-07-18,2023 Holly Glen at Harmony,HGHAM,Holly Glen Hammerheads Swim Team,false,271.5,1,1,0,0,HARM,Harmony,true,240.5,2,0,1,0
+2023-07-18,2023 Crabtree at Hedingham Sharks,CRAB,Crabtree,false,286.0,1,1,0,0,HEDI,Hedingham Sharks,true,226.0,2,0,1,0
+2023-07-18,2023 Northbrook at Harrington Grove,NBK,Northbrook Club,false,310.0,1,1,0,0,HG,Harrington Grove,true,197.0,2,0,1,0
+2023-07-18,2023 Preston Village at Hammerheads,PV,Preston Village Tiger Sharks,false,378.0,1,1,0,0,HHH,Haddon Hall Hammerheads,true,131.0,2,0,1,0
+2023-07-18,2023 Stonebridge at Hasentree,STONE,Stonebridge Stingrays,false,319.5,1,1,0,0,HTHHS,Hasentree Hammerheads,true,194.5,2,0,1,0
+2023-07-18,2023 Lakemont at Heritage Betas,HWFB,"Heritage Swim Team Association, Inc.",true,373.0,1,1,0,0,LKMT,Lakemont,false,131.0,2,0,1,0
+2023-07-18,2023 Hawthorne at JCC,JCC,JCC J-Rays,true,329.0,1,1,0,0,HAW,Hawthorne Stingrays,false,178.0,2,0,1,0
+2023-07-18,2023 Charleston Villg at Kildaire Farms,KILD,Kildaire Farms Killer Whales,true,291.0,1,1,0,0,CVC,Charleston Village Crocodiles,false,223.0,2,0,1,0
+2023-07-18,2023 Wellington Park at Kitts Creek,KITT,Kitts Creek Killer Whales,true,381.0,1,1,0,0,WLLPK,Wellington Park,false,128.0,2,0,1,0
+2023-07-18,2023 Alligators at Lochmere,ABB,Abbington Alligators,false,341.0,1,1,0,0,LOCH,Lochmere Swim Team,true,173.0,2,0,1,0
+2023-07-18,2023 CV Hammerheads at Life Time Cary,LTFC,Life Time Cary,true,280.0,1,1,0,0,CARP,Carpenter Village Hammerheads,false,215.0,2,0,1,0
+2023-07-18,2023 Meredith Townes at Manchester,MSRC,Manchester,true,278.0,1,1,0,0,MT,Meredith Townes,false,227.0,2,0,1,0
+2023-07-18,2023 Brier Creek CC at North Hills Club,NH,North Hills Club,true,268.5,1,1,0,0,BCCC,Brier Creek Country Club,false,245.5,2,0,1,0
+2023-07-18,2023 Coachmans Trail at Oak Park,OPK,Oak Park,true,313.5,1,1,0,0,CTSWI,CT Sharks,false,176.5,2,0,1,0
+2023-07-18,2023 Amberly at Oxxford Hunt,AMBER,Amberly,false,256.0,1,1,0,0,OXH,Oxxford Hunt,true,248.0,2,0,1,0
+2023-07-18,2023 The Christian Co at Park Village,TCC,The Christian Co,false,277.0,1,1,0,0,PARKV,Park Village,true,223.0,2,0,1,0
+2023-07-18,2023 Raleigh Racquet at Planters Walk,RRC,Raleigh Racquet,false,270.0,1,1,0,0,PWST,Planters Walk Piranhas Swim Team,true,213.0,2,0,1,0
+2023-07-18,2023 12 Oaks at The Reserve,12OAK,12 Oaks Summer Swim Team,false,254.0,1,1,0,0,RES,The Reserve Stingrays,true,251.0,2,0,1,0
+2023-07-18,2023 Arbor Creek Swim at RenPark Rays,AC,Arbor Creek Swim Club,false,245.0,1,1,0,0,RPRAY,RenPark Rays,true,195.0,2,0,1,0
+2023-07-18,2023 Medfield Pool at Silverton Sharks,MARC,Medfield  Sharks,false,293.0,1,1,0,0,SILV,Silverton Sharks,true,220.0,2,0,1,0
+2023-07-18,2023 Lakepark at SummerfieldNorth,LPK,Lakepark Swim Team,false,285.66666666666663,1,1,0,0,SMFLD,SummerfieldNorth,true,228.33333333333331,2,0,1,0
+2023-07-18,2023 North Raleigh at Springdale,NRSC,North Raleigh,false,302.0,1,1,0,0,SPRG,Springdale,true,211.0,2,0,1,0
+2023-07-18,2023 Apex Breakers at Sunset Ridge,APEX,Apex Breakers Swim Team,false,259.6666666666667,1,1,0,0,SSR,Sunset Ridge,true,254.33333333333334,2,0,1,0
+2023-07-18,2023 Wendell Waves at Southall,WAVES,Wendell Waves,false,303.0,1,1,0,0,SSRC,Southall Swim & Racquet Club,true,211.0,2,0,1,0
+2023-07-18,2023 Seven Oaks at University Club,7OAK,Seven Oaks,false,273.0,1,1,0,0,UCLUB,University Club,true,241.0,2,0,1,0
+2023-07-18,2023 Clubworx Sharks at Woodcreek,WCWC,WoodCreek WhiteCaps,true,292.0,1,1,0,0,CW,Clubworx Sharks,false,222.0,2,0,1,0
+2023-07-18,2023 SV Killer Whales at Walden Creek,SHEP,Shepherd's Vineyard Killer Whales,false,268.5,1,1,0,0,WDCR,Walden Creek,true,244.5,2,0,1,0
+2023-07-18,2023 Quail Hollow at Wood Valley,WDVLY,Wood Valley,true,289.0,1,1,0,0,QHSC,Quail Hollow Amberjacks,false,225.0,2,0,1,0
+2023-07-18,2023 Regency Riptides at Wellsley,WELLS,Wellsley,true,296.5,1,1,0,0,REG,Regency Riptides Swim Team,false,217.5,2,0,1,0
+2023-07-18,2023 OliveChapel Swim at Weatherstone Sha,OCSTC,OliveChapel Swim,false,326.0,1,1,0,0,WES,Weatherstone Sharks,true,185.0,2,0,1,0
+2023-07-18,2023 Park @ West Lake at Weldon Ridge,WRIDG,Weldon Ridge,true,246.0,1,1,0,0,PAWL,Park @ West Lake,false,215.0,2,0,1,0
+2023-07-22,TSA Champs Saturday 10 and Under,HEDI,Hedingham Sharks,true,,0,,,,PARKV,Park Village,false,,0,,,
+2023-07-22,TSA Champs Saturday 11 and Up,HEDI,Hedingham Sharks,true,,0,,,,APEX,Apex Breakers Swim Team,false,,0,,,
+2023-07-23,TSA Champs Sunday 10 and Under,BELL,Bella Casa Barracudas,true,,0,,,,WCWC,WoodCreek WhiteCaps,false,,0,,,
+2023-07-23,TSA Champs Sunday 11 and Up,BELL,Bella Casa Barracudas,true,,0,,,,NH,North Hills Club,false,,0,,,

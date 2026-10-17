@@ -1,0 +1,278 @@
+meet_date,meet_name,team1_abbrev,team1_name,team1_is_home,team1_score,team1_place,team1_win_count,team1_loss_count,team1_tie_count,team2_abbrev,team2_name,team2_is_home,team2_score,team2_place,team2_win_count,team2_loss_count,team2_tie_count
+6/10/2025,2025 Sweetwater at Arbor Creek Swim,AC,Arbor Creek,TRUE,1,1,1,0,0,SWSF,Sweetwater,FALSE,0,2,0,1,0
+6/10/2025,2025 Regency Riptides at Amberly,AMBER,Amberly,TRUE,290,1,1,0,0,REG,Regency,FALSE,223,2,0,1,0
+6/10/2025,2025 Sunset Ridge at Apex Breakers,APEX,Apex,TRUE,309,1,1,0,0,SSR,Sunset Ridge,FALSE,200,2,0,1,0
+6/10/2025,2025 North Hills at Bedford Sharks,NH,North Hills,FALSE,309.5,1,1,0,0,BAFR,Bedford at Falls River,TRUE,201.5,2,0,1,0
+6/10/2025,2025 TCC at Bella Casa,BELL,Bella Casa,TRUE,302.5,1,1,0,0,TCC,TCC,FALSE,206.5,2,0,1,0
+6/10/2025,2025 Glenridge at Brighton Forest,GLEN,Glenridge,FALSE,262,1,1,0,0,BRFO,Brighton Forest,TRUE,241,2,0,1,0
+6/10/2025,2025 Coachmans Trail at Banbury Woods,CTSWI,Coachman's Trail,FALSE,287,1,1,0,0,BWHL,Banbury Woods & Hunters Landing,TRUE,199,2,0,1,0
+6/10/2025,2025 University Club at CSC Swim Team,CARY,Cary,TRUE,263.5,1,1,0,0,UCLUB,University Club,FALSE,250.5,2,0,1,0
+6/10/2025,2025 Devereaux at Crooked Creek,DEVER,Devereaux,FALSE,273,1,1,0,0,CC,Crooked Creek,TRUE,231,2,0,1,0
+6/10/2025,2025 Garner at Charleston Villg,CVC,Charleston Village,TRUE,287,1,1,0,0,GAR,Garner,FALSE,211,2,0,1,0
+6/10/2025,2025 Hasentree at DT Typhoons,DTTYP,Durant Trails,TRUE,275.5,1,1,0,0,HTHHS,Hasentree,FALSE,228.5,2,0,1,0
+6/10/2025,2025 Alligators at Dutchman Downs,DUTCH,Dutchman Downs,TRUE,268,1,1,0,0,ABB,Abbington,FALSE,236,2,0,1,0
+6/10/2025,2025 Granite Falls at Greystone,GFG,Granite Falls,FALSE,306,1,1,0,0,GRY,Greystone,TRUE,208,2,0,1,0
+6/10/2025,2025 North Raleigh at Greenway Club,NRSC,North Raleigh,FALSE,271,1,1,0,0,GWC,Greenway Club,TRUE,234,2,0,1,0
+6/10/2025,2025 Eagle Ridge at Harmony,ERST,Eagle Ridge,FALSE,329,1,1,0,0,HARM,Harmony,TRUE,164,2,0,1,0
+6/10/2025,2025 Black Horse Run at Hawthorne,BHR,Black Horse Run,FALSE,245,1,1,0,0,HAW,Hawthorne,TRUE,219,2,0,1,0
+6/10/2025,2025 Oak Park at Hedingham Sharks,HEDI,Hedingham,TRUE,259,1,1,0,0,OPK,Oak Park,FALSE,243,2,0,1,0
+6/10/2025,2025 Wellsley at Highcroft,WELLS,Wellsley,FALSE,271,1,1,0,0,HHST,Highcroft,TRUE,243,2,0,1,0
+6/10/2025,2025 Quail Hollow at Heritage Betas,QHSC,Quail Hollow,FALSE,303,1,1,0,0,HWFB,Heritage of Wake Forest,TRUE,202,2,0,1,0
+6/10/2025,2025 The Reserve at Kildaire Farms,KILD,Kildaire Farms,TRUE,309,1,1,0,0,RES,The Reserve,FALSE,199,2,0,1,0
+6/10/2025,2025 CV Hammerheads at Kitts Creek,KITT,Kitts Creek,TRUE,309,1,1,0,0,CARP,Carpenter Village,FALSE,205,2,0,1,0
+6/10/2025,2025 Southall at Lakemont,SSRC,Southall,FALSE,266,1,1,0,0,LKMT,Lakemont,TRUE,240,2,0,1,0
+6/10/2025,2025 SM Sea Dragons at Life Time Fitness Cary,LTFC,Life Time Fitness Cary,TRUE,276,1,1,0,0,SMSD,Scotts Mill,FALSE,175,2,0,1,0
+6/10/2025,2025 Summerfield North at Lifetime Raleigh,SMFLD,Summerfield North,FALSE,285,1,1,0,0,LTRAL,Lifetime Raleigh,TRUE,223,2,0,1,0
+6/10/2025,2025 Cary Park at Medfield Pool,CPSD,Cary Park,FALSE,263,1,1,0,0,MARC,Medfield,TRUE,250,2,0,1,0
+6/10/2025,BYE,MSRC,Manchester,TRUE,1,0,,,,,,,,,,,
+6/10/2025,2025 Crabtree at Meredith Townes,CRAB,Crabtree,FALSE,339,1,1,0,0,MT,Meredith Townes,TRUE,167,2,0,1,0
+6/10/2025,2025 Lakepark at Northbrook,NBK,Northbrook,TRUE,263,1,1,0,0,LPK,Lake Park,FALSE,244,2,0,1,0
+6/10/2025,2025 Weatherstone Sha at Oxxford Hunt,OXH,Oxxford Hunt,TRUE,286,1,1,0,0,WES,Weatherstone,FALSE,218,2,0,1,0
+6/10/2025,2025 Bentwinds Barrac at Park Village,BWBAR,Bentwinds,FALSE,263,1,1,0,0,PARKV,Park Village,TRUE,246,2,0,1,0
+6/10/2025,2025 Holly Glen at Park at West Lake,HGHAM,Holly Glen,FALSE,266,1,1,0,0,PAWL,Park at West Lake,TRUE,248,2,0,1,0
+6/10/2025,2025 SV Killer Whales at Preston Village,SHEP,Shepherds Vineyard,FALSE,303,1,1,0,0,PV,Preston Village,TRUE,211,2,0,1,0
+6/10/2025,2025 Lochmere at Prestonwood,LOCH,Lochmere,FALSE,264,1,1,0,0,PWOOD,Prestonwood,TRUE,250,2,0,1,0
+6/10/2025,2025 Harrington Grove at Riverwood,HG,Harrington Grove,FALSE,375,1,1,0,0,RVWD,Riverwood,TRUE,137,2,0,1,0
+6/10/2025,2025 Seven Oaks at Scottish Hills,7OAK,Seven Oaks,FALSE,355,1,1,0,0,SHRC,Scottish Hills,TRUE,158,2,0,1,0
+6/10/2025,2025 Brookstone at Silverton,SILV,Silverton,TRUE,272,1,1,0,0,BROOK,Brookstone,FALSE,233,2,0,1,0
+6/10/2025,2025 Stonebridge at Springdale,SPRG,Springdale,TRUE,272,1,1,0,0,STONE,Stonebridge,FALSE,238,2,0,1,0
+6/10/2025,2025 Planters Walk at Wendell,WAVES,Wendell,TRUE,331,1,1,0,0,PWST,Planter's Walk,FALSE,143,2,0,1,0
+6/10/2025,2025 Clubworx at Woodcreek,WCWC,WoodCreek,TRUE,308.5,1,1,0,0,CW,Clubworx,FALSE,205.5,2,0,1,0
+6/10/2025,2025 Olive Chapel at Walden Creek,OCSTC,Olive Chapel,FALSE,315,1,1,0,0,WDCR,Walden Creek,TRUE,192,2,0,1,0
+6/10/2025,2025 Brier Creek CC at Wood Valley,BCCC,Brier Creek,FALSE,293.5,1,1,0,0,WDVLY,Wood Valley,TRUE,207.5,2,0,1,0
+6/10/2025,2025 Renaissance Park at Wellington Park,WLLPK,Wellington Park,TRUE,258,1,1,0,0,RPRAY,Renaissance Park,FALSE,220,2,0,1,0
+6/10/2025,2025 Hammerheads at Weldon Ridge,WRIDG,Weldon Ridge,TRUE,235,1,1,0,0,HHH,Haddon Hall,FALSE,225,2,0,1,0
+6/10/2025,2025 Raleigh Racquet at Zebulon,RRC,Raleigh Racquet,FALSE,224,1,1,0,0,ZCC,Zebulon,TRUE,189,2,0,1,0
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+6/17/2025,2025 CSC Swim Team at Seven Oaks,7OAK,Seven Oaks,TRUE,324,1,1,0,0,CARY,Cary,FALSE,190,2,0,1,0
+6/17/2025,2025 Lochmere at Alligators,ABB,Abbington,TRUE,287,1,1,0,0,LOCH,Lochmere,FALSE,226,2,0,1,0
+6/17/2025,2025 Kildaire Farms at Bella Casa,BELL,Bella Casa,TRUE,334.8333333,1,1,0,0,KILD,Kildaire Farms,FALSE,173.1666667,2,0,1,0
+6/17/2025,2025 Raleigh Racquet at Black Horse Run,BHR,Black Horse Run,TRUE,282,1,1,0,0,RRC,Raleigh Racquet,FALSE,195,2,0,1,0
+6/17/2025,2025 Sweetwater at Crooked Creek,CC,Crooked Creek,TRUE,316,1,1,0,0,SWSF,Sweetwater,FALSE,74,2,0,1,0
+6/17/2025,2025 Woodcreek at Brookstone,WCWC,WoodCreek,FALSE,299,1,1,0,0,BROOK,Brookstone,TRUE,202,2,0,1,0
+6/17/2025,2025 Kitts Creek at Bentwinds Barrac,KITT,Kitts Creek,FALSE,267,1,1,0,0,BWBAR,Bentwinds,TRUE,237,2,0,1,0
+6/17/2025,2025 Park Village at CV Hammerheads,PARKV,Park Village,FALSE,266,1,1,0,0,CARP,Carpenter Village,TRUE,238,2,0,1,0
+6/17/2025,2025 Sunset Ridge at Cary Park,CPSD,Cary Park,TRUE,346,1,1,0,0,SSR,Sunset Ridge,FALSE,166,2,0,1,0
+6/17/2025,2025 Lakemont at Crabtree,LKMT,Lakemont,FALSE,250,1,1,0,0,CRAB,Crabtree,TRUE,244,2,0,1,0
+6/17/2025,2025 Renaissance Park at Charleston Villg,CVC,Charleston Village,TRUE,327,1,1,0,0,RPRAY,Renaissance Park,FALSE,157,2,0,1,0
+6/17/2025,2025 Silverton at Clubworx,CW,Clubworx,TRUE,319,1,1,0,0,SILV,Silverton,FALSE,190,2,0,1,0
+6/17/2025,2025 Arbor Creek Swim at Devereaux,AC,Arbor Creek,FALSE,268,1,1,0,0,DEVER,Devereaux,TRUE,210,2,0,1,0
+6/17/2025,2025 Prestonwood at Dutchman Downs,DUTCH,Dutchman Downs,TRUE,277,1,1,0,0,PWOOD,Prestonwood,FALSE,216,2,0,1,0
+6/17/2025,2025 Glenridge at Eagle Ridge,ERST,Eagle Ridge,TRUE,278,1,1,0,0,GLEN,Glenridge,FALSE,225,2,0,1,0
+6/17/2025,2025 Wellington Park at Garner,GAR,Garner,TRUE,270,1,1,0,0,WLLPK,Wellington Park,FALSE,201,2,0,1,0
+6/17/2025,2025 Wood Valley at Granite Falls,GFG,Granite Falls,TRUE,314,1,1,0,0,WDVLY,Wood Valley,FALSE,199,2,0,1,0
+6/17/2025,2025 Brier Creek CC at Greystone,GRY,Greystone,TRUE,271,1,1,0,0,BCCC,Brier Creek,FALSE,238,2,0,1,0
+6/17/2025,2025 Brighton Forest at Harmony,BRFO,Brighton Forest,FALSE,250,1,1,0,0,HARM,Harmony,TRUE,226,2,0,1,0
+6/17/2025,2025 Lakepark at Harrington Grove,LPK,Lake Park,FALSE,256,1,1,0,0,HG,Harrington Grove,TRUE,255,2,0,1,0
+6/17/2025,2025 SM Sea Dragons at Holly Glen,HGHAM,Holly Glen,TRUE,293,1,1,0,0,SMSD,Scotts Mill,FALSE,216,2,0,1,0
+6/17/2025,2025 Weatherstone Sha at Hammerheads,HHH,Haddon Hall,TRUE,316,1,1,0,0,WES,Weatherstone,FALSE,147,2,0,1,0
+6/17/2025,2025 Lifetime Raleigh at Hasentree,HTHHS,Hasentree,TRUE,313,1,1,0,0,LTRAL,Lifetime Raleigh,FALSE,173,2,0,1,0
+6/17/2025,BYE,OPK,Oak Park,TRUE,1,0,,,,,,,,,,,
+6/17/2025,2025 Park at West Lake at Life Time Fitness Cary,LTFC,Life Time Fitness Cary,TRUE,268,1,1,0,0,PAWL,Park at West Lake,FALSE,225,2,0,1,0
+6/17/2025,2025 Apex Breakers at Medfield Pool,APEX,Apex,FALSE,280,1,1,0,0,MARC,Medfield,TRUE,234,2,0,1,0
+6/17/2025,2025 Hedingham Sharks at Manchester,HEDI,Hedingham,FALSE,320,1,1,0,0,MSRC,Manchester,TRUE,179,2,0,1,0
+6/17/2025,2025 Greenway Club at North Hills,NH,North Hills,TRUE,269.5,1,1,0,0,GWC,Greenway Club,FALSE,243.5,2,0,1,0
+6/17/2025,2025 Bedford Sharks at North Raleigh,NRSC,North Raleigh,TRUE,274.5,1,1,0,0,BAFR,Bedford at Falls River,FALSE,233.5,2,0,1,0
+6/17/2025,2025 Preston Village at Olive Chapel,PV,Preston Village,FALSE,257,1,1,0,0,OCSTC,Olive Chapel,TRUE,246,2,0,1,0
+6/17/2025,2025 Banbury Woods at Planters Walk,BWHL,Banbury Woods & Hunters Landing,FALSE,311,1,1,0,0,PWST,Planter's Walk,TRUE,164,2,0,1,0
+6/17/2025,2025 Springdale at Quail Hollow,QHSC,Quail Hollow,TRUE,261,1,1,0,0,SPRG,Springdale,FALSE,252,2,0,1,0
+6/17/2025,2025 Highcroft at Regency Riptides,REG,Regency,TRUE,292,1,1,0,0,HHST,Highcroft,FALSE,204,2,0,1,0
+6/17/2025,2025 Northbrook at Riverwood,NBK,Northbrook,FALSE,288,1,1,0,0,RVWD,Riverwood,TRUE,216,2,0,1,0
+6/17/2025,2025 Walden Creek at SV Killer Whales,SHEP,Shepherds Vineyard,TRUE,382,1,1,0,0,WDCR,Walden Creek,FALSE,132,2,0,1,0
+6/17/2025,2025 DT Typhoons at Summerfield North,SMFLD,Summerfield North,TRUE,282,1,1,0,0,DTTYP,Durant Trails,FALSE,224,2,0,1,0
+6/17/2025,2025 Meredith Townes at Southall,SSRC,Southall,TRUE,366,1,1,0,0,MT,Meredith Townes,FALSE,132,2,0,1,0
+6/17/2025,2025 Heritage Betas at Stonebridge,STONE,Stonebridge,TRUE,347,1,1,0,0,HWFB,Heritage of Wake Forest,FALSE,165,2,0,1,0
+6/17/2025,2025 The Reserve at TCC,TCC,TCC,TRUE,298,1,1,0,0,RES,The Reserve,FALSE,211,2,0,1,0
+6/17/2025,2025 Scottish Hills at University Club,UCLUB,University Club,TRUE,306,1,1,0,0,SHRC,Scottish Hills,FALSE,204,2,0,1,0
+6/17/2025,2025 Coachmans Trail at Wendell,WAVES,Wendell,TRUE,317,1,1,0,0,CTSWI,Coachman's Trail,FALSE,187,2,0,1,0
+6/17/2025,2025 Amberly at Wellsley,WELLS,Wellsley,TRUE,328,1,1,0,0,AMBER,Amberly,FALSE,186,2,0,1,0
+6/17/2025,2025 Oxxford Hunt at Weldon Ridge,WRIDG,Weldon Ridge,TRUE,245.5,1,1,0,0,OXH,Oxxford Hunt,FALSE,241.5,2,0,1,0
+6/17/2025,2025 Hawthorne at Zebulon,ZCC,Zebulon,TRUE,268,1,1,0,0,HAW,Hawthorne,FALSE,194,2,0,1,0
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+6/24/2025,2025 Weldon Ridge at Amberly,AMBER,Amberly,TRUE,349,1,1,0,0,WRIDG,Weldon Ridge,FALSE,160,2,0,1,0
+6/24/2025,2025 CSC Swim Team at Apex Breakers,CARY,Cary,FALSE,289,1,1,0,0,APEX,Apex,TRUE,221,2,0,1,0
+6/24/2025,2025 Harrington Grove at Bedford Sharks,HG,Harrington Grove,FALSE,260,1,1,0,0,BAFR,Bedford at Falls River,TRUE,241,2,0,1,0
+6/24/2025,2025 North Hills at Brier Creek CC,NH,North Hills,FALSE,275.5,1,1,0,0,BCCC,Brier Creek,TRUE,236.5,2,0,1,0
+6/24/2025,2025 Breckenridge at Charleston Villg,CVC,Charleston Village,TRUE,389,1,1,0,0,BRECK,Breckenridge,FALSE,88,2,0,1,0
+6/24/2025,2025 TCC at Bentwinds Barrac,BWBAR,Bentwinds,TRUE,259,1,1,0,0,TCC,TCC,FALSE,253,2,0,1,0
+6/24/2025,2025 Crabtree at Banbury Woods,CRAB,Crabtree,FALSE,323,1,1,0,0,BWHL,Banbury Woods & Hunters Landing,TRUE,180,2,0,1,0
+6/24/2025,2025 Zebulon at Coachmans Trail,CTSWI,Coachman's Trail,TRUE,270,1,1,0,0,ZCC,Zebulon,FALSE,143,2,0,1,0
+6/24/2025,2025 Manchester at DT Typhoons,DTTYP,Durant Trails,TRUE,322,1,1,0,0,MSRC,Manchester,FALSE,172,2,0,1,0
+6/24/2025,2025 Olive Chapel at Dutchman Downs,DUTCH,Dutchman Downs,TRUE,269,1,1,0,0,OCSTC,Olive Chapel,FALSE,239,2,0,1,0
+6/24/2025,2025 Harmony at Garner,GAR,Garner,TRUE,235,1,1,0,0,HARM,Harmony,FALSE,204,2,0,1,0
+6/24/2025,2025 Crooked Creek at Glenridge,GLEN,Glenridge,TRUE,301,1,1,0,0,CC,Crooked Creek,FALSE,192,2,0,1,0
+6/24/2025,2025 Northbrook at Greenway Club,GWC,Greenway Club,TRUE,266,1,1,0,0,NBK,Northbrook,FALSE,246,2,0,1,0
+6/24/2025,2025 Planters Walk at Hawthorne,HAW,Hawthorne,TRUE,260,1,1,0,0,PWST,Planter's Walk,FALSE,186,2,0,1,0
+6/24/2025,2025 Lakemont at Hedingham Sharks,HEDI,Hedingham,TRUE,269,1,1,0,0,LKMT,Lakemont,FALSE,231,2,0,1,0
+6/24/2025,2025 Bella Casa at Holly Glen,HGHAM,Holly Glen,TRUE,263,1,1,0,0,BELL,Bella Casa,FALSE,250,2,0,1,0
+6/24/2025,2025 Springdale at Hasentree,SPRG,Springdale,FALSE,318,1,1,0,0,HTHHS,Hasentree,TRUE,196,2,0,1,0
+6/24/2025,BYE,MT,Meredith Townes,TRUE,,0,,,,,,,,,,,
+6/24/2025,2025 CV Hammerheads at Kildaire Farms,CARP,Carpenter Village,FALSE,287,1,1,0,0,KILD,Kildaire Farms,TRUE,227,2,0,1,0
+6/24/2025,2025 Eagle Ridge at Kitts Creek,KITT,Kitts Creek,TRUE,321,1,1,0,0,ERST,Eagle Ridge,FALSE,193,2,0,1,0
+6/24/2025,2025 SV Killer Whales at Lochmere,LOCH,Lochmere,TRUE,277,1,1,0,0,SHEP,Shepherds Vineyard,FALSE,228,2,0,1,0
+6/24/2025,2025 Stonebridge at Lakepark,LPK,Lake Park,TRUE,300,1,1,0,0,STONE,Stonebridge,FALSE,204,2,0,1,0
+6/24/2025,2025 Granite Falls at North Raleigh,NRSC,North Raleigh,TRUE,280,1,1,0,0,GFG,Granite Falls,FALSE,233,2,0,1,0
+6/24/2025,2025 Lifetime Raleigh at Oak Park,OPK,Oak Park,TRUE,246,1,1,0,0,LTRAL,Lifetime Raleigh,FALSE,237,2,0,1,0
+6/24/2025,2025 Park at West Lake at Oxxford Hunt,OXH,Oxxford Hunt,TRUE,255,1,1,0,0,PAWL,Park at West Lake,FALSE,211,2,0,1,0
+6/24/2025,2025 Brighton Forest at Park Village,PARKV,Park Village,TRUE,311,1,1,0,0,BRFO,Brighton Forest,FALSE,201,2,0,1,0
+6/24/2025,2025 Silverton at Preston Village,PV,Preston Village,TRUE,306,1,1,0,0,SILV,Silverton,FALSE,199,2,0,1,0
+6/24/2025,2025 Medfield Pool at Prestonwood,MARC,Medfield,FALSE,286,1,1,0,0,PWOOD,Prestonwood,TRUE,227,2,0,1,0
+6/24/2025,2025 Riverwood at Quail Hollow,QHSC,Quail Hollow,TRUE,287,1,1,0,0,RVWD,Riverwood,FALSE,216,2,0,1,0
+6/24/2025,2025 Wendell at Raleigh Racquet,WAVES,Wendell,FALSE,329,1,1,0,0,RRC,Raleigh Racquet,TRUE,151,2,0,1,0
+6/24/2025,2025 Brookstone at Regency Riptides,BROOK,Brookstone,FALSE,283,1,1,0,0,REG,Regency,TRUE,230,2,0,1,0
+6/24/2025,2025 Life Time Fitness Cary at The Reserve,LTFC,Life Time Fitness Cary,FALSE,243,1,1,0,0,RES,The Reserve,TRUE,205,2,0,1,0
+6/24/2025,2025 Devereaux at Renaissance Park,DEVER,Devereaux,FALSE,243,1,1,0,0,RPRAY,Renaissance Park,TRUE,218,2,0,1,0
+6/24/2025,2025 Cary Park at Scottish Hills,CPSD,Cary Park,FALSE,289.5,1,1,0,0,SHRC,Scottish Hills,TRUE,223.5,2,0,1,0
+6/24/2025,2025 Heritage Betas at Summerfield North,HWFB,Heritage of Wake Forest,FALSE,264,1,1,0,0,SMFLD,Summerfield North,TRUE,245,2,0,1,0
+6/24/2025,2025 Hammerheads at SM Sea Dragons,HHH,Haddon Hall,FALSE,267,1,1,0,0,SMSD,Scotts Mill,TRUE,239,2,0,1,0
+6/24/2025,2025 Alligators at Sunset Ridge,SSR,Sunset Ridge,TRUE,1,1,0,0,1,ABB,Abbington,FALSE,1,1,0,0,1
+6/24/2025,2025 Black Horse Run at Southall,SSRC,Southall,TRUE,314,1,1,0,0,BHR,Black Horse Run,FALSE,200,2,0,1,0
+6/24/2025,2025 Greystone at University Club,UCLUB,University Club,TRUE,245,1,1,0,0,GRY,Greystone,FALSE,165,2,0,1,0
+6/24/2025,2025 Woodcreek at Walden Creek,WCWC,WoodCreek,FALSE,363,1,1,0,0,WDCR,Walden Creek,TRUE,151,2,0,1,0
+6/24/2025,2025 Seven Oaks at Wood Valley,7OAK,Seven Oaks,FALSE,369,1,1,0,0,WDVLY,Wood Valley,TRUE,144,2,0,1,0
+6/24/2025,2025 Clubworx at Wellsley,CW,Clubworx,FALSE,290,1,1,0,0,WELLS,Wellsley,TRUE,224,2,0,1,0
+6/24/2025,2025 Highcroft at Weatherstone Sha,HHST,Highcroft,FALSE,259,1,1,0,0,WES,Weatherstone,TRUE,235,2,0,1,0
+6/24/2025,2025 Arbor Creek Swim at Wellington Park,WLLPK,Wellington Park,TRUE,256,1,1,0,0,AC,Arbor Creek,FALSE,229,2,0,1,0
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+6/30/2025,2025 Walden Creek at Clubworx,CW,Clubworx,TRUE,344,1,1,0,0,WDCR,Walden Creek,FALSE,169,2,0,1,0
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+7/1/2025,2025 Cary Park at Seven Oaks,7OAK,Seven Oaks,TRUE,306,1,1,0,0,CPSD,Cary Park,FALSE,207,2,0,1,0
+7/1/2025,2025 Apex Breakers at Alligators,ABB,Abbington,TRUE,290,1,1,0,0,APEX,Apex,FALSE,224,2,0,1,0
+7/1/2025,2025 Bedford Sharks at Brier Creek CC,BCCC,Brier Creek,TRUE,381,1,1,0,0,BAFR,Bedford at Falls River,FALSE,132,2,0,1,0
+7/1/2025,2025 Bentwinds Barrac at Brighton Forest,BWBAR,Bentwinds,FALSE,267,1,1,0,0,BRFO,Brighton Forest,TRUE,206,2,0,1,0
+7/1/2025,2025 Amberly at Brookstone,AMBER,Amberly,FALSE,308,1,1,0,0,BROOK,Brookstone,TRUE,203,2,0,1,0
+7/1/2025,2025 Wendell at Banbury Woods,WAVES,Wendell,FALSE,278,1,1,0,0,BWHL,Banbury Woods & Hunters Landing,TRUE,220,2,0,1,0
+7/1/2025,2025 Greystone at CSC Swim Team,CARY,Cary,TRUE,257.5,1,1,0,0,GRY,Greystone,FALSE,256.5,2,0,1,0
+7/1/2025,2025 Arbor Creek at Crooked Creek,AC,Arbor Creek,FALSE,315,1,1,0,0,CC,Crooked Creek,TRUE,137,2,0,1,0
+7/1/2025,BYE,CRAB,Crabtree,TRUE,,0,,,,,,,,,,,
+7/1/2025,2025 Breckenridge at Devereaux,DEVER,Devereaux,TRUE,285,1,1,0,0,BRECK,Breckenridge,FALSE,152,2,0,1,0
+7/1/2025,2025 Garner at Eagle Ridge,ERST,Eagle Ridge,TRUE,349,1,1,0,0,GAR,Garner,FALSE,154,2,0,1,0
+7/1/2025,2025 University Club at Granite Falls,UCLUB,University Club,FALSE,263.5,1,1,0,0,GFG,Granite Falls,TRUE,249.5,2,0,1,0
+7/1/2025,2025 Park Village at Glenridge,PARKV,Park Village,FALSE,291,1,1,0,0,GLEN,Glenridge,TRUE,208,2,0,1,0
+7/1/2025,2025 Quail Hollow at Harrington Grove,QHSC,Quail Hollow,FALSE,313,1,1,0,0,HG,Harrington Grove,TRUE,200,2,0,1,0
+7/1/2025,2025 Life Time Fitness Cary at Hammerheads,LTFC,Life Time Fitness Cary,FALSE,287.5,1,1,0,0,HHH,Haddon Hall,TRUE,207.5,2,0,1,0
+7/1/2025,2025 Oxxford Hunt at Highcroft,OXH,Oxxford Hunt,FALSE,274,1,1,0,0,HHST,Highcroft,TRUE,227,2,0,1,0
+7/1/2025,2025 Riverwood at Heritage Betas,HWFB,Heritage of Wake Forest,TRUE,274,1,1,0,0,RVWD,Riverwood,FALSE,240,2,0,1,0
+7/1/2025,2025 Kitts Creek at Kildaire Farms,KITT,Kitts Creek,FALSE,269,1,1,0,0,KILD,Kildaire Farms,TRUE,245,2,0,1,0
+7/1/2025,2025 Black Horse Run at Lakemont,LKMT,Lakemont,TRUE,254,1,1,0,0,BHR,Black Horse Run,FALSE,245,2,0,1,0
+7/1/2025,2025 Preston Village at Lochmere,PV,Preston Village,FALSE,302,1,1,0,0,LOCH,Lochmere,TRUE,211,2,0,1,0
+7/1/2025,2025 Greenway Club at Lakepark,GWC,Greenway Club,FALSE,292,1,1,0,0,LPK,Lake Park,TRUE,221,2,0,1,0
+7/1/2025,2025 Hedingham Sharks at Lifetime Raleigh,HEDI,Hedingham,FALSE,275,1,1,0,0,LTRAL,Lifetime Raleigh,TRUE,216,2,0,1,0
+7/1/2025,2025 Manchester at Meredith Townes,MSRC,Manchester,FALSE,292,1,1,0,0,MT,Meredith Townes,TRUE,190,2,0,1,0
+7/1/2025,2025 North Raleigh at Northbrook,NRSC,North Raleigh,FALSE,265,1,1,0,0,NBK,Northbrook,TRUE,249,2,0,1,0
+7/1/2025,2025 Wood Valley at North Hills,NH,North Hills,TRUE,256,1,1,0,0,WDVLY,Wood Valley,FALSE,247,2,0,1,0
+7/1/2025,2025 Summerfield North at Oak Park,SMFLD,Summerfield North,FALSE,260,1,1,0,0,OPK,Oak Park,TRUE,249,2,0,1,0
+7/1/2025,2025 Bella Casa at Park at West Lake,BELL,Bella Casa,FALSE,267.5,1,1,0,0,PAWL,Park at West Lake,TRUE,239.5,2,0,1,0
+7/1/2025,2025 Coachmans Trail at Planters Walk,CTSWI,Coachman's Trail,FALSE,293,1,1,0,0,PWST,Planter's Walk,TRUE,208,2,0,1,0
+7/1/2025,2025 Hawthorne at Raleigh Racquet,HAW,Hawthorne,FALSE,263,1,1,0,0,RRC,Raleigh Racquet,TRUE,174,2,0,1,0
+7/1/2025,2025 CV Hammerheads at The Reserve,CARP,Carpenter Village,FALSE,261,1,1,0,0,RES,The Reserve,TRUE,247,2,0,1,0
+7/1/2025,2025 Harmony at Renaissance Park,RPRAY,Renaissance Park,TRUE,255,1,1,0,0,HARM,Harmony,FALSE,204,2,0,1,0
+7/1/2025,2025 Prestonwood at SV Killer Whales,SHEP,Shepherds Vineyard,TRUE,304,1,1,0,0,PWOOD,Prestonwood,FALSE,210,2,0,1,0
+7/1/2025,2025 Medfield Pool at Scottish Hills,SHRC,Scottish Hills,TRUE,315,1,1,0,0,MARC,Medfield,FALSE,199,2,0,1,0
+7/1/2025,2025 Regency Riptides at Silverton,SILV,Silverton,TRUE,265.5,1,1,0,0,REG,Regency,FALSE,247.5,2,0,1,0
+7/1/2025,2025 Weldon Ridge at SM Sea Dragons,SMSD,Scotts Mill,TRUE,266,1,1,0,0,WRIDG,Weldon Ridge,FALSE,236,2,0,1,0
+7/1/2025,2025 DT Typhoons at Springdale,SPRG,Springdale,TRUE,369.8333333,1,1,0,0,DTTYP,Durant Trails,FALSE,139.1666667,2,0,1,0
+7/1/2025,2025 Dutchman Downs at Sunset Ridge,SSR,Sunset Ridge,TRUE,251.5,1,0,0,1,DUTCH,Dutchman Downs,FALSE,251.5,1,0,0,1
+7/1/2025,2025 Hasentree at Stonebridge,STONE,Stonebridge,TRUE,305,1,1,0,0,HTHHS,Hasentree,FALSE,197,2,0,1,0
+7/1/2025,2025 Holly Glen at TCC,TCC,TCC,TRUE,296,1,1,0,0,HGHAM,Holly Glen,FALSE,218,2,0,1,0
+7/1/2025,2025 Olive Chapel at Woodcreek,WCWC,WoodCreek,TRUE,273,1,1,0,0,OCSTC,Olive Chapel,FALSE,241,2,0,1,0
+7/1/2025,2025 Wellsley at Weatherstone Sha,WELLS,Wellsley,FALSE,385,1,1,0,0,WES,Weatherstone,TRUE,120,2,0,1,0
+7/1/2025,2025 Charleston Villg at Wellington Park,CVC,Charleston Village,FALSE,281,1,1,0,0,WLLPK,Wellington Park,TRUE,221,2,0,1,0
+7/1/2025,2025 Southall at Zebulon,SSRC,Southall,FALSE,291,1,1,0,0,ZCC,Zebulon,TRUE,214,2,0,1,0
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+7/8/2025,2025 Renaissance Park at Arbor Creek Swim,AC,Arbor Creek,TRUE,258,1,1,0,0,RPRAY,Renaissance Park,FALSE,191,2,0,1,0
+7/8/2025,2025 Weatherstone Sha at Amberly,AMBER,Amberly,TRUE,304,1,1,0,0,WES,Weatherstone,FALSE,179,2,0,1,0
+7/8/2025,2025 Scottish Hills at Apex Breakers,SHRC,Scottish Hills,FALSE,318,1,1,0,0,APEX,Apex,TRUE,195,2,0,1,0
+7/8/2025,2025 Life Time Fitness Cary at Bella Casa,LTFC,Life Time Fitness Cary,FALSE,260.75,1,1,0,0,BELL,Bella Casa,TRUE,242.25,2,0,1,0
+7/8/2025,2025 Crabtree at Black Horse Run,CRAB,Crabtree,FALSE,275,1,1,0,0,BHR,Black Horse Run,TRUE,235,2,0,1,0
+7/8/2025,2025 Breckenridge at Wellington Park,WLLPK,Wellington Park,TRUE,368,1,1,0,0,BRECK,Breckenridge,FALSE,96,2,0,1,0
+7/8/2025,2025 Kitts Creek at Brighton Forest,KITT,Kitts Creek,FALSE,313,1,1,0,0,BRFO,Brighton Forest,TRUE,197,2,0,1,0
+7/8/2025,2025 Wellsley at Brookstone,WELLS,Wellsley,FALSE,280,1,1,0,0,BROOK,Brookstone,TRUE,230,2,0,1,0
+7/8/2025,2025 Kildaire Farms at Bentwinds Barrac,BWBAR,Bentwinds,TRUE,280,1,1,0,0,KILD,Kildaire Farms,FALSE,231,2,0,1,0
+7/8/2025,2025 TCC at CV Hammerheads,TCC,TCC,FALSE,269,1,1,0,0,CARP,Carpenter Village,TRUE,229,2,0,1,0
+7/8/2025,2025 CSC Swim Team at Cary Park,CARY,Cary,FALSE,291.5,1,1,0,0,CPSD,Cary Park,TRUE,221.5,2,0,1,0
+7/8/2025,2025 Hawthorne at Coachmans Trail,CTSWI,Coachman's Trail,TRUE,281,1,1,0,0,HAW,Hawthorne,FALSE,169,2,0,1,0
+7/8/2025,2025 Devereaux at Charleston Villg,CVC,Charleston Village,TRUE,305,1,1,0,0,DEVER,Devereaux,FALSE,209,2,0,1,0
+7/8/2025,2025 Oak Park at DT Typhoons,DTTYP,Durant Trails,TRUE,259,1,1,0,0,OPK,Oak Park,FALSE,243,2,0,1,0
+7/8/2025,2025 Glenridge at Garner,GLEN,Glenridge,FALSE,280,1,1,0,0,GAR,Garner,TRUE,216,2,0,1,0
+7/8/2025,2025 North Hills at Granite Falls,GFG,Granite Falls,TRUE,294,1,1,0,0,NH,North Hills,FALSE,219,2,0,1,0
+7/8/2025,2025 Seven Oaks at Greystone,7OAK,Seven Oaks,FALSE,343.5,1,1,0,0,GRY,Greystone,TRUE,170.5,2,0,1,0
+7/8/2025,2025 Harrington Grove at Greenway Club,GWC,Greenway Club,TRUE,320,1,1,0,0,HG,Harrington Grove,FALSE,194,2,0,1,0
+7/8/2025,2025 Crooked Creek at Harmony,CC,Crooked Creek,FALSE,230,1,1,0,0,HARM,Harmony,TRUE,210,2,0,1,0
+7/8/2025,2025 The Reserve at Holly Glen,HGHAM,Holly Glen,TRUE,304,1,1,0,0,RES,The Reserve,FALSE,206,2,0,1,0
+7/8/2025,2025 Heritage Betas at Hasentree,HWFB,Heritage of Wake Forest,FALSE,269.5,1,1,0,0,HTHHS,Hasentree,TRUE,244.5,2,0,1,0
+7/8/2025,BYE,LKMT,Lakemont,TRUE,,0,,,,,,,,,,,
+7/8/2025,2025 Alligators at Medfield Pool,MARC,Medfield,TRUE,267,1,1,0,0,ABB,Abbington,FALSE,247,2,0,1,0
+7/8/2025,2025 Lifetime Raleigh at Manchester,MSRC,Manchester,TRUE,257,1,1,0,0,LTRAL,Lifetime Raleigh,FALSE,223,2,0,1,0
+7/8/2025,2025 Hedingham Sharks at Meredith Townes,HEDI,Hedingham,FALSE,344,1,1,0,0,MT,Meredith Townes,TRUE,140,2,0,1,0
+7/8/2025,2025 Bedford Sharks at Northbrook,NBK,Northbrook,TRUE,315,1,1,0,0,BAFR,Bedford at Falls River,FALSE,199,2,0,1,0
+7/8/2025,2025 Brier Creek CC at North Raleigh,BCCC,Brier Creek,FALSE,301,1,1,0,0,NRSC,North Raleigh,TRUE,204,2,0,1,0
+7/8/2025,2025 Lochmere at Olive Chapel,LOCH,Lochmere,FALSE,266.5,1,1,0,0,OCSTC,Olive Chapel,TRUE,242.5,2,0,1,0
+7/8/2025,2025 SM Sea Dragons at Oxxford Hunt,OXH,Oxxford Hunt,TRUE,274.5,1,1,0,0,SMSD,Scotts Mill,FALSE,207.5,2,0,1,0
+7/8/2025,2025 Eagle Ridge at Park Village,PARKV,Park Village,TRUE,327,1,1,0,0,ERST,Eagle Ridge,FALSE,187,2,0,1,0
+7/8/2025,2025 Hammerheads at Park at West Lake,PAWL,Park at West Lake,TRUE,269.5,1,1,0,0,HHH,Haddon Hall,FALSE,236.5,2,0,1,0
+7/8/2025,2025 Sunset Ridge at Prestonwood,SSR,Sunset Ridge,FALSE,286,1,1,0,0,PWOOD,Prestonwood,TRUE,228,2,0,1,0
+7/8/2025,2025 Lakepark at Quail Hollow,LPK,Lake Park,FALSE,268.5,1,1,0,0,QHSC,Quail Hollow,TRUE,245.5,2,0,1,0
+7/8/2025,2025 Planters Walk at Raleigh Racquet,RRC,Raleigh Racquet,TRUE,276,1,1,0,0,PWST,Planter's Walk,FALSE,200,2,0,1,0
+7/8/2025,2025 Clubworx at Regency Riptides,CW,Clubworx,FALSE,306,1,1,0,0,REG,Regency,TRUE,207,2,0,1,0
+7/8/2025,2025 Stonebridge at Riverwood,RVWD,Riverwood,TRUE,288.5,1,1,0,0,STONE,Stonebridge,FALSE,222.5,2,0,1,0
+7/8/2025,2025 Dutchman Downs at SV Killer Whales,SHEP,Shepherds Vineyard,TRUE,274,1,1,0,0,DUTCH,Dutchman Downs,FALSE,240,2,0,1,0
+7/8/2025,2025 Summerfield North at Springdale,SPRG,Springdale,TRUE,348,1,1,0,0,SMFLD,Summerfield North,FALSE,166,2,0,1,0
+7/8/2025,2025 Banbury Woods at Southall,SSRC,Southall,TRUE,328,1,1,0,0,BWHL,Banbury Woods & Hunters Landing,FALSE,179,2,0,1,0
+7/8/2025,2025 Wood Valley at University Club,UCLUB,University Club,TRUE,317,1,1,0,0,WDVLY,Wood Valley,FALSE,194,2,0,1,0
+7/8/2025,2025 Zebulon at Wendell,WAVES,Wendell,TRUE,360,1,1,0,0,ZCC,Zebulon,FALSE,150,2,0,1,0
+7/8/2025,2025 Preston Village at Woodcreek,WCWC,WoodCreek,TRUE,298,1,1,0,0,PV,Preston Village,FALSE,214,2,0,1,0
+7/8/2025,2025 Silverton at Walden Creek,SILV,Silverton,FALSE,295,1,1,0,0,WDCR,Walden Creek,TRUE,219,2,0,1,0
+7/8/2025,2025 Highcroft at Weldon Ridge,HHST,Highcroft,FALSE,271,1,1,0,0,WRIDG,Weldon Ridge,TRUE,240,2,0,1,0
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+7/15/2025,2025 University Club at Seven Oaks,7OAK,Seven Oaks,TRUE,290,1,1,0,0,UCLUB,University Club,FALSE,224,2,0,1,0
+7/15/2025,2025 Prestonwood at Alligators,ABB,Abbington,TRUE,304,1,1,0,0,PWOOD,Prestonwood,FALSE,209,2,0,1,0
+7/15/2025,2025 Charleston Villg at Arbor Creek Swim,AC,Arbor Creek,TRUE,279,1,1,0,0,CVC,Charleston Village,FALSE,234,2,0,1,0
+7/15/2025,2025 Greenway Club at Bedford Sharks,GWC,Greenway Club,FALSE,303,1,1,0,0,BAFR,Bedford at Falls River,TRUE,211,2,0,1,0
+7/15/2025,2025 Granite Falls at Brier Creek CC,BCCC,Brier Creek,TRUE,279,1,1,0,0,GFG,Granite Falls,FALSE,235,2,0,1,0
+7/15/2025,2025 Banbury Woods at Black Horse Run,BHR,Black Horse Run,TRUE,245,1,1,0,0,BWHL,Banbury Woods & Hunters Landing,FALSE,242,2,0,1,0
+7/15/2025,2025 Bentwinds Barrac at CV Hammerheads,BWBAR,Bentwinds,FALSE,271,1,1,0,0,CARP,Carpenter Village,TRUE,243,2,0,1,0
+7/15/2025,2025 Scottish Hills at CSC Swim Team,CARY,Cary,TRUE,271,1,1,0,0,SHRC,Scottish Hills,FALSE,242,2,0,1,0
+7/15/2025,2025 Garner at Crooked Creek,CC,Crooked Creek,TRUE,254,1,1,0,0,GAR,Garner,FALSE,250,2,0,1,0
+7/15/2025,2025 Apex Breakers at Cary Park,CPSD,Cary Park,TRUE,280,1,1,0,0,APEX,Apex,FALSE,230,2,0,1,0
+7/15/2025,2025 Southall at Crabtree,SSRC,Southall,FALSE,266,1,1,0,0,CRAB,Crabtree,TRUE,247,2,0,1,0
+7/15/2025,2025 Raleigh Racquet at Coachmans Trail,CTSWI,Coachman's Trail,TRUE,325,1,1,0,0,RRC,Raleigh Racquet,FALSE,157,2,0,1,0
+7/15/2025,2025 Brookstone at Clubworx,CW,Clubworx,TRUE,318,1,1,0,0,BROOK,Brookstone,FALSE,185,2,0,1,0
+7/15/2025,2025 Wellington Park at Devereaux,DEVER,Devereaux,TRUE,283,1,1,0,0,WLLPK,Wellington Park,FALSE,229,2,0,1,0
+7/15/2025,2025 Brighton Forest at Eagle Ridge,ERST,Eagle Ridge,TRUE,281,1,1,0,0,BRFO,Brighton Forest,FALSE,232,2,0,1,0
+7/15/2025,2025 Harmony at Glenridge,GLEN,Glenridge,TRUE,338,1,1,0,0,HARM,Harmony,FALSE,147,2,0,1,0
+7/15/2025,2025 Wendell at Hawthorne,WAVES,Wendell,FALSE,298,1,1,0,0,HAW,Hawthorne,TRUE,164,2,0,1,0
+7/15/2025,BYE,HEDI,Hedingham,TRUE,,0,,,,,,,,,,,
+7/15/2025,2025 Northbrook at Harrington Grove,NBK,Northbrook,FALSE,288,1,1,0,0,HG,Harrington Grove,TRUE,226,2,0,1,0
+7/15/2025,2025 Oxxford Hunt at Hammerheads,OXH,Oxxford Hunt,FALSE,276,1,1,0,0,HHH,Haddon Hall,TRUE,234,2,0,1,0
+7/15/2025,2025 Amberly at Highcroft,AMBER,Amberly,FALSE,303,1,1,0,0,HHST,Highcroft,TRUE,210,2,0,1,0
+7/15/2025,2025 Springdale at Heritage Betas,SPRG,Springdale,FALSE,215,1,1,0,0,HWFB,Heritage of Wake Forest,TRUE,159,2,0,1,0
+7/15/2025,2025 Park Village at Kitts Creek,KITT,Kitts Creek,TRUE,293,1,1,0,0,PARKV,Park Village,FALSE,218,2,0,1,0
+7/15/2025,2025 Meredith Townes at Lakemont,LKMT,Lakemont,TRUE,285,1,1,0,0,MT,Meredith Townes,FALSE,158,2,0,1,0
+7/15/2025,2025 Dutchman Downs at Lochmere,DUTCH,Dutchman Downs,FALSE,270.5,1,1,0,0,LOCH,Lochmere,TRUE,239.5,2,0,1,0
+7/15/2025,2025 Riverwood at Lakepark,LPK,Lake Park,TRUE,304,1,1,0,0,RVWD,Riverwood,FALSE,209,2,0,1,0
+7/15/2025,2025 Holly Glen at Life Time Fitness Cary,LTFC,Life Time Fitness Cary,TRUE,304,1,1,0,0,HGHAM,Holly Glen,FALSE,210,2,0,1,0
+7/15/2025,2025 DT Typhoons at Lifetime Raleigh,DTTYP,Durant Trails,FALSE,315,1,1,0,0,LTRAL,Lifetime Raleigh,TRUE,197,2,0,1,0
+7/15/2025,2025 North Raleigh at North Hills,NH,North Hills,TRUE,259,1,1,0,0,NRSC,North Raleigh,FALSE,251,2,0,1,0
+7/15/2025,2025 SV Killer Whales at Olive Chapel,SHEP,Shepherds Vineyard,FALSE,291,1,1,0,0,OCSTC,Olive Chapel,TRUE,219,2,0,1,0
+7/15/2025,2025 Manchester at Oak Park,OPK,Oak Park,TRUE,256,1,1,0,0,MSRC,Manchester,FALSE,250,2,0,1,0
+7/15/2025,2025 Walden Creek at Preston Village,PV,Preston Village,TRUE,260,1,1,0,0,WDCR,Walden Creek,FALSE,253,2,0,1,0
+7/15/2025,2025 Zebulon at Planters Walk,ZCC,Zebulon,FALSE,276,1,1,0,0,PWST,Planter's Walk,TRUE,214,2,0,1,0
+7/15/2025,2025 Bella Casa at The Reserve,BELL,Bella Casa,FALSE,322,1,1,0,0,RES,The Reserve,TRUE,164,2,0,1,0
+7/15/2025,BYE,RPRAY,Renaissance Park,TRUE,,0,,,,,,,,,,,
+7/15/2025,2025 Woodcreek at Silverton,WCWC,WoodCreek,FALSE,299,1,1,0,0,SILV,Silverton,TRUE,215,2,0,1,0
+7/15/2025,2025 Hasentree at Summerfield North,SMFLD,Summerfield North,TRUE,317,1,1,0,0,HTHHS,Hasentree,FALSE,185,2,0,1,0
+7/15/2025,2025 Park at West Lake at SM Sea Dragons,SMSD,Scotts Mill,TRUE,310,1,1,0,0,PAWL,Park at West Lake,FALSE,200,2,0,1,0
+7/15/2025,2025 Medfield Pool at Sunset Ridge,SSR,Sunset Ridge,TRUE,260,1,1,0,0,MARC,Medfield,FALSE,253,2,0,1,0
+7/15/2025,2025 Quail Hollow at Stonebridge,STONE,Stonebridge,TRUE,258,1,1,0,0,QHSC,Quail Hollow,FALSE,198,2,0,1,0
+7/15/2025,2025 Kildaire Farms at TCC,KILD,Kildaire Farms,FALSE,230,1,1,0,0,TCC,TCC,TRUE,198,2,0,1,0
+7/15/2025,2025 Greystone at Wood Valley,GRY,Greystone,FALSE,265.5,1,1,0,0,WDVLY,Wood Valley,TRUE,248.5,2,0,1,0
+7/15/2025,2025 Regency Riptides at Wellsley,WELLS,Wellsley,TRUE,266,1,1,0,0,REG,Regency,FALSE,247,2,0,1,0
+7/15/2025,2025 Weldon Ridge at Weatherstone Sha,WES,Weatherstone,TRUE,255.5,1,1,0,0,WRIDG,Weldon Ridge,FALSE,242.5,2,0,1,0
+7/15/2025,2025 Breckenridge at Sweetwater,BRECK,Breckenridge,FALSE,241,1,1,0,0,SWSF,Sweetwater,TRUE,117,2,0,1,0

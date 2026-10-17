@@ -1,0 +1,276 @@
+meet_date,meet_name,team1_abbrev,team1_name,team1_is_home,team1_score,team1_place,team1_win_count,team1_loss_count,team1_tie_count,team2_abbrev,team2_name,team2_is_home,team2_score,team2_place,team2_win_count,team2_loss_count,team2_tie_count,DIFFERENTIAL
+6/9/2026,2026 Medfield Pool at Alligators,ABB,Abbington,TRUE,296,1,1,0,0,MARC,Medfield,FALSE,216,2,0,1,0,80
+6/9/2026,2026 Quail Hollow at Bedford Sharks,BAFR,Bedford at Falls River,TRUE,274,1,1,0,0,QHSC,Quail Hollow,FALSE,239,2,0,1,0,35
+6/9/2026,2026 Weatherstone Sha at Bella Casa,BELL,Bella Casa,TRUE,280.5,1,1,0,0,WES,Weatherstone,FALSE,218.5,2,0,1,0,62
+6/9/2026,2026 Raleigh Racquet at Black Horse Run,BHR,Black Horse Run,TRUE,284,1,1,0,0,RRC,Raleigh Racquet,FALSE,215,2,0,1,0,69
+6/9/2026,2026 Regency Riptides at Brookstone,REG,Regency,FALSE,321,1,1,0,0,BROOK,Brookstone,TRUE,149,2,0,1,0,172
+6/9/2026,2026 Park at West Lake at Bentwinds Barrac,BWBAR,Bentwinds,TRUE,287,1,1,0,0,PAWL,Park at West Lake,FALSE,207,2,0,1,0,80
+6/9/2026,2026 Renaissance Park at Crooked Creek,RPRAY,Renaissance Park,FALSE,262,1,1,0,0,CC,Crooked Creek,TRUE,169,2,0,1,0,93
+6/9/2026,2026 Seven Oaks at Cary Park,7OAK,Seven Oaks,FALSE,284,1,1,0,0,CPSD,Cary Park,TRUE,230,2,0,1,0,54
+6/9/2026,2026 Hedingham Sharks at DT Typhoons,DTTYP,Durant Trails,TRUE,282,1,1,0,0,HEDI,Hedingham,FALSE,214,2,0,1,0,68
+6/9/2026,2026 Woodcreek at Dutchman Downs,DUTCH,Dutchman Downs,TRUE,307,1,1,0,0,WCWC,WoodCreek,FALSE,201,2,0,1,0,106
+6/9/2026,2026 Arbor Creek Swim at Eagle Ridge,ERST,Eagle Ridge,TRUE,303,1,1,0,0,AC,Arbor Creek,FALSE,181,2,0,1,0,122
+6/9/2026,2026 Charleston Villg at Garner,GAR,Garner,TRUE,277,1,1,0,0,CVC,Charleston Village,FALSE,218,2,0,1,0,59
+6/9/2026,2026 Brighton Forest at Glenridge,GLEN,Glenridge,TRUE,272,1,1,0,0,BRFO,Brighton Forest,FALSE,164,2,0,1,0,108
+6/9/2026,2026 North Raleigh at Greystone,GRY,Greystone,TRUE,314,1,1,0,0,NRSC,North Raleigh,FALSE,192,2,0,1,0,122
+6/9/2026,2026 Sweetwater at Harmony,HARM,Harmony,TRUE,330,1,1,0,0,SWSF,Sweetwater,FALSE,95,2,0,1,0,235
+6/9/2026,2026 Crabtree at Hawthorne,CRAB,Crabtree,FALSE,303.5,1,1,0,0,HAW,Hawthorne,TRUE,169.5,2,0,1,0,134
+6/9/2026,2026 Life Time Fitness Cary at Hammerheads,LTFC,Life Time Fitness Cary,FALSE,299,1,1,0,0,HHH,Haddon Hall,TRUE,207,2,0,1,0,92
+6/9/2026,2026 Weldon Ridge at Highcroft,WRIDG,Weldon Ridge,FALSE,256,1,1,0,0,HHST,Highcroft,TRUE,249,2,0,1,0,7
+6/9/2026,2026 Summerfield North at Hasentree,SMFLD,Summerfield North,FALSE,252,1,1,0,0,HTHHS,Hasentree,TRUE,239,2,0,1,0,13
+6/9/2026,2026 Stonebridge at Heritage Betas,STONE,Stonebridge,FALSE,290,1,1,0,0,HWFB,Heritage of Wake Forest,TRUE,220,2,0,1,0,70
+6/9/2026,2026 Park Village at Kildaire Farms,PARKV,Park Village,FALSE,289,1,1,0,0,KILD,Kildaire Farms,TRUE,225,2,0,1,0,64
+6/9/2026,2026 TCC at Kitts Creek,KITT,Kitts Creek,TRUE,260,1,1,0,0,TCC,TCC,FALSE,244,2,0,1,0,16
+6/9/2026,2026 Clubworx at Lochmere,LOCH,Lochmere,TRUE,241.33333333333331,1,1,0,0,CW,Clubworx,FALSE,206.66666666666669,2,0,1,0,34.66666667
+6/9/2026,2026 Harrington Grove at Lakepark,LPK,Lake Park,TRUE,295,1,1,0,0,HG,Harrington Grove,FALSE,218,2,0,1,0,77
+6/9/2026,2026 Southall at Manchester,SSRC,Southall,FALSE,255,1,1,0,0,MSRC,Manchester,TRUE,251,2,0,1,0,4
+6/9/2026,BYE,MT,Meredith Townes,TRUE,365,0,,,,,,,,,,,,365
+6/9/2026,2026 Greenway Club at Northbrook,NBK,Northbrook,TRUE,263,1,1,0,0,GWC,Greenway Club,FALSE,250,2,0,1,0,13
+6/9/2026,2026 Brier Creek CC at North Hills,BCCC,Brier Creek,FALSE,259,1,1,0,0,NH,North Hills,TRUE,245,2,0,1,0,14
+6/9/2026,2026 Amberly at Olive Chapel,AMBER,Amberly,FALSE,285,1,1,0,0,OCSTC,Olive Chapel,TRUE,228,2,0,1,0,57
+6/9/2026,2026 Lakemont at Oak Park,OPK,Oak Park,TRUE,284,1,1,0,0,LKMT,Lakemont,FALSE,207,2,0,1,0,77
+6/9/2026,2026 Walden Creek at Oxxford Hunt,OXH,Oxxford Hunt,TRUE,304.5,1,1,0,0,WDCR,Walden Creek,FALSE,198.5,2,0,1,0,106
+6/9/2026,2026 Prestonwood at Preston Village,PWOOD,Prestonwood,FALSE,326,1,1,0,0,PV,Preston Village,TRUE,187,2,0,1,0,139
+6/9/2026,2026 Banbury Woods at Planters Walk,BWHL,Banbury Woods & Hunters Landing,FALSE,277,1,1,0,0,PWST,Planter's Walk,TRUE,230,2,0,1,0,47
+6/9/2026,2026 CV Hammerheads at The Reserve,CARP,Carpenter Village,FALSE,262,1,1,0,0,RES,The Reserve,TRUE,235,2,0,1,0,27
+6/9/2026,2026 Sunset Ridge at SV Killer Whales,SSR,Sunset Ridge,FALSE,275,1,1,0,0,SHEP,Shepherds Vineyard,TRUE,228,2,0,1,0,47
+6/9/2026,2026 Apex Breakers at Scottish Hills,SHRC,Scottish Hills,TRUE,306,1,1,0,0,APEX,Apex,FALSE,204,2,0,1,0,102
+6/9/2026,2026 Wellsley at Silverton,SILV,Silverton,TRUE,281,1,1,0,0,WELLS,Wellsley,FALSE,227,2,0,1,0,54
+6/9/2026,2026 Holly Glen at SM Sea Dragons,HGHAM,Holly Glen,FALSE,267,1,1,0,0,SMSD,Scotts Mill,TRUE,246,2,0,1,0,21
+6/9/2026,2026 Riverwood at Springdale,SPRG,Springdale,TRUE,315,1,1,0,0,RVWD,Riverwood,FALSE,191,2,0,1,0,124
+6/9/2026,2026 CSC Swim Team at University Club,CARY,Cary,FALSE,279,1,1,0,0,UCLUB,University Club,TRUE,231,2,0,1,0,48
+6/9/2026,2026 Lifetime Raleigh at Wendell,LTRAL,Lifetime Raleigh,FALSE,269,1,1,0,0,WAVES,Wendell,TRUE,227,2,0,1,0,42
+6/9/2026,2026 Granite Falls at Wood Valley,WDVLY,Wood Valley,TRUE,273,1,1,0,0,GFG,Granite Falls,FALSE,242,2,0,1,0,31
+6/9/2026,2026 Breckenridge at Wellington Park,WLLPK,Wellington Park,TRUE,316,1,1,0,0,BBDST,Breckenridge,FALSE,149,2,0,1,0,167
+6/9/2026,2026 Coachmans Trail at Zebulon,CTSWI,Coachman's Trail,FALSE,249,1,1,0,0,ZCC,Zebulon,TRUE,190,2,0,1,0,59
+,,,,,,,,,,,,,,,,,,3516.666667
+,,,,,,,,,,,,,,,,,,
+6/16/2026,2026 Garner at Renaissance Park,GAR,Garner,FALSE,347,1,1,0,0,RPRAY,Renaissance Park,TRUE,164,2,0,1,0,183
+6/16/2026,2026 Dutchman Downs at Alligators,DUTCH,Dutchman Downs,FALSE,295.5,1,1,0,0,ABB,Abbington,TRUE,217.5,2,0,1,0,78
+6/16/2026,2026 Glenridge at Arbor Creek Swim,GLEN,Glenridge,FALSE,309,1,1,0,0,AC,Arbor Creek,TRUE,149,2,0,1,0,160
+6/16/2026,2026 Lakepark at Bedford Sharks,BAFR,Bedford at Falls River,TRUE,265,1,1,0,0,LPK,Lake Park,FALSE,249,2,0,1,0,16
+6/16/2026,2026 Greystone at Brier Creek CC,GRY,Greystone,FALSE,257,1,1,0,0,BCCC,Brier Creek,TRUE,217,2,0,1,0,40
+6/16/2026,2026 Zebulon at Black Horse Run,BHR,Black Horse Run,TRUE,299,1,1,0,0,ZCC,Zebulon,FALSE,174,2,0,1,0,125
+6/16/2026,2026 Crooked Creek at Breckenridge,BBDST,Breckenridge,TRUE,234,1,1,0,0,CC,Crooked Creek,FALSE,233,2,0,1,0,1
+6/16/2026,2026 Oxxford Hunt at Brookstone,OXH,Oxxford Hunt,FALSE,334,1,1,0,0,BROOK,Brookstone,TRUE,155,2,0,1,0,179
+6/16/2026,2026 Kildaire Farms at CV Hammerheads,CARP,Carpenter Village,TRUE,343,1,1,0,0,KILD,Kildaire Farms,FALSE,165,2,0,1,0,178
+6/16/2026,2026 Seven Oaks at CSC Swim Team,7OAK,Seven Oaks,FALSE,304,1,1,0,0,CARY,Cary,TRUE,210,2,0,1,0,94
+6/16/2026,2026 Raleigh Racquet at Crabtree,CRAB,Crabtree,TRUE,282,1,1,0,0,RRC,Raleigh Racquet,FALSE,211,2,0,1,0,71
+6/16/2026,2026 Lifetime Raleigh at Coachmans Trail,LTRAL,Lifetime Raleigh,FALSE,264.5,1,1,0,0,CTSWI,Coachman's Trail,TRUE,217.5,2,0,1,0,47
+6/16/2026,2026 Harmony at Charleston Villg,CVC,Charleston Village,TRUE,273,1,1,0,0,HARM,Harmony,FALSE,203,2,0,1,0,70
+6/16/2026,2026 Preston Village at Clubworx,CW,Clubworx,TRUE,333,1,1,0,0,PV,Preston Village,FALSE,181,2,0,1,0,152
+6/16/2026,2026 Sweetwater at Devereaux,DEVER,Devereaux,TRUE,283,1,1,0,0,SWSF,Sweetwater,FALSE,132,2,0,1,0,151
+6/16/2026,2026 Brighton Forest at Eagle Ridge,ERST,Eagle Ridge,TRUE,306,1,1,0,0,BRFO,Brighton Forest,FALSE,198,2,0,1,0,108
+6/16/2026,2026 Wendell at Hawthorne,WAVES,Wendell,FALSE,279.75,1,1,0,0,HAW,Hawthorne,TRUE,185.25,2,0,1,0,94.5
+6/16/2026,2026 Summerfield North at Hedingham Sharks,HEDI,Hedingham,TRUE,267,1,1,0,0,SMFLD,Summerfield North,FALSE,243,2,0,1,0,24
+6/16/2026,2026 Quail Hollow at Harrington Grove,HG,Harrington Grove,TRUE,274,1,1,0,0,QHSC,Quail Hollow,FALSE,226,2,0,1,0,48
+6/16/2026,2026 Bella Casa at Holly Glen,BELL,Bella Casa,FALSE,258.5,1,1,0,0,HGHAM,Holly Glen,TRUE,255.5,2,0,1,0,3
+6/16/2026,2026 Hammerheads at Highcroft,HHH,Haddon Hall,FALSE,254.5,1,1,0,0,HHST,Highcroft,TRUE,240.5,2,0,1,0,14
+6/16/2026,2026 DT Typhoons at Hasentree,DTTYP,Durant Trails,FALSE,328.5,1,1,0,0,HTHHS,Hasentree,TRUE,179.5,2,0,1,0,149
+6/16/2026,2026 Weldon Ridge at Life Time Fitness Cary,LTFC,Life Time Fitness Cary,TRUE,249.5,1,1,0,0,WRIDG,Weldon Ridge,FALSE,231.5,2,0,1,0,18
+6/16/2026,2026 Woodcreek at Medfield Pool,MARC,Medfield,TRUE,263,1,1,0,0,WCWC,WoodCreek,FALSE,238,2,0,1,0,25
+6/16/2026,2026 Oak Park at Manchester,OPK,Oak Park,FALSE,250,1,1,0,0,MSRC,Manchester,TRUE,239,2,0,1,0,11
+6/16/2026,2026 Granite Falls at Northbrook,GFG,Granite Falls,FALSE,296,1,1,0,0,NBK,Northbrook,TRUE,208,2,0,1,0,88
+6/16/2026,2026 North Hills at North Raleigh,NH,North Hills,FALSE,285,1,1,0,0,NRSC,North Raleigh,TRUE,211,2,0,1,0,74
+6/16/2026,2026 Silverton at Olive Chapel,SILV,Silverton,FALSE,293,1,1,0,0,OCSTC,Olive Chapel,TRUE,220,2,0,1,0,73
+6/16/2026,2026 The Reserve at Park Village,PARKV,Park Village,TRUE,276,1,1,0,0,RES,The Reserve,FALSE,215,2,0,1,0,61
+6/16/2026,2026 Kitts Creek at Park at West Lake,KITT,Kitts Creek,FALSE,328.5,1,1,0,0,PAWL,Park at West Lake,TRUE,183.5,2,0,1,0,145
+6/16/2026,2026 Lochmere at Prestonwood,LOCH,Lochmere,FALSE,267,1,1,0,0,PWOOD,Prestonwood,TRUE,245,2,0,1,0,22
+6/16/2026,2026 Meredith Townes at Planters Walk,PWST,Planter's Walk,TRUE,310,1,1,0,0,MT,Meredith Townes,FALSE,177,2,0,1,0,133
+6/16/2026,2026 Heritage Betas at Riverwood,RVWD,Riverwood,TRUE,318,1,1,0,0,HWFB,Heritage of Wake Forest,FALSE,195,2,0,1,0,123
+6/16/2026,2026 SV Killer Whales at Scottish Hills,SHRC,Scottish Hills,TRUE,345,1,1,0,0,SHEP,Shepherds Vineyard,FALSE,164,2,0,1,0,181
+6/16/2026,2026 Apex Breakers at Sunset Ridge,APEX,Apex,FALSE,323.5,1,1,0,0,SSR,Sunset Ridge,TRUE,185.5,2,0,1,0,138
+6/16/2026,2026 Lakemont at Southall,SSRC,Southall,TRUE,308,1,1,0,0,LKMT,Lakemont,FALSE,190,2,0,1,0,118
+6/16/2026,2026 Springdale at Stonebridge,SPRG,Springdale,FALSE,321,1,1,0,0,STONE,Stonebridge,TRUE,193,2,0,1,0,128
+6/16/2026,2026 Bentwinds Barrac at TCC,TCC,TCC,TRUE,296,1,1,0,0,BWBAR,Bentwinds,FALSE,218,2,0,1,0,78
+6/16/2026,2026 Cary Park at University Club,UCLUB,University Club,TRUE,266.5,1,1,0,0,CPSD,Cary Park,FALSE,229.5,2,0,1,0,37
+6/16/2026,2026 Regency Riptides at Walden Creek,REG,Regency,FALSE,270,1,1,0,0,WDCR,Walden Creek,TRUE,237,2,0,1,0,33
+6/16/2026,2026 Greenway Club at Wood Valley,WDVLY,Wood Valley,TRUE,261,1,1,0,0,GWC,Greenway Club,FALSE,241,2,0,1,0,20
+6/16/2026,2026 Amberly at Wellsley,WELLS,Wellsley,TRUE,259,1,1,0,0,AMBER,Amberly,FALSE,255,2,0,1,0,4
+6/16/2026,2026 SM Sea Dragons at Weatherstone Sha,SMSD,Scotts Mill,FALSE,242,1,1,0,0,WES,Weatherstone,TRUE,238,2,0,1,0,4
+6/16/2026,BYE,WLLPK,Wellington Park,TRUE,,0,,,,,,,,,,,,0
+,,,,,,,,,,,,,,,,,,3499.5
+,,,,,,,,,,,,,,,,,,
+6/23/2026,2026 Greystone at Seven Oaks,7OAK,Seven Oaks,TRUE,351,1,1,0,0,GRY,Greystone,FALSE,163,2,0,1,0,188
+6/23/2026,2026 Crooked Creek at Arbor Creek Swim,AC,Arbor Creek,TRUE,262,1,1,0,0,CC,Crooked Creek,FALSE,194,2,0,1,0,68
+6/23/2026,2026 Walden Creek at Amberly,AMBER,Amberly,TRUE,361,1,1,0,0,WDCR,Walden Creek,FALSE,132,2,0,1,0,229
+6/23/2026,2026 Dutchman Downs at Apex Breakers,DUTCH,Dutchman Downs,FALSE,300,1,1,0,0,APEX,Apex,TRUE,213,2,0,1,0,87
+6/23/2026,2026 Bentwinds Barrac at Bella Casa,BELL,Bella Casa,TRUE,304,1,1,0,0,BWBAR,Bentwinds,FALSE,205,2,0,1,0,99
+6/23/2026,2026 Charleston Villg at Brighton Forest,BRFO,Brighton Forest,TRUE,260,1,1,0,0,CVC,Charleston Village,FALSE,251,2,0,1,0,9
+6/23/2026,2026 Raleigh Racquet at Banbury Woods,RRC,Raleigh Racquet,FALSE,235,1,1,0,0,BWHL,Banbury Woods & Hunters Landing,TRUE,224,2,0,1,0,11
+6/23/2026,2026 Scottish Hills at Cary Park,CPSD,Cary Park,TRUE,275,1,1,0,0,SHRC,Scottish Hills,FALSE,231,2,0,1,0,44
+6/23/2026,2026 Black Horse Run at Coachmans Trail,CTSWI,Coachman's Trail,TRUE,287,1,1,0,0,BHR,Black Horse Run,FALSE,208,2,0,1,0,79
+6/23/2026,2026 Olive Chapel at Clubworx,CW,Clubworx,TRUE,290.5,1,1,0,0,OCSTC,Olive Chapel,FALSE,223.5,2,0,1,0,67
+6/23/2026,2026 Wellington Park at Devereaux,WLLPK,Wellington Park,FALSE,299,1,1,0,0,DEVER,Devereaux,TRUE,198,2,0,1,0,101
+6/23/2026,2026 Stonebridge at DT Typhoons,STONE,Stonebridge,FALSE,269,1,1,0,0,DTTYP,Durant Trails,TRUE,244,2,0,1,0,25
+6/23/2026,2026 Harmony at Garner,GAR,Garner,TRUE,283,1,1,0,0,HARM,Harmony,FALSE,215,2,0,1,0,68
+6/23/2026,2026 North Raleigh at Granite Falls,GFG,Granite Falls,TRUE,269.5,1,1,0,0,NRSC,North Raleigh,FALSE,240.5,2,0,1,0,29
+6/23/2026,2026 Brier Creek CC at Greenway Club,BCCC,Brier Creek,FALSE,366,1,1,0,0,GWC,Greenway Club,TRUE,144,2,0,1,0,222
+6/23/2026,2026 Harrington Grove at Heritage Betas,HWFB,Heritage of Wake Forest,TRUE,298,1,1,0,0,HG,Harrington Grove,FALSE,212,2,0,1,0,86
+6/23/2026,2026 Glenridge at Kildaire Farms,GLEN,Glenridge,FALSE,303,1,1,0,0,KILD,Kildaire Farms,TRUE,210,2,0,1,0,93
+6/23/2026,2026 Crabtree at Lakemont,LKMT,Lakemont,TRUE,247,1,1,0,0,CRAB,Crabtree,FALSE,245,2,0,1,0,2
+6/23/2026,2026 Alligators at Lochmere,ABB,Abbington,FALSE,262.5,1,1,0,0,LOCH,Lochmere,TRUE,251.5,2,0,1,0,11
+6/23/2026,2026 Northbrook at Lakepark,LPK,Lake Park,TRUE,295,1,1,0,0,NBK,Northbrook,FALSE,218,2,0,1,0,77
+6/23/2026,2026 Manchester at Lifetime Raleigh,LTRAL,Lifetime Raleigh,TRUE,291,1,1,0,0,MSRC,Manchester,FALSE,221,2,0,1,0,70
+6/23/2026,2026 SV Killer Whales at Medfield Pool,SHEP,Shepherds Vineyard,FALSE,269,1,1,0,0,MARC,Medfield,TRUE,239,2,0,1,0,30
+6/23/2026,2026 Wendell at Meredith Townes,WAVES,Wendell,FALSE,198,1,1,0,0,MT,Meredith Townes,TRUE,133,2,0,1,0,65
+6/23/2026,2026 University Club at North Hills,UCLUB,University Club,FALSE,287,1,1,0,0,NH,North Hills,TRUE,225,2,0,1,0,62
+6/23/2026,2026 Hasentree at Oak Park,HTHHS,Hasentree,FALSE,258,1,1,0,0,OPK,Oak Park,TRUE,220,2,0,1,0,38
+6/23/2026,2026 Highcroft at Oxxford Hunt,OXH,Oxxford Hunt,TRUE,274,1,1,0,0,HHST,Highcroft,FALSE,227,2,0,1,0,47
+6/23/2026,2026 Park at West Lake at Park Village,PARKV,Park Village,TRUE,354.5,1,1,0,0,PAWL,Park at West Lake,FALSE,158.5,2,0,1,0,196
+6/23/2026,2026 Wellsley at Prestonwood,PWOOD,Prestonwood,TRUE,300,1,1,0,0,WELLS,Wellsley,FALSE,210,2,0,1,0,90
+6/23/2026,2026 Wood Valley at Quail Hollow,WDVLY,Wood Valley,FALSE,337,1,1,0,0,QHSC,Quail Hollow,TRUE,177,2,0,1,0,160
+6/23/2026,2026 Life Time Fitness Cary at Regency Riptides,LTFC,Life Time Fitness Cary,FALSE,322,1,1,0,0,REG,Regency,TRUE,176,2,0,1,0,146
+6/23/2026,2026 Eagle Ridge at The Reserve,ERST,Eagle Ridge,FALSE,258,1,1,0,0,RES,The Reserve,TRUE,248,2,0,1,0,10
+6/23/2026,BYE,RPRAY,Renaissance Park,TRUE,,0,,,,,,,,,,,,0
+6/23/2026,2026 Brookstone at Silverton,SILV,Silverton,TRUE,407,1,1,0,0,BROOK,Brookstone,FALSE,105,2,0,1,0,302
+6/23/2026,2026 Riverwood at Summerfield North,RVWD,Riverwood,FALSE,297,1,1,0,0,SMFLD,Summerfield North,TRUE,194,2,0,1,0,103
+6/23/2026,2026 Kitts Creek at SM Sea Dragons,KITT,Kitts Creek,FALSE,294,1,1,0,0,SMSD,Scotts Mill,TRUE,220,2,0,1,0,74
+6/23/2026,2026 Bedford Sharks at Springdale,SPRG,Springdale,TRUE,220,1,1,0,0,BAFR,Bedford at Falls River,FALSE,154,2,0,1,0,66
+6/23/2026,2026 CSC Swim Team at Sunset Ridge,CARY,Cary,FALSE,345,1,1,0,0,SSR,Sunset Ridge,TRUE,164,2,0,1,0,181
+6/23/2026,2026 Hedingham Sharks at Southall,HEDI,Hedingham,FALSE,317,1,1,0,0,SSRC,Southall,TRUE,188,2,0,1,0,129
+6/23/2026,2026 Breckenridge at Sweetwater,BBDST,Breckenridge,FALSE,301,1,1,0,0,SWSF,Sweetwater,TRUE,123,2,0,1,0,178
+6/23/2026,2026 CV Hammerheads at TCC,TCC,TCC,TRUE,363,1,1,0,0,CARP,Carpenter Village,FALSE,146,2,0,1,0,217
+6/23/2026,2026 Preston Village at Woodcreek,WCWC,WoodCreek,TRUE,314,1,1,0,0,PV,Preston Village,FALSE,200,2,0,1,0,114
+6/23/2026,2026 Hammerheads at Weatherstone Sha,HHH,Haddon Hall,FALSE,248,1,1,0,0,WES,Weatherstone,TRUE,242,2,0,1,0,6
+6/23/2026,2026 Holly Glen at Weldon Ridge,WRIDG,Weldon Ridge,TRUE,283,1,1,0,0,HGHAM,Holly Glen,FALSE,226,2,0,1,0,57
+6/23/2026,2026 Planters Walk at Zebulon,PWST,Planter's Walk,FALSE,321,1,1,0,0,ZCC,Zebulon,TRUE,189,2,0,1,0,132
+,,,,,,,,,,,,,,,,,,4068
+,,,,,,,,,,,,,,,,,,
+6/30/2026,2026 Scottish Hills at Seven Oaks,7OAK,Seven Oaks,TRUE,290,1,1,0,0,SHRC,Scottish Hills,FALSE,224,2,0,1,0,66
+6/30/2026,2026 The Reserve at Arbor Creek Swim,RES,The Reserve,FALSE,280.5,1,1,0,0,AC,Arbor Creek,TRUE,185.5,2,0,1,0,95
+6/30/2026,2026 Clubworx at Amberly,AMBER,Amberly,TRUE,266.5,1,1,0,0,CW,Clubworx,FALSE,247.5,2,0,1,0,19
+6/30/2026,2026 Cary Park at Apex Breakers,CPSD,Cary Park,FALSE,309,1,1,0,0,APEX,Apex,TRUE,194,2,0,1,0,115
+6/30/2026,2026 University Club at Brier Creek CC,UCLUB,University Club,FALSE,288,1,1,0,0,BCCC,Brier Creek,TRUE,217,2,0,1,0,71
+6/30/2026,2026 Devereaux at Breckenridge,DEVER,Devereaux,FALSE,275,1,1,0,0,BBDST,Breckenridge,TRUE,188,2,0,1,0,87
+6/30/2026,2026 Renaissance Park at Brighton Forest,BRFO,Brighton Forest,TRUE,320,1,1,0,0,RPRAY,Renaissance Park,FALSE,146,2,0,1,0,174
+6/30/2026,2026 Park Village at Bentwinds Barrac,PARKV,Park Village,FALSE,340,1,1,0,0,BWBAR,Bentwinds,TRUE,174,2,0,1,0,166
+6/30/2026,2026 Hawthorne at Banbury Woods,BWHL,Banbury Woods & Hunters Landing,TRUE,265,1,1,0,0,HAW,Hawthorne,FALSE,186,2,0,1,0,79
+6/30/2026,2026 Eagle Ridge at CV Hammerheads,ERST,Eagle Ridge,FALSE,301,1,1,0,0,CARP,Carpenter Village,TRUE,211,2,0,1,0,90
+6/30/2026,2026 Wellington Park at Crooked Creek,WLLPK,Wellington Park,FALSE,221,1,1,0,0,CC,Crooked Creek,TRUE,167,2,0,1,0,54
+6/30/2026,2026 Black Horse Run at Crabtree,CRAB,Crabtree,TRUE,315,1,1,0,0,BHR,Black Horse Run,FALSE,189,2,0,1,0,126
+6/30/2026,2026 Planters Walk at Coachmans Trail,PWST,Planter's Walk,FALSE,278,1,1,0,0,CTSWI,Coachman's Trail,TRUE,224,2,0,1,0,54
+6/30/2026,2026 Heritage Betas at DT Typhoons,DTTYP,Durant Trails,TRUE,259,1,1,0,0,HWFB,Heritage of Wake Forest,FALSE,253,2,0,1,0,6
+6/30/2026,2026 Preston Village at Dutchman Downs,DUTCH,Dutchman Downs,TRUE,385.5,1,1,0,0,PV,Preston Village,FALSE,119.5,2,0,1,0,266
+6/30/2026,2026 Greystone at Granite Falls,GRY,Greystone,FALSE,301.5,1,1,0,0,GFG,Granite Falls,TRUE,212.5,2,0,1,0,89
+6/30/2026,2026 Charleston Villg at Glenridge,GLEN,Glenridge,TRUE,266,1,1,0,0,CVC,Charleston Village,FALSE,213,2,0,1,0,53
+6/30/2026,2026 Lakepark at Greenway Club,LPK,Lake Park,FALSE,282,1,1,0,0,GWC,Greenway Club,TRUE,226,2,0,1,0,56
+6/30/2026,BYE,HARM,Harmony,TRUE,,0,,,,,,,,,,,,0
+6/30/2026,2026 Stonebridge at Hedingham Sharks,STONE,Stonebridge,FALSE,303,1,1,0,0,HEDI,Hedingham,TRUE,210,2,0,1,0,93
+6/30/2026,2026 Northbrook at Harrington Grove,NBK,Northbrook,FALSE,274,1,1,0,0,HG,Harrington Grove,TRUE,231,2,0,1,0,43
+6/30/2026,2026 Kitts Creek at Holly Glen,KITT,Kitts Creek,FALSE,281,1,1,0,0,HGHAM,Holly Glen,TRUE,232,2,0,1,0,49
+6/30/2026,2026 Bella Casa at Hammerheads,BELL,Bella Casa,FALSE,260,1,1,0,0,HHH,Haddon Hall,TRUE,251,2,0,1,0,9
+6/30/2026,2026 Hasentree at Lakemont,LKMT,Lakemont,TRUE,259,1,1,0,0,HTHHS,Hasentree,FALSE,245,2,0,1,0,14
+6/30/2026,2026 Olive Chapel at Lochmere,LOCH,Lochmere,TRUE,297,1,1,0,0,OCSTC,Olive Chapel,FALSE,211,2,0,1,0,86
+6/30/2026,2026 Weatherstone Sha at Life Time Fitness Cary,LTFC,Life Time Fitness Cary,TRUE,274,1,1,0,0,WES,Weatherstone,FALSE,221,2,0,1,0,53
+6/30/2026,2026 Southall at Lifetime Raleigh,LTRAL,Lifetime Raleigh,TRUE,294,1,1,0,0,SSRC,Southall,FALSE,216,2,0,1,0,78
+6/30/2026,2026 CSC Swim Team at North Hills,CARY,Cary,FALSE,328,1,1,0,0,NH,North Hills,TRUE,182,2,0,1,0,146
+6/30/2026,2026 Wood Valley at North Raleigh,NRSC,North Raleigh,TRUE,269,1,1,0,0,WDVLY,Wood Valley,FALSE,240,2,0,1,0,29
+6/30/2026,2026 Kildaire Farms at Park at West Lake,KILD,Kildaire Farms,FALSE,268,1,1,0,0,PAWL,Park at West Lake,TRUE,235,2,0,1,0,33
+6/30/2026,2026 Springdale at Quail Hollow,SPRG,Springdale,FALSE,324,1,1,0,0,QHSC,Quail Hollow,TRUE,190,2,0,1,0,134
+6/30/2026,BYE,RRC,Raleigh Racquet,TRUE,,0,,,,,,,,,,,,0
+6/30/2026,2026 Silverton at Regency Riptides,SILV,Silverton,FALSE,355,1,1,0,0,REG,Regency,TRUE,150,2,0,1,0,205
+6/30/2026,2026 Bedford Sharks at Riverwood,RVWD,Riverwood,TRUE,292,1,1,0,0,BAFR,Bedford at Falls River,FALSE,211,2,0,1,0,81
+6/30/2026,2026 Alligators at SV Killer Whales,SHEP,Shepherds Vineyard,TRUE,268,1,1,0,0,ABB,Abbington,FALSE,236,2,0,1,0,32
+6/30/2026,2026 Oak Park at Summerfield North,SMFLD,Summerfield North,TRUE,287,1,1,0,0,OPK,Oak Park,FALSE,216,2,0,1,0,71
+6/30/2026,2026 TCC at SM Sea Dragons,TCC,TCC,FALSE,269.5,1,1,0,0,SMSD,Scotts Mill,TRUE,238.5,2,0,1,0,31
+6/30/2026,2026 Medfield Pool at Sunset Ridge,MARC,Medfield,FALSE,262,1,1,0,0,SSR,Sunset Ridge,TRUE,250,2,0,1,0,12
+6/30/2026,2026 Garner at Sweetwater,GAR,Garner,FALSE,411,1,1,0,0,SWSF,Sweetwater,TRUE,76,2,0,1,0,335
+6/30/2026,2026 Manchester at Wendell,WAVES,Wendell,TRUE,308,1,1,0,0,MSRC,Manchester,FALSE,196,2,0,1,0,112
+6/30/2026,2026 Prestonwood at Woodcreek,WCWC,WoodCreek,TRUE,281,1,1,0,0,PWOOD,Prestonwood,FALSE,226,2,0,1,0,55
+6/30/2026,2026 Highcroft at Walden Creek,HHST,Highcroft,FALSE,263,1,1,0,0,WDCR,Walden Creek,TRUE,240,2,0,1,0,23
+6/30/2026,2026 Brookstone at Wellsley,WELLS,Wellsley,TRUE,392,1,1,0,0,BROOK,Brookstone,FALSE,112,2,0,1,0,280
+6/30/2026,2026 Oxxford Hunt at Weldon Ridge,WRIDG,Weldon Ridge,TRUE,257.5,1,1,0,0,OXH,Oxxford Hunt,FALSE,229.5,2,0,1,0,28
+6/30/2026,2026 Meredith Townes at Zebulon,ZCC,Zebulon,TRUE,252,1,1,0,0,MT,Meredith Townes,FALSE,242,2,0,1,0,10
+,,,,,,,,,,,,,,,,,,3708
+,,,,,,,,,,,,,,,,,,
+7/7/2026,2026 North Hills at Seven Oaks,7OAK,Seven Oaks,TRUE,147,1,1,0,0,NH,North Hills,FALSE,47,2,0,1,0,100
+7/7/2026,2026 Heritage Betas at Bedford Sharks,BAFR,Bedford at Falls River,TRUE,186,1,1,0,0,HWFB,Heritage of Wake Forest,FALSE,106,2,0,1,0,80
+7/7/2026,2026 Amberly at Brookstone,AMBER,Amberly,FALSE,99,1,1,0,0,BROOK,Brookstone,TRUE,9,2,0,1,0,90
+7/7/2026,2026 SM Sea Dragons at Bentwinds Barrac,SMSD,Scotts Mill,FALSE,184,1,1,0,0,BWBAR,Bentwinds,TRUE,172,2,0,1,0,12
+7/7/2026,2026 Black Horse Run at Banbury Woods,BWHL,Banbury Woods & Hunters Landing,TRUE,245,1,1,0,0,BHR,Black Horse Run,FALSE,239,2,0,1,0,6
+7/7/2026,2026 Scottish Hills at CSC Swim Team,CARY,Cary,TRUE,44,1,0,0,1,SHRC,Scottish Hills,FALSE,24,1,0,0,1,20
+7/7/2026,2026 Brighton Forest at Crooked Creek,BRFO,Brighton Forest,FALSE,89,1,0,0,1,CC,Crooked Creek,TRUE,61,1,0,0,1,28
+7/7/2026,2026 Sunset Ridge at Cary Park,CPSD,Cary Park,TRUE,336,1,1,0,0,SSR,Sunset Ridge,FALSE,160,2,0,1,0,176
+7/7/2026,2026 Arbor Creek Swim at Charleston Villg,CVC,Charleston Village,TRUE,78,1,0,0,1,AC,Arbor Creek,FALSE,57,1,0,0,1,21
+7/7/2026,2026 Wellsley at Clubworx,CW,Clubworx,TRUE,111,1,1,0,0,WELLS,Wellsley,FALSE,74,2,0,1,0,37
+7/7/2026,2026 Kildaire Farms at Eagle Ridge,ERST,Eagle Ridge,TRUE,204,1,1,0,0,KILD,Kildaire Farms,FALSE,170,2,0,1,0,34
+7/7/2026,2026 Wellington Park at Garner,GAR,Garner,TRUE,120,1,0,0,1,WLLPK,Wellington Park,FALSE,110,1,0,0,1,10
+7/7/2026,2026 Brier Creek CC at Granite Falls,GFG,Granite Falls,TRUE,298.5,1,1,0,0,BCCC,Brier Creek,FALSE,215.5,2,0,1,0,83
+7/7/2026,2026 University Club at Greystone,UCLUB,University Club,FALSE,130,1,0,0,1,GRY,Greystone,TRUE,82,1,0,0,1,48
+7/7/2026,2026 Devereaux at Harmony,DEVER,Devereaux,FALSE,35,1,0,0,1,HARM,Harmony,TRUE,33,1,0,0,1,2
+7/7/2026,2026 Hammerheads at Holly Glen,HGHAM,Holly Glen,TRUE,75,1,0,0,1,HHH,Haddon Hall,FALSE,47,1,0,0,1,28
+7/7/2026,2026 Regency Riptides at Highcroft,HHST,Highcroft,TRUE,56,1,1,0,0,REG,Regency,FALSE,25,2,0,1,0,31
+7/7/2026,2026 Southall at Hasentree,HTHHS,Hasentree,TRUE,140,2,0,1,0,SSRC,Southall,FALSE,90,1,1,0,0,50
+7/7/2026,2026 Bella Casa at Kitts Creek,KITT,Kitts Creek,TRUE,298,1,1,0,0,BELL,Bella Casa,FALSE,213,2,0,1,0,85
+7/7/2026,2026 Wood Valley at Lakepark,LPK,Lake Park,TRUE,188,1,1,0,0,WDVLY,Wood Valley,FALSE,184,2,0,1,0,4
+7/7/2026,2026 Lakemont at Lifetime Raleigh,LTRAL,Lifetime Raleigh,TRUE,247,1,1,0,0,LKMT,Lakemont,FALSE,231,2,0,1,0,16
+7/7/2026,2026 Apex Breakers at Medfield Pool,APEX,Apex,FALSE,53,1,1,0,0,MARC,Medfield,TRUE,15,2,0,1,0,38
+7/7/2026,2026 Crabtree at Manchester,CRAB,Crabtree,FALSE,158,1,1,0,0,MSRC,Manchester,TRUE,103,2,0,1,0,55
+7/7/2026,2026 Quail Hollow at Northbrook,NBK,Northbrook,TRUE,110,1,0,0,1,QHSC,Quail Hollow,FALSE,83,1,0,0,1,27
+7/7/2026,2026 Greenway Club at North Raleigh,NRSC,North Raleigh,TRUE,187,1,1,0,0,GWC,Greenway Club,FALSE,128,2,0,1,0,59
+7/7/2026,2026 Prestonwood at Olive Chapel,PWOOD,Prestonwood,FALSE,20,1,0,0,1,OCSTC,Olive Chapel,TRUE,10,1,0,0,1,10
+7/7/2026,2026 Hedingham Sharks at Oak Park,HEDI,Hedingham,FALSE,67,1,0,0,1,OPK,Oak Park,TRUE,64,1,0,0,1,3
+7/7/2026,2026 Life Time Fitness Cary at Oxxford Hunt,OXH,Oxxford Hunt,TRUE,10,1,0,0,1,LTFC,Life Time Fitness Cary,FALSE,10,1,0,0,1,0
+7/7/2026,2026 TCC at Park Village,PARKV,Park Village,TRUE,20,1,0,0,1,TCC,TCC,FALSE,10,1,0,0,1,10
+7/7/2026,2026 CV Hammerheads at Park at West Lake,CARP,Carpenter Village,FALSE,145,1,0,0,1,PAWL,Park at West Lake,TRUE,85,1,0,0,1,60
+7/7/2026,2026 Alligators at Preston Village,ABB,Abbington,FALSE,47,1,0,0,1,PV,Preston Village,TRUE,16,1,0,0,1,31
+7/7/2026,2026 Hawthorne at Planters Walk,PWST,Planter's Walk,TRUE,219.5,1,1,0,0,HAW,Hawthorne,FALSE,141.5,2,0,1,0,78
+7/7/2026,2026 Meredith Townes at Raleigh Racquet,RRC,Raleigh Racquet,TRUE,32,1,1,0,0,MT,Meredith Townes,FALSE,31,2,0,1,0,1
+7/7/2026,2026 Glenridge at The Reserve,GLEN,Glenridge,FALSE,104,1,0,0,1,RES,The Reserve,TRUE,64,1,0,0,1,40
+7/7/2026,2026 Sweetwater at Renaissance Park,RPRAY,Renaissance Park,TRUE,241,1,1,0,0,SWSF,Sweetwater,FALSE,78,2,0,1,0,163
+7/7/2026,2026 DT Typhoons at Riverwood,RVWD,Riverwood,TRUE,222,1,1,0,0,DTTYP,Durant Trails,FALSE,148,2,0,1,0,74
+7/7/2026,2026 Dutchman Downs at SV Killer Whales,DUTCH,Dutchman Downs,FALSE,61,1,0,0,1,SHEP,Shepherds Vineyard,TRUE,34,1,0,0,1,27
+7/7/2026,2026 Walden Creek at Silverton,SILV,Silverton,TRUE,399,1,1,0,0,WDCR,Walden Creek,FALSE,111,2,0,1,0,288
+7/7/2026,2026 Harrington Grove at Springdale,SPRG,Springdale,TRUE,42,1,0,0,1,HG,Harrington Grove,FALSE,30,1,0,0,1,12
+7/7/2026,2026 Summerfield North at Stonebridge,STONE,Stonebridge,TRUE,69,1,0,0,1,SMFLD,Summerfield North,FALSE,53,1,0,0,1,16
+7/7/2026,2026 Coachmans Trail at Wendell,WAVES,Wendell,TRUE,169,1,1,0,0,CTSWI,Coachman's Trail,FALSE,108,2,0,1,0,61
+7/7/2026,2026 Lochmere at Woodcreek,WCWC,WoodCreek,TRUE,56,1,0,0,1,LOCH,Lochmere,FALSE,48,1,0,0,1,8
+7/7/2026,2026 Weatherstone Sha at Weldon Ridge,WRIDG,Weldon Ridge,TRUE,197,1,1,0,0,WES,Weatherstone,FALSE,79,2,0,1,0,118
+,,,,,,,,,,,,,,,,,,2140
+,,,,,,,,,,,,,,,,,,
+7/14/2026,2026 Woodcreek at Alligators,ABB,Abbington,TRUE,261.5,1,1,0,0,WCWC,WoodCreek,FALSE,252.5,2,0,1,0,9
+7/14/2026,2026 Silverton at Amberly,AMBER,Amberly,TRUE,269,1,1,0,0,SILV,Silverton,FALSE,245,2,0,1,0,24
+7/14/2026,2026 SV Killer Whales at Apex Breakers,APEX,Apex,TRUE,298,1,1,0,0,SHEP,Shepherds Vineyard,FALSE,216,2,0,1,0,82
+7/14/2026,2026 North Raleigh at Brier Creek CC,BCCC,Brier Creek,TRUE,324,1,1,0,0,NRSC,North Raleigh,FALSE,190,2,0,1,0,134
+7/14/2026,2026 SM Sea Dragons at Bella Casa,SMSD,Scotts Mill,FALSE,269,1,1,0,0,BELL,Bella Casa,TRUE,240,2,0,1,0,29
+7/14/2026,2026 Wendell at Black Horse Run,WAVES,Wendell,FALSE,279,1,1,0,0,BHR,Black Horse Run,TRUE,224,2,0,1,0,55
+7/14/2026,2026 Renaissance Park at Breckenridge,RPRAY,Renaissance Park,FALSE,232,1,1,0,0,BBDST,Breckenridge,TRUE,205,2,0,1,0,27
+7/14/2026,2026 Arbor Creek Swim at Brighton Forest,BRFO,Brighton Forest,TRUE,266,1,1,0,0,AC,Arbor Creek,FALSE,166,2,0,1,0,100
+7/14/2026,2026 Park Village at CV Hammerheads,CARP,Carpenter Village,TRUE,262,1,1,0,0,PARKV,Park Village,FALSE,250,2,0,1,0,12
+7/14/2026,2026 Cary Park at CSC Swim Team,CARY,Cary,TRUE,313,1,1,0,0,CPSD,Cary Park,FALSE,201,2,0,1,0,112
+7/14/2026,2026 Lifetime Raleigh at Crabtree,LTRAL,Lifetime Raleigh,FALSE,318,1,1,0,0,CRAB,Crabtree,TRUE,178,2,0,1,0,140
+7/14/2026,2026 Crooked Creek at Charleston Villg,CVC,Charleston Village,TRUE,332,1,1,0,0,CC,Crooked Creek,FALSE,161,2,0,1,0,171
+7/14/2026,2026 Garner at Devereaux,GAR,Garner,FALSE,282,1,1,0,0,DEVER,Devereaux,TRUE,220,2,0,1,0,62
+7/14/2026,2026 Medfield Pool at Dutchman Downs,DUTCH,Dutchman Downs,TRUE,316.5,1,1,0,0,MARC,Medfield,FALSE,191.5,2,0,1,0,125
+7/14/2026,2026 Eagle Ridge at Glenridge,GLEN,Glenridge,TRUE,249,1,1,0,0,ERST,Eagle Ridge,FALSE,242,2,0,1,0,7
+7/14/2026,2026 North Hills at Greystone,GRY,Greystone,TRUE,325,1,1,0,0,NH,North Hills,FALSE,188,2,0,1,0,137
+7/14/2026,2026 Granite Falls at Greenway Club,GFG,Granite Falls,FALSE,302,1,1,0,0,GWC,Greenway Club,TRUE,212,2,0,1,0,90
+7/14/2026,2026 Zebulon at Hawthorne,ZCC,Zebulon,FALSE,293,1,1,0,0,HAW,Hawthorne,TRUE,209,2,0,1,0,84
+7/14/2026,2026 Hasentree at Hedingham Sharks,HEDI,Hedingham,TRUE,276,1,1,0,0,HTHHS,Hasentree,FALSE,223,2,0,1,0,53
+7/14/2026,2026 Bedford Sharks at Harrington Grove,BAFR,Bedford at Falls River,FALSE,287.5,1,1,0,0,HG,Harrington Grove,TRUE,225.5,2,0,1,0,62
+7/14/2026,2026 Weldon Ridge at Hammerheads,WRIDG,Weldon Ridge,FALSE,286.5,1,1,0,0,HHH,Haddon Hall,TRUE,217.5,2,0,1,0,69
+7/14/2026,2026 Springdale at Heritage Betas,SPRG,Springdale,FALSE,321.5,1,1,0,0,HWFB,Heritage of Wake Forest,TRUE,192.5,2,0,1,0,129
+7/14/2026,2026 The Reserve at Kildaire Farms,KILD,Kildaire Farms,TRUE,269.5,1,1,0,0,RES,The Reserve,FALSE,243.5,2,0,1,0,26
+7/14/2026,2026 Bentwinds Barrac at Kitts Creek,KITT,Kitts Creek,TRUE,332,1,1,0,0,BWBAR,Bentwinds,FALSE,182,2,0,1,0,150
+7/14/2026,2026 Manchester at Lakemont,LKMT,Lakemont,TRUE,265,1,1,0,0,MSRC,Manchester,FALSE,243,2,0,1,0,22
+7/14/2026,2026 Highcroft at Life Time Fitness Cary,LTFC,Life Time Fitness Cary,TRUE,292,1,1,0,0,HHST,Highcroft,FALSE,222,2,0,1,0,70
+7/14/2026,2026 Banbury Woods at Meredith Townes,BWHL,Banbury Woods & Hunters Landing,FALSE,273,1,1,0,0,MT,Meredith Townes,TRUE,220,2,0,1,0,53
+7/14/2026,2026 Lochmere at Preston Village,LOCH,Lochmere,FALSE,327,1,1,0,0,PV,Preston Village,TRUE,187,2,0,1,0,140
+7/14/2026,2026 Clubworx at Prestonwood,PWOOD,Prestonwood,TRUE,267,1,1,0,0,CW,Clubworx,FALSE,247,2,0,1,0,20
+7/14/2026,2026 Lakepark at Quail Hollow,LPK,Lake Park,FALSE,359,1,1,0,0,QHSC,Quail Hollow,TRUE,150,2,0,1,0,209
+7/14/2026,2026 Coachmans Trail at Raleigh Racquet,CTSWI,Coachman's Trail,FALSE,307,1,1,0,0,RRC,Raleigh Racquet,TRUE,183,2,0,1,0,124
+7/14/2026,2026 Oxxford Hunt at Regency Riptides,OXH,Oxxford Hunt,FALSE,290,1,1,0,0,REG,Regency,TRUE,210,2,0,1,0,80
+7/14/2026,2026 Sunset Ridge at Scottish Hills,SHRC,Scottish Hills,TRUE,354,1,1,0,0,SSR,Sunset Ridge,FALSE,160,2,0,1,0,194
+7/14/2026,2026 DT Typhoons at Summerfield North,DTTYP,Durant Trails,FALSE,261,1,1,0,0,SMFLD,Summerfield North,TRUE,243,2,0,1,0,18
+7/14/2026,2026 Oak Park at Southall,SSRC,Southall,TRUE,280,1,1,0,0,OPK,Oak Park,FALSE,232,2,0,1,0,48
+7/14/2026,2026 Riverwood at Stonebridge,RVWD,Riverwood,FALSE,279,1,1,0,0,STONE,Stonebridge,TRUE,234,2,0,1,0,45
+7/14/2026,BYE,SWSF,Sweetwater,TRUE,,0,,,,,,,,,,,,0
+7/14/2026,2026 Park at West Lake at TCC,TCC,TCC,TRUE,372,1,1,0,0,PAWL,Park at West Lake,FALSE,134,2,0,1,0,238
+7/14/2026,2026 Seven Oaks at University Club,7OAK,Seven Oaks,FALSE,327,1,1,0,0,UCLUB,University Club,TRUE,187,2,0,1,0,140
+7/14/2026,2026 Brookstone at Walden Creek,WDCR,Walden Creek,TRUE,327,1,1,0,0,BROOK,Brookstone,FALSE,158,2,0,1,0,169
+7/14/2026,2026 Northbrook at Wood Valley,WDVLY,Wood Valley,TRUE,297,1,1,0,0,NBK,Northbrook,FALSE,213,2,0,1,0,84
+7/14/2026,2026 Olive Chapel at Wellsley,OCSTC,Olive Chapel,FALSE,285,1,1,0,0,WELLS,Wellsley,TRUE,229,2,0,1,0,56
+7/14/2026,2026 Holly Glen at Weatherstone Sha,HGHAM,Holly Glen,FALSE,301,1,1,0,0,WES,Weatherstone,TRUE,207,2,0,1,0,94
+7/14/2026,2026 Harmony at Wellington Park,WLLPK,Wellington Park,TRUE,269,1,1,0,0,HARM,Harmony,FALSE,198,2,0,1,0,71
+,,,,,,,,,,,,,,,,,,3764
