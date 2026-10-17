@@ -46,6 +46,7 @@ To schedule year **N**, `data/N/input/` holds:
 |---|---|---|
 | `north_ranks.csv`, `south_ranks.csv` | `tools/legacy_extract_rank.py` run on the **N-1** workbook | Team rank order per league (`rank,team`) |
 | `team_addresses.csv` | `tools/scrape_team_addresses.py` | Pool address + lat/long per club |
+| `team_distances.csv`, `team_drive_minutes.csv` | `tools/build_team_distances.py` (Google Maps) | Club-to-club road miles / drive minutes matrices |
 | `<N> TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv` | SwimTopia export | Current-season meet results |
 | `<N-1> Dual Meet Summary ... .xlsx` | League spreadsheet | Provenance only — the scheduler reads the CSVs, not the workbook |
 
@@ -62,8 +63,8 @@ details.
 1. Create `data/<year>/` (copy an existing year's folder as a template).
 2. Drop the SwimTopia CSV and prior-year workbook into `data/<year>/input/`
    and fill in `config.yaml`.
-3. Generate `north_ranks.csv` / `south_ranks.csv` and `team_addresses.csv`
-   using the tools below.
+3. Generate `north_ranks.csv` / `south_ranks.csv`, `team_addresses.csv`, and
+   the distance matrices using the tools below.
 4. Run the scheduler pointing at that year.
 5. Fill in `data/<year>/README.md` with run date and commit hash.
 6. Commit inputs, config, and outputs together.
@@ -119,3 +120,33 @@ map snippet falls back to the address text on the page and is flagged in
 Club names on the website differ slightly from the Dual Meet Summary in a few
 cases (e.g. `Lakepark` vs `Lake Park`, `Brier Creek Country Club` vs
 `Brier Creek`), so joining to `*_ranks.csv` needs a small alias map.
+
+### `build_team_distances.py` — road distance matrices via Google Maps
+
+Calls the Google **Routes API** (`computeRouteMatrix`) for every club pair in
+`team_addresses.csv` and writes two square CSVs (clubs as first row and first
+column, diagonal = 0):
+
+- `team_distances.csv` – driving distance in miles (1 decimal)
+- `team_drive_minutes.csv` – typical driving time in minutes
+
+```bash
+export GOOGLE_MAPS_API_KEY=...        # never commit this
+python src/tools/build_team_distances.py data/2026/input/team_addresses.csv --dry-run
+python src/tools/build_team_distances.py data/2026/input/team_addresses.csv
+```
+
+- Clubs are located by lat/long when present, else by address string.
+- Requests are batched 10×10; 88 clubs → ~81 requests / ~7,700 billed
+  elements, inside Google's monthly free tier. (Larger blocks caused the API
+  to return truncated/cancelled elements.)
+- Raw results are cached in `team_distances_cache.json` beside the output, so
+  re-running only fetches pairs not already cached, and transient failures
+  are retried automatically. Commit the cache along with the CSVs.
+  with the CSVs.
+- Exits 2 (and leaves blanks) if Google returns no route for a pair.
+
+To get a key: Google Cloud Console → APIs & Services → Library → enable
+**Routes API** → Credentials → Create API key. Restrict it to the Routes API.
+(The older standalone "Distance Matrix API" is legacy and no longer offered
+to new projects.)
