@@ -1,0 +1,89 @@
+league,new_rank,prev_rank,change,team,prev_division,div_record,ovr_record,div_pd,ovr_pd,div_winner,div_loser,m_travel_distance,m_travel_minutes,rating,c_previous_rank,c_division_record,c_overall_record,c_division_winner,c_division_loser,c_division_point_diff,c_overall_point_diff,c_travel_distance,c_travel_minutes,adjustments
+North,1,1,0,Seven Oaks,1,3-0,6-0,398,946,1,0,,,1080.0,950.0,0.0,90.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+North,2,2,0,University Club,1,2-1,5-1,233,637,0,0,,,985.0,925.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+North,3,5,2,North Hills,2,3-0,5-1,306,309,1,0,,,950.0,850.0,0.0,60.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+North,4,6,2,Brier Creek,2,2-1,3-3,104,42,0,0,,,825.0,825.0,0.0,0.0,0.0,-0.0,0.0,0.0,0.0,0.0,moved up — HTH: Brier Creek beat Greystone by 6 (rating gap 45)
+North,5,3,-2,Greystone,1,1-2,2-4,-266,-247,0,0,,,870.0,900.0,-0.0,-30.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,moved down — HTH: Brier Creek beat Greystone by 6 (rating gap 45)
+North,6,10,4,Bedford at Falls River,3,2-1,5-1,49,494,0,0,,,785.0,725.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,moved up — HTH: Bedford at Falls River beat Wood Valley by 22 (rating gap 15)
+North,7,7,0,Wood Valley,2,1-2,3-3,2,33,0,0,,,800.0,800.0,-0.0,0.0,0.0,-0.0,0.0,0.0,0.0,0.0,moved down — HTH: Bedford at Falls River beat Wood Valley by 22 (rating gap 15)
+North,8,4,-4,Granite Falls,1,0-3,1-5,-365,-446,0,1,,,755.0,875.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+North,9,15,6,North Raleigh,4,3-0,6-0,413,873,1,0,,,730.0,600.0,0.0,90.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved up — HTH: North Raleigh beat Northbrook by 50 (rating gap 15)
+North,10,12,2,Northbrook,3,2-1,4-2,78,327,1,0,,,745.0,675.0,0.0,30.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved down — HTH: North Raleigh beat Northbrook by 50 (rating gap 15)
+North,11,11,0,Harrington Grove,3,1-1-1,2-3-1,-83,-97,0,0,,,685.0,700.0,0.0,-15.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,
+North,12,9,-3,Greenway Club,3,0-2-1,2-3-1,-44,84.3333,0,1,,,675.0,750.0,-0.0,-15.0,0.0,-60.0,-0.0,0.0,0.0,0.0,
+North,13,8,-5,Quail Hollow,2,0-3,1-5,-412,-573.333,0,1,,,655.0,775.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+North,14,14,0,Riverwood,4,2-1,4-2,327,610,0,0,,,655.0,625.0,0.0,30.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+North,15,19,4,Hasentree,5,2-1,5-1,10,65,0,0,,,560.0,500.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+North,16,21,5,Lake Park,6,3-0,5-1,178.333,368.333,1,0,,,550.0,450.0,0.0,60.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+North,17,20,3,Stonebridge,5,3-0,4-2,305.333,231.333,1,0,,,545.0,475.0,0.0,30.0,40.0,-0.0,0.0,0.0,0.0,0.0,"moved up — COPD: Stonebridge over Springdale by net 304.333 via Hasentree, Manchester, Meredith Townes (rating gap 0)"
+North,18,18,0,Manchester,5,1-2,2-4,-135.333,-470.333,0,0,,,495.0,525.0,-0.0,-30.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,"moved up — COPD: Manchester over Black Horse Run by net 269 via North Raleigh, Springdale (rating gap 5) | moved up — HTH: Manchester beat Springdale by 70 (rating gap 50)"
+North,19,16,-3,Springdale,4,1-2,2-4,-51,-50,0,0,,,545.0,575.0,-0.0,-30.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,"moved down — COPD: Stonebridge over Springdale by net 304.333 via Hasentree, Manchester, Meredith Townes (rating gap 0) | moved down — HTH: Manchester beat Springdale by 70 (rating gap 50)"
+North,20,13,-7,Black Horse Run,4,0-3,0-6,-689,-1426,0,1,,,500.0,650.0,-0.0,-90.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,"moved down — COPD: Manchester over Black Horse Run by net 269 via North Raleigh, Springdale (rating gap 5)"
+North,21,23,2,Heritage of Wake Forest,6,2-1,5-1,281,663,0,0,,,460.0,400.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+North,22,17,-5,Meredith Townes,5,0-3,0-6,-180,-670,0,1,,,400.0,550.0,-0.0,-90.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+North,23,22,-1,Summerfield North,6,1-2,2-4,-92.6667,-133.667,0,0,,,395.0,425.0,-0.0,-30.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,
+North,24,30,6,Durant Trails,8,3-0,6-0,182.333,640.333,1,0,,,355.0,225.0,0.0,90.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+North,25,28,3,Oak Park,7,3-0,3-3,324.667,206.667,1,0,,,315.0,275.0,0.0,0.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved up — HTH: Oak Park beat Hedingham by 142 (rating gap 10) | moved up — HTH: Oak Park beat Crabtree by 45.6667 (rating gap 5)
+North,26,25,-1,Crabtree,7,2-1,2-4,163.333,-90.6667,0,0,,,320.0,350.0,0.0,-30.0,0.0,-0.0,0.0,-0.0,0.0,0.0,moved up — HTH: Crabtree beat Hedingham by 60 (rating gap 5) | moved down — HTH: Oak Park beat Crabtree by 45.6667 (rating gap 5)
+North,27,26,-1,Hedingham,7,1-2,3-3,-140,-212,0,0,,,325.0,325.0,-0.0,0.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,moved down — HTH: Crabtree beat Hedingham by 60 (rating gap 5) | moved down — HTH: Oak Park beat Hedingham by 142 (rating gap 10)
+North,28,24,-4,Lakemont,6,0-3,2-4,-366.667,-221.667,0,1,,,285.0,375.0,-0.0,-30.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+North,29,29,0,Lifetime Raleigh,8,2-1,4-2,-12.6667,24.3333,0,0,,,280.0,250.0,0.0,30.0,0.0,-0.0,-0.0,0.0,0.0,0.0,
+North,30,31,1,Jewish Community Center,8,1-2,4-2,98.3333,670.333,0,0,,,230.0,200.0,-0.0,30.0,0.0,-0.0,0.0,0.0,0.0,0.0,moved up — HTH: Jewish Community Center beat Wendell by 197 (rating gap 20)
+North,31,33,2,Wendell,9,2-0,5-1,292,746,1,0,,,250.0,150.0,0.0,60.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved down — HTH: Jewish Community Center beat Wendell by 197 (rating gap 20)
+North,32,35,3,Banbury Woods & Hunters Landing,9,1-1,5-1,-113,218,0,0,,,160.0,100.0,0.0,60.0,0.0,-0.0,-0.0,0.0,0.0,0.0,
+North,33,27,-6,Coachman's Trail,7,0-3,0-6,-348,-699,0,1,,,150.0,300.0,-0.0,-90.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+North,34,34,0,Southall,9,0-2,4-2,-179,105,0,1,,,95.0,125.0,-0.0,30.0,0.0,-60.0,-0.0,0.0,0.0,0.0,
+North,35,36,1,Zebulon,10,2-0,2-4,129,-455,1,0,,,85.0,75.0,0.0,-30.0,40.0,-0.0,0.0,-0.0,0.0,0.0,
+North,36,32,-4,Hawthorne,8,0-3,1-5,-268,-347,0,1,,,55.0,175.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+North,37,37,0,Raleigh Racquet,10,1-1,1-5,-30,-526,0,0,,,-10.0,50.0,0.0,-60.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,
+North,38,38,0,Planter's Walk,10,0-2,0-6,-99,-750,0,1,,,-125.0,25.0,-0.0,-90.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,1,5,4,Scottish Hills,2,2-1,5-1,187,310,1,0,,,1250.0,1150.0,0.0,60.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved up — HTH: Scottish Hills beat Prestonwood by 16 (rating gap 15)
+South,2,2,0,Prestonwood,1,3-0,3-3,229,20,1,0,,,1265.0,1225.0,0.0,0.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved down — HTH: Scottish Hills beat Prestonwood by 16 (rating gap 15)
+South,3,1,-2,Cary Park,1,2-1,2-4,42,-403,0,0,,,1220.0,1250.0,0.0,-30.0,0.0,-0.0,0.0,-0.0,0.0,0.0,
+South,4,6,2,Cary,2,2-1,5-1,185,359,0,0,,,1185.0,1125.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+South,5,3,-2,Apex,1,1-2,1-5,-119.667,-406.667,0,0,,,1140.0,1200.0,-0.0,-60.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,
+South,6,8,2,Abbington,2,2-1,5-1,153,294,0,0,,,1135.0,1075.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+South,7,11,4,Medfield,3,3-0,4-2,108,58,1,0,,,1070.0,1000.0,0.0,30.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+South,8,4,-4,Sunset Ridge,1,0-3,1-5,-151.333,-171.333,0,1,,,1055.0,1175.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,9,9,0,Shepherds Vineyard,3,2-1,3-3,84,-16,0,0,,,1050.0,1050.0,0.0,0.0,0.0,-0.0,0.0,-0.0,0.0,0.0,
+South,10,10,0,Walden Creek,3,1-2,3-3,-43,-17,0,0,,,1025.0,1025.0,-0.0,0.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,moved up — HTH: Walden Creek beat Olive Chapel by 50 (rating gap 25)
+South,11,13,2,Olive Chapel,4,3-0,5-1,395,441,1,0,,,1050.0,950.0,0.0,60.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved down — HTH: Walden Creek beat Olive Chapel by 50 (rating gap 25)
+South,12,7,-5,Lochmere,2,0-3,0-6,-525,-716,0,1,,,950.0,1100.0,-0.0,-90.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,13,16,3,Dutchman Downs,4,2-1,5-1,378,802,0,0,,,935.0,875.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+South,14,14,0,Weatherstone,4,1-2,3-3,-245,-247,0,0,,,925.0,925.0,-0.0,0.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,
+South,15,17,2,Brookstone,5,3-0,4-2,137,272,1,0,,,920.0,850.0,0.0,30.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+South,16,12,-4,Silverton,3,0-3,1-5,-149,29,0,1,,,855.0,975.0,-0.0,-60.0,0.0,-60.0,-0.0,0.0,0.0,0.0,
+South,17,24,7,Preston Village,6,3-0,6-0,460.333,997.333,1,0,,,805.0,675.0,0.0,90.0,40.0,-0.0,0.0,0.0,0.0,0.0,"moved up — COPD: Preston Village over WoodCreek by net 117.333 via Haddon Hall, Regency, Wellsley (rating gap 30)"
+South,18,20,2,WoodCreek,5,2-1,5-1,154,497,0,0,,,835.0,775.0,0.0,60.0,0.0,-0.0,0.0,0.0,0.0,0.0,"moved down — COPD: Preston Village over WoodCreek by net 117.333 via Haddon Hall, Regency, Wellsley (rating gap 30)"
+South,19,21,2,Regency,6,1-2,3-3,-61,51,0,0,,,750.0,750.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,0.0,0.0,moved up — COPD: Regency over Scotts Mill by net 155 via Highcroft (rating gap 0) | moved up — HTH: Regency beat Clubworx by 70 (rating gap 20)
+South,20,19,-1,Clubworx,5,1-2,2-4,-90,-203,0,0,,,770.0,800.0,-0.0,-30.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,moved down — HTH: Regency beat Clubworx by 70 (rating gap 20)
+South,21,15,-6,Scotts Mill,4,0-3,0-6,-528,-1061,0,1,,,750.0,900.0,-0.0,-90.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,moved down — COPD: Regency over Scotts Mill by net 155 via Highcroft (rating gap 0)
+South,22,25,3,Twelve Oaks,7,3-0,5-1,244,279,1,0,,,750.0,650.0,0.0,60.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+South,23,18,-5,Highcroft,5,0-3,1-5,-201,-387,0,1,,,705.0,825.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,24,22,-2,Wellsley,6,1-2,1-5,-115.333,-454.333,0,0,,,665.0,725.0,-0.0,-60.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,
+South,25,30,5,Amberly,8,3-0,6-0,358,741,1,0,,,655.0,525.0,0.0,90.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+South,26,23,-3,Haddon Hall,6,1-2,2-4,-284,-397,0,1,,,610.0,700.0,-0.0,-30.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,27,31,4,Bella Casa,8,2-1,4-2,-74.3333,104.667,0,0,,,530.0,500.0,0.0,30.0,0.0,-0.0,-0.0,0.0,0.0,0.0,"moved up — COPD: Bella Casa over Life Time Fitness Cary by net 125.667 via Amberly, Carpenter Village, Oxxford Hunt (rating gap 10) | moved up — COPD: Bella Casa over The Reserve by net 187.667 via Carpenter Village, Oxxford Hunt (rating gap 35) | moved up — HTH: Bella Casa beat Oxxford Hunt by 14.6667 (rating gap 50)"
+South,28,29,1,Oxxford Hunt,8,1-2,4-2,83.3333,223.333,0,0,,,580.0,550.0,-0.0,30.0,0.0,-0.0,0.0,0.0,0.0,0.0,moved down — HTH: Bella Casa beat Oxxford Hunt by 14.6667 (rating gap 50)
+South,29,26,-3,The Reserve,7,1-2,1-5,-15,-411,0,0,,,565.0,625.0,-0.0,-60.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,"moved down — COPD: Bella Casa over The Reserve by net 187.667 via Carpenter Village, Oxxford Hunt (rating gap 35)"
+South,30,33,3,Weldon Ridge,9,3-0,4-2,232,5,1,0,,,520.0,450.0,0.0,30.0,40.0,-0.0,0.0,0.0,0.0,0.0,moved up — COPD: Weldon Ridge over Life Time Fitness Cary by net 92 via Amberly (rating gap 20)
+South,31,27,-4,Life Time Fitness Cary,7,1-2,1-5,-113,-595,0,0,,,540.0,600.0,-0.0,-60.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,"moved down — COPD: Bella Casa over Life Time Fitness Cary by net 125.667 via Amberly, Carpenter Village, Oxxford Hunt (rating gap 10) | moved down — COPD: Weldon Ridge over Life Time Fitness Cary by net 92 via Amberly (rating gap 20)"
+South,32,28,-4,Carpenter Village,7,1-2,1-5,-116,-283,0,1,,,455.0,575.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,33,38,5,Holly Glen,10,3-0,5-0-1,198,521,1,0,,,440.0,325.0,0.0,75.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+South,34,34,0,Park at West Lake,9,2-1,3-3,205,214,0,0,,,425.0,425.0,0.0,0.0,0.0,-0.0,0.0,0.0,0.0,0.0,
+South,35,35,0,Kildaire Farms,9,1-2,2-2-2,-95,10,0,0,,,400.0,400.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,0.0,0.0,
+South,36,32,-4,Brighton Forest,8,0-3,1-4-1,-367,-376,0,1,,,370.0,475.0,-0.0,-45.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,37,39,2,TCC,10,2-1,4-2,133,352,0,0,,,330.0,300.0,0.0,30.0,0.0,-0.0,0.0,0.0,0.0,0.0,moved up — HTH: TCC beat Harmony by 80 (rating gap 20)
+South,38,37,-1,Harmony,10,1-2,3-3,6,27,0,0,,,350.0,350.0,-0.0,0.0,0.0,-0.0,0.0,0.0,0.0,0.0,moved down — HTH: TCC beat Harmony by 80 (rating gap 20)
+South,39,43,4,Kitts Creek,11,3-0,6-0,423,768,1,0,,,330.0,200.0,0.0,90.0,40.0,-0.0,0.0,0.0,0.0,0.0,
+South,40,36,-4,Charleston Village,9,0-3,1-5,-342,-589,0,1,,,255.0,375.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,
+South,41,47,6,Bentwinds,12,2-0,5-0-1,229,823,1,0,,,215.0,100.0,0.0,75.0,40.0,-0.0,0.0,0.0,0.0,0.0,"moved up — COPD: Bentwinds over Glenridge by net 279 via Arbor Creek, Wellington Park (rating gap 10)"
+South,42,40,-2,Park Village,10,0-3,2-4,-337,-423,0,1,,,185.0,275.0,-0.0,-30.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,moved up — HTH: Park Village beat Devereaux by 28 (rating gap 5) | moved up — HTH: Park Village beat Glenridge by 14 (rating gap 40)
+South,43,42,-1,Glenridge,11,2-1,3-3,-14,-9,0,0,,,225.0,225.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,"moved down — COPD: Bentwinds over Glenridge by net 279 via Arbor Creek, Wellington Park (rating gap 10) | moved down — HTH: Park Village beat Glenridge by 14 (rating gap 40)"
+South,44,41,-3,Devereaux,11,1-2,1-5,-52,-428,0,0,,,190.0,250.0,-0.0,-60.0,0.0,-0.0,-0.0,-0.0,0.0,0.0,moved down — HTH: Park Village beat Devereaux by 28 (rating gap 5)
+South,45,46,1,Eagle Ridge,12,1-1,5-1,-92,365,0,0,,,185.0,125.0,0.0,60.0,0.0,-0.0,-0.0,0.0,0.0,0.0,
+South,46,45,-1,Garner,12,0-2,3-3,-137,28,0,1,,,90.0,150.0,-0.0,0.0,0.0,-60.0,-0.0,0.0,0.0,0.0,
+South,47,44,-3,Wellington Park,11,0-3,1-5,-357,-537,0,1,,,55.0,175.0,-0.0,-60.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,"moved up — COPD: Wellington Park over Arbor Creek by net 128 via Bentwinds, Eagle Ridge, Glenridge, Renaissance Park (rating gap 5)"
+South,48,49,1,Arbor Creek,13,2-0,2-4,104,-349,1,0,,,60.0,50.0,0.0,-30.0,40.0,-0.0,0.0,-0.0,0.0,0.0,"moved down — COPD: Wellington Park over Arbor Creek by net 128 via Bentwinds, Eagle Ridge, Glenridge, Renaissance Park (rating gap 5)"
+South,49,48,-1,Crooked Creek,13,1-1,1-5,0,-463,0,0,,,15.0,75.0,0.0,-60.0,0.0,-0.0,0.0,-0.0,0.0,0.0,
+South,50,50,0,Renaissance Park,13,0-2,0-5-1,-104,-528,0,1,,,-110.0,25.0,-0.0,-75.0,0.0,-60.0,-0.0,-0.0,0.0,0.0,

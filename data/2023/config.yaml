@@ -1,1 +1,110 @@
+# 2023 season -> produces proposed 2024 rankings
+# Weights copied from data/2026/config.yaml (tuned on 2026 -> 2027); see README.
 year: 2023
+inputs:
+  north_ranks: north_ranks.csv
+  south_ranks: south_ranks.csv
+  dataclips: 2023 TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv
+  score_overrides: score_overrides.csv
+aliases:
+  12 Oaks Summer Swim Team: Twelve Oaks
+  Abbington Alligators: Abbington
+  Apex Breakers Swim Team: Apex
+  Arbor Creek Swim Club: Arbor Creek
+  Banbury Woods Dolphins: Banbury Woods & Hunters Landing
+  Bedford at Falls River Sharks Swim Team: Bedford at Falls River
+  Bella Casa Barracudas: Bella Casa
+  Bentwinds Barracudas: Bentwinds
+  Brier Creek Country Club: Brier Creek
+  Brighton Forest Silver Fins: Brighton Forest
+  Brookstone Barracudas: Brookstone
+  CT Sharks: Coachman's Trail
+  Carpenter Village Hammerheads: Carpenter Village
+  Cary Park Sea Dragons: Cary Park
+  Cary Swim Club Swim Team: Cary
+  Charleston Village Crocodiles: Charleston Village
+  Clubworx Sharks: Clubworx
+  Devereaux Devil Rays: Devereaux
+  Durant Trails Typhoons Swim Team: Durant Trails
+  Dutchman Downs Dolphins: Dutchman Downs
+  Eagle Ridge Soaring Eagles: Eagle Ridge
+  Garner Dolphins: Garner
+  Glenridge Gators: Glenridge
+  Granite Falls Gators: Granite Falls
+  Greenway Club Racers Swim Team: Greenway Club
+  Greystone Gators: Greystone
+  Haddon Hall Hammerheads: Haddon Hall
+  Hasentree Hammerheads: Hasentree
+  Hawthorne Stingrays: Hawthorne
+  Hedingham Sharks: Hedingham
+  Hedingham Sharks Swim Team: Hedingham
+  Heritage Swim Team Association, Inc.: Heritage of Wake Forest
+  Highcroft Hurricanes Swim Team: Highcroft
+  Holly Glen Hammerheads Swim Team: Holly Glen
+  JCC J-Rays: Jewish Community Center
+  Kildaire Farms Killer Whales: Kildaire Farms
+  Kitts Creek Killer Whales: Kitts Creek
+  Lakepark: Lake Park
+  Lakepark Swim Team: Lake Park
+  Life Time Athletic Raleigh: Lifetime Raleigh
+  Life Time Cary: Life Time Fitness Cary
+  LifeTime Raleigh: Lifetime Raleigh
+  Lochmere Swim Team: Lochmere
+  Medfield  Sharks: Medfield
+  Medfield Sharks: Medfield
+  North Hills Club: North Hills
+  Northbrook Club: Northbrook
+  OliveChapel Swim: Olive Chapel
+  Park @ West Lake: Park at West Lake
+  Planters Walk Piranhas Swim Team: Planter's Walk
+  Preston Village Tiger Sharks: Preston Village
+  Quail Hollow Amberjacks: Quail Hollow
+  Raleigh Racquet Club: Raleigh Racquet
+  Regency Riptides Swim Team: Regency
+  RenPark Rays: Renaissance Park
+  Riverwood Rays: Riverwood
+  Scottish Hills Sea Lions: Scottish Hills
+  Scotts Mill Sea Dragons: Scotts Mill
+  Shepherd's Vineyard Killer Whales: Shepherds Vineyard
+  Silverton Sharks: Silverton
+  Southall Swim & Racquet Club: Southall
+  Stonebridge Stingrays: Stonebridge
+  SummerfieldNorth: Summerfield North
+  The Christian Co: TCC
+  The Reserve Stingrays: The Reserve
+  Weatherstone Sharks: Weatherstone
+  Wendell Waves: Wendell
+  WoodCreek WhiteCaps: WoodCreek
+  Zebulon Swim Team: Zebulon
+new_teams: {}
+division:
+  size: 4
+weights:
+  previous_rank: 25.0
+  division_record: 0.0
+  overall_record: 15.0
+  division_winner: 40.0
+  division_loser: 60.0
+  division_point_diff: 0.0
+  overall_point_diff: 0.0
+metrics:
+  travel_distance:
+    file: team_distances.csv
+    source: matrix_row_mean
+    normalize: minmax_league
+    direction: lower_is_better
+    weight: 0.0
+  travel_minutes:
+    file: team_drive_minutes.csv
+    source: matrix_row_mean
+    normalize: minmax_league
+    direction: lower_is_better
+    weight: 0.0
+adjust:
+  hth_enabled: true
+  hth_min_margin: 1.0
+  hth_max_rating_gap: 60.0
+  copd_enabled: true
+  copd_min_margin: 80.0
+  copd_max_rating_gap: 45.0
+  passes: 3

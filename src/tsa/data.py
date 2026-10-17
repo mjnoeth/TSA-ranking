@@ -87,18 +87,30 @@ def load_ranks(path: Path, league: str) -> list[Team]:
     return teams
 
 
+# Dataclip rows that are not TSA dual meets (optional/championship meets are
+# excluded from rankings per the committee methodology).
+NON_DUAL_MEET_PATTERNS = ("TSA Champs", "Cary City", "City Meet", "Championship")
+
+
+def is_dual_meet(meet_name: str) -> bool:
+    name = str(meet_name)
+    return name != "BYE" and not any(p.lower() in name.lower() for p in NON_DUAL_MEET_PATTERNS)
+
+
 def load_dataclips(path: Path, aliases: dict[str, str]) -> list[Meet]:
     d = pd.read_csv(path)
-    d = d.dropna(subset=["team1_name", "team2_name", "team1_score", "team2_score"])
-    d = d[d.meet_name != "BYE"]
+    d = d.dropna(subset=["team1_name", "team2_name"])
+    d = d[d.meet_name.map(is_dual_meet)]
     meets = []
     for r in d.itertuples(index=False):
+        # Blank scores (meet never finalised in SwimTopia) are kept as NaN so a
+        # score_overrides.csv row can supply the league's official result.
         meets.append(Meet(
             date=str(r.meet_date),
             team_a=_canon(r.team1_name, aliases),
             team_b=_canon(r.team2_name, aliases),
-            score_a=float(r.team1_score),
-            score_b=float(r.team2_score),
+            score_a=float(r.team1_score) if pd.notna(r.team1_score) else float("nan"),
+            score_b=float(r.team2_score) if pd.notna(r.team2_score) else float("nan"),
         ))
     return meets
 
@@ -153,6 +165,11 @@ def load_season(cfg: SeasonConfig) -> Season:
 
     meets = load_dataclips(cfg.inputs["dataclips"], cfg.aliases)
     apply_overrides(meets, cfg.inputs.get("score_overrides"), cfg.aliases)
+    unscored = [m for m in meets if m.score_a != m.score_a or m.score_b != m.score_b]   # NaN check
+    if unscored:
+        ex = ", ".join(f"{m.team_a} vs {m.team_b} ({m.date})" for m in unscored[:5])
+        raise ValueError(f"{len(unscored)} meet(s) have no score in the dataclip and no override: {ex}"
+                         + (" ..." if len(unscored) > 5 else "") + ". Add rows to score_overrides.csv.")
 
     played = {m.team_a for m in meets} | {m.team_b for m in meets}
 

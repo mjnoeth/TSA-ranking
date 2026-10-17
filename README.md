@@ -148,25 +148,42 @@ Season checklist:
    logged in the report.
 
 The 2026 weights were tuned against the committee's approved 2027 ranking with
-`tools/tune_weights.py`: North 28/37 exact, South 34/51 exact, every team
-within 4 places, Spearman ≥ 0.998.
+`tools/tune_weights.py`. Applied unchanged to 2023–2025 (out-of-sample), the
+engine matches the committee within one place for 88% of 352 team-seasons and
+within two places for 97%; re-tuning on all four seasons pooled finds no
+better weights. Full tables, chart, and per-team misses:
+[docs/accuracy_summary.md](docs/accuracy_summary.md).
+
+![accuracy](docs/accuracy_summary.png)
 
 ## Tools
 
 Helper scripts in `src/tools/` prepare inputs or tune the engine. They are run
 once per season and are independent of the ranking code.
 
+### `summarize_accuracy.py` — engine vs. committee, every season
+
+Runs each `data/<year>/` that has a following year's reference ranks, and
+writes [docs/accuracy_summary.md](docs/accuracy_summary.md) (tables + per-team
+misses) and `docs/accuracy_summary.png` (chart).
+
+```bash
+python src/tools/summarize_accuracy.py
+```
+
 ### `legacy_extract_score_overrides.py` — official score corrections
 
 Diffs the dataclip against the `Results` sheet of the *same* season's Dual
 Meet Summary workbook and writes every disagreement to `score_overrides.csv`
-(`date,team_a,team_b,score_a,score_b,note`). In 2026 this captured 11
+(`date,team_a,team_b,score_a,score_b,note`). Pass `--config` so older
+dataclips' long club names are aliased. In 2026 this captured 11
 rain-shortened meets the league recorded as 1-1 / 1-0.
 
 ```bash
 python src/tools/legacy_extract_score_overrides.py \
   "data/2027/input/2026 Dual Meet Summary v.4.0 - MN Copy.xlsx" \
-  "data/2026/input/2026 TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv"
+  "data/2026/input/2026 TSA MEET RESULTS - SWIMTOPIA DATACLIPS.csv" \
+  --config data/2026/config.yaml
 ```
 
 Once the workbook is retired, maintain this file by hand.
@@ -204,6 +221,9 @@ rank,team
 ```
 
 - CSVs are written next to the workbook by default; `--out-dir` overrides.
+- `--current` writes the rank each team *held* that season (column D) instead
+  of the proposal — used to reconstruct 2023's incoming ranks because the 2022
+  workbook was never filled in.
 - **Requires** both `North Report` and `South Report` sheets; exits non-zero
   if either is missing.
 - Reads column A (rank) and column B (team) from row 4, skips the

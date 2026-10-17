@@ -6,13 +6,18 @@ workbook and writes north_ranks.csv / south_ranks.csv with columns rank,team.
 
 The Report sheets have a fixed layout across all known years:
   row 1-3  headers
-  row 4+   col A = proposed next-season rank, col B = team name
+  row 4+   col A = proposed next-season rank, col B = team name,
+           col D = rank the team held *this* season
 Rows whose team name starts with "**" are placeholders and are skipped.
 
 Usage:
   python src/tools/legacy_extract_rank.py <workbook.xlsx> [--out-dir DIR]
+  python src/tools/legacy_extract_rank.py <workbook.xlsx> --current [--out-dir DIR]
 
-By default the CSVs are written next to the workbook.
+By default the CSVs are written next to the workbook. With --current the
+current-season rank (col D) is written instead of the proposal (col A) -
+useful to reconstruct a season's *input* ranks when the prior year's workbook
+is unavailable.
 """
 
 from __future__ import annotations
@@ -29,10 +34,11 @@ SHEETS = {"North Report": "north_ranks.csv", "South Report": "south_ranks.csv"}
 FIRST_DATA_ROW = 4
 
 
-def extract(ws) -> list[tuple[int, str]]:
+def extract(ws, current: bool = False) -> list[tuple[int, str]]:
     teams: list[tuple[int, str]] = []
-    for row in ws.iter_rows(min_row=FIRST_DATA_ROW, max_col=2, values_only=True):
-        rank, team = row
+    for row in ws.iter_rows(min_row=FIRST_DATA_ROW, max_col=4, values_only=True):
+        proposed, team, _, cur = row
+        rank = cur if current else proposed
         if not isinstance(team, str) or not team.strip():
             continue
         team = team.strip()
@@ -43,6 +49,7 @@ def extract(ws) -> list[tuple[int, str]]:
         if not isinstance(rank, (int, float)):
             raise ValueError(f"{ws.title}: non-numeric rank {rank!r} for team {team!r}")
         teams.append((int(rank), team))
+    teams.sort()
 
     ranks = [r for r, _ in teams]
     if ranks != list(range(1, len(ranks) + 1)):
@@ -58,6 +65,7 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("workbook", type=Path, help="previous season's Dual Meet Summary .xlsx")
     p.add_argument("--out-dir", type=Path, help="directory for CSV output (default: workbook's directory)")
+    p.add_argument("--current", action="store_true", help="write this season's rank (col D) instead of the proposal (col A)")
     args = p.parse_args(argv)
 
     if not args.workbook.is_file():
@@ -77,7 +85,7 @@ def main(argv: list[str] | None = None) -> int:
 
     for sheet, filename in SHEETS.items():
         try:
-            teams = extract(wb[sheet])
+            teams = extract(wb[sheet], current=args.current)
         except ValueError as e:
             print(f"error: {e}", file=sys.stderr)
             return 1
