@@ -1,4 +1,4 @@
-# TSA Scheduler
+# TSA Ranking
 
 Objective, data-driven **next-season rankings** for the Tarheel Swim
 Association (TSA) from this season's dual-meet results. Replaces the by-hand

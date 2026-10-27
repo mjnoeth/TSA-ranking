@@ -12,7 +12,7 @@ from .ranking import TeamStats
 
 def write_ranks(stats: dict[str, TeamStats], out_dir: Path) -> dict[str, Path]:
     """north_ranks.csv / south_ranks.csv in the same ``rank,team`` format the
-    scheduler consumes, so this season's output is next season's input."""
+    ranker consumes, so this season's output is next season's input."""
     out_dir.mkdir(parents=True, exist_ok=True)
     paths = {}
     for league in LEAGUES:

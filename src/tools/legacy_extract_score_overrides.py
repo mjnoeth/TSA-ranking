@@ -7,7 +7,7 @@ official status is recorded as a 1-1 tie). Stefan applied those corrections by
 hand in the workbook's "Results" sheet.
 
 This tool diffs the dataclip against the Results sheet and writes every
-disagreement to score_overrides.csv, which the scheduler applies on load.
+disagreement to score_overrides.csv, which the ranker applies on load.
 
 Usage:
   python src/tools/legacy_extract_score_overrides.py <workbook.xlsx> <dataclips.csv> [--config config.yaml] [--out score_overrides.csv]
